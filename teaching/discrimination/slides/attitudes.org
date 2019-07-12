@@ -1,0 +1,109 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Gender Attitudes
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* /Does Integration Change Gender Attitudes?/
+- Dahl, Kotsdam, Rooth (2018)
+- New, unpublished research
+
+* Labor market segregation
+- Many jobs are primarily male or female
+- Similar in education
+- Why do women and men work in different jobs?
+  - Is it a choice?
+  - Do expectations matter?
+  - Do attitudes matter?
+
+* 
+[[./img/dahl_tab1.png]]
+
+* Attitude
+- Existing attitudes toward gender discourage women from entering some fields
+- Can attitudes be changed?
+- Does exposure to women in the workplace change attitudes?
+- Identification problem: "Better" attitude workplaces tend to hire more women
+
+* The experiment
+- Randomly assign women to certain groups of male workers
+- Ask workers about attitudes toward women before and after assignment
+- Dahl et al use Norwegian military squads
+
+* Norwegian military service
+- Conscripted military
+- All 17 year old men and women screened for military service
+- ~13% selected for military service (most motivated)
+- 8 weeks of boot camp
+- Mandatory for men if selected, optional for women (since changed)
+- Self-selection: Most motivated men and women end up serving (like other jobs)
+
+* Experimental design
+- Recruits separated in to squads
+  - Train together for 8 weeks
+  - Share room, meals, etc
+- Give survey to each incoming recruit
+- Randomly assign women to squads
+- Re-administer survey after boot camp 
+
+* 
+[[./img/dahl_fig1a.png]]
+
+* 
+[[./img/dahl_fig1b.png]]
+
+* 
+[[./img/dahl_fig1c.png]]
+
+* Survey questions
+- "Teams perform better when made up of the same sex."
+  - 1: Completely disagree, 7: Completely agree
+- "It is important for men and women to share household work equally."
+  - Strongly agree, agree, neither agree nor disagree, etc
+- "I am feminine."
+  - Does not fit at all, does not fit well, reasonable fit, etc
+- Each question coded as binary variable (zero or one)
+
+* 
+#+ATTR_HTML: :height 625
+[[./img/dahl_tab2.png]]
+
+* 
+[[./img/dahl_tab3.png]]
+
+* Identification assumption
+- Only thing that is different across groups is exposure to women
+- Randomization assures this is true /on average/
+- Common to report "treatment arms" to see if treated and untreated groups are similar
+  - Might get differences from a "bad draw," might threaten results
+
+* 
+[[./img/dahl_tab4.png]]
+
+
+* Robustness
+- All causal estimates depend on identification assumptions
+- These assumptions can't be tested!
+- Instead, common to use "robustness checks" and "placebo tests"
+- Does the result hold up to various specifications/assumptions?
+- Does the statistical model imply nonsensical results?
+
+* 
+#+attr_html: :height 625
+[[./img/dahl_tab4b.png]]
+
+* 
+[[./img/dahl_tab6.png]]
+
+
+* External validity
+- How well do we expect these results to hold outside of the experimental environment?
+- Are the people being studied systematically different than general population or other segregated jobs?
+- Can't test directly, but we can compare attitudes across groups
+
+* 
+[[./img/dahl_figa2a.png]]
+
+* 
+[[./img/dahl_figa2b.png]]

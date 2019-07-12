@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title> EC 399 </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/slide_white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- C-x C-k S for slide, M for markdown -->
+
+	<section data-markdown>
+	  # Piketty's *Capital*
+
+	  ## EC 399: Economics of Inequality
+
+	  ## Spring 2017
+	</section>
+
+	<section data-markdown>
+	  ### *Capital in the Twenty-First Century*
+
+	  - Thomas Piketty (2013)
+
+	  - 700 pages
+	  
+	  - Past, present, and future of inequality
+
+	  - \#1 on the New York Times Best Seller list
+	</section>
+
+	<section data-markdown>
+	  ### Income vs Wealth
+
+	  Income is a *flow* variable, measured in units per unit of time
+
+	  - Dollars per hour, thousands of dollars per year, etc
+
+	  Wealth is a *stock* variable, measured as a total amount
+
+	  - Amount of money in your bank account
+
+	  - Value of assets you own
+	</section>
+
+	<section data-markdown>
+	  ### Capital income
+
+	  - Wealth is a source of income
+
+	  - S=I
+
+	  - Capital income increases as wealth increases
+
+	</section>
+
+	<section data-markdown>
+	  ### 3 facts
+
+	  1. Labor income inequality is higher in the US than in Europe, opposite of 1900
+
+	  2. Wealth inequality more concentrated than income inequality
+
+	  3. Wealth to income ratios are U-shaped in Europe, flat in US
+	</section>
+
+	<section>
+	  <img src='img/piketty_saez_fig1.png' />
+	</section>
+	
+	<section>
+	  <img src='img/piketty_saez_fig2.png' />
+	</section>
+
+	<section>
+	  <img src='img/piketty_saez_fig3.png' />
+	</section>
+
+	<section data-markdown>
+	  > The United States is the land of booming top labor incomes; Europe is the land of booming wealth (albeit with a lower wealth concentration than in the United States). These are distinct phenomena, involving different economic mechanisms and different parts of the developed world.
+	</section>
+
+	<section data-markdown>
+	  ### Wealth/income ratio
+
+	  Solow model:
+
+	  - $Y=f(K)$
+
+	  - Steady state: $\bar{K} \rightarrow f(\bar{K})=\bar{Y}$
+
+	  - Long-run wealth/income ratio: $\bar{K}/\bar{Y}$
+
+	  - With steady-state growth, $K/Y$ is still constant (both K and Y grow at same rate)
+	</section>
+
+	<section data-markdown>
+	  ### Piketty's "first fundamental law of capitalism"
+
+	  $$\text{Capital share of income}=\alpha =r\dfrac{K}{Y}$$
+
+	  - Just a definition
+	  
+	  - $r$ is the return on capital 
+
+	  - $rK$ is capital income per year
+
+	  - $rK/Y$ is share of capital income to total income (Y)
+	</section>
+	
+	<section data-markdown>
+	  ### Piketty's "second fundamental law of capitalism"
+
+	  $$\dfrac{\bar{K}}{\bar{Y}} = \dfrac{s}{g}$$
+
+	  - $s$ is the savings rate, $g$ long-run growth rate
+
+	  - Can be shown using Solow model
+
+	  Intuitively:
+
+	  - $\dot{K} = sY$ (K = net capital)
+
+	  - Rate of change of K is g
+
+	</section>
+
+	<section data-markdown>
+	  ### Example
+
+	  $s=0.10$
+
+	  - $g=0.03$:
+
+	  $$\dfrac{\bar{K}}{\bar{Y}} = \dfrac{0.1}{0.03} = 3.33$$
+
+	  - $g=0.015$:
+
+	  $$\dfrac{\bar{K}}{\bar{Y}} = \dfrac{0.1}{0.015} = 6.66$$
+	</section>
+
+	<section>
+	  <img src='img/eu_gdp.png' />
+	</section>
+
+	<section data-markdown>
+	  ### US wealth/income ratio
+
+	  Why is US not seeing accumulating wealth?
+
+	  - Population growing faster in US (causes growth)
+
+	  - Savings rate lower in US
+	</section>
+
+	<section data-markdown>
+	  ### $r-g$
+
+	  - Suppose two people in society: one with capital income, one with labor income
+
+	  - Labor income grows at rate $g$
+
+	  - Capital income grows at rate $r$
+
+	  - If $r>g$, capital income accumulates faster than labor income
+
+	  - Capital begets capital (part of capital income is saved), so wealth inequality increases
+
+	</section>
+	
+	<section>
+	  <img src='img/piketty_saez_fig4.png' />
+	</section>
+
+	<section data-markdown>
+	  ### Putting it all together
+
+	  - Lower growth rates cause $K/Y$ to increase
+
+	  - Capital share increases ($rK/Y$)
+
+	  - $r>g$: capital incomes diverge from labor incomes
+
+	  - Wealth more concentrated than labor income
+	</section>
+
+	
+	<section data-markdown>
+	  ### Labor and capital
+
+	  - Most of current inequality is caused by labor, not capital
+
+	  - High wage-earners are able to save more of their incomes, accumulate capital
+
+	  - We might expect top wage earners to transition to capital earners
+	</section>
+
+	<section data-markdown>
+	  ### First law
+
+	  $$\alpha =r\dfrac{K}{Y}$$
+
+	  If $K/Y$ increasing to steady state, will $\alpha$ increase?
+
+	  - If $r$ goes down, then capital share of income may not decrease
+
+	  - If $r$ stays the same or goes up, then capital share will increase
+	</section>
+
+	<section data-markdown>
+	  ### What determines $r$?
+
+	  - $r$ is the return on capital
+
+	  - With competitive markets, equal to the marginal productivity of capital (MPK)
+
+	  - MPK is a function of level of capital (-) and technology (+)
+
+	  - "Capital augmenting" technology can keep $r$ high in the long run
+
+	  - Solow, 2014:
+
+	  > There is no logical necessity for the rate of return to exceed the growth rate...but there is no invisible hand to steer a market economy away from this perversity. 
+	</section>
+
+	<section data-markdown>
+	  ### Capitalism and inequality
+
+	  - Piketty shows that there is no "law" of capitalism that ensures inequality will fall
+
+	  - Capital income can be derived from skilled investing, but unskilled investing can earn high income if wealth is high
+
+	  - Increasing wealth might imply increasing inherited wealth
+	</section>
+
+	<section data-markdown>
+	  ### Patrimonial capital
+
+	  - Wealth is inherited from parents
+
+	  - You can earn capital income simply because your parents earn capital income (no skills required!)
+
+	  - This was the case for most of history, until 20th century
+
+	  - Piketty argues that the 20th century is an anomoly, driven by negative capital shocks (world wars) and high growth (convergence)
+
+	  - $r>g$ implies a return to patrimonial capitalism, widening gulf between capital and labor
+
+	  > The reason why wealth today is not as unequally distributed as in the past is simply that not enough time has passed since 1945.
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Criticisms
+
+	  - Causes of the rising capital share
+	  
+	  - Does $r>g$ lead to rising inequality?
+	  
+	  - Is inequality good for the economy?
+
+	</section>
+
+	<section>
+	  <img src="img/alpha.png" />
+	</section>
+
+	<section data-markdown>
+	  ### Rising capital share
+
+	  Putting the two laws together:
+
+	  $$ \alpha = r\dfrac{s}{g} $$
+
+	  - r, s, and g not enough to explain rise in capital share
+	  
+	  - Evidence suggests that rising capital share is due rising home prices, not a return on capital investments
+	</section>
+	
+	<section data-markdown>
+	  ### $r-g$ in theory
+
+	  - $r>g$ does not necessarily imply more inequality
+
+	  - Small amounts of social mobility mean $r>g$ can lead to a *decrease* in inequality
+
+	  - High returns on capital encourage people to save more, accumulate wealth
+	</section>
+
+	<section data-markdown>
+	  ### $r-g$ in history
+
+	  - Piketty does not show any correlations between $r-g$ and inequality
+	  
+	  From 1870 to 2012:
+
+	  - Increases in $r-g$ are not associated with rising top income share
+
+	  - Same holds for many definitions of $r$
+
+	  - No long term effects in the data either
+	</section>
+
+	<section data-markdown>
+	  ### Capital mobility and capital returns
+
+	  - Capital is generally very mobile across national boundaries
+
+	  - The rich can earn a high return even if there are low returns in their home country
+
+	  - Returns should equalize across countries
+
+	  - Wealth accumulation should occur everywhere
+	</section>
+
+	<section>
+	  <img src="img/sa_sweed.png"/>
+	</section>
+
+	<section>
+	  <img src="img/sweed.png"/>
+	</section>
+
+	<section>
+	  <img src="img/sa.png"/>
+	</section>
+	
+	<section data-markdown>
+	  ### South Africa and Sweden
+
+	  - Both countries capitalist
+	  
+	  - Inequality in SA much different than inequality in Sweden
+
+	  - SA inequality was/is institutionalized (apartheid)
+
+	  - Changes in inequality reflect changes in institutions more than $r-g$
+	</section>
+	
+	<section data-markdown>
+	  ### Is inequality good for the economy?
+
+	  Mankiw (2013): "Defending the One Percent" (on Canvas)
+	</section>
+
+	<section data-markdown>
+	  ### LeBron James parable
+
+	  - Steve Jobs improved the economic well being of many people
+
+	  - Was compensated very well for his efforts
+
+	  - Is it bad that he accumulated wealth?
+	</section>
+
+	<section data-markdown>
+	  ### Equality of opportunity
+
+	  - Inequality is bad if it means unequal access to opportunity
+
+	  - Great Gatsby curve, Moving to Opportunity, etc
+
+	  - Genetics likely play a large part
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Genetics and economic outcomes
+
+	  - Studies on twins (same genes) raised in separate households suggest genes factor heavily into economic outcomes
+
+	  - Low intergenerational mobility is largely due to genes, rather than environment
+
+	  - Unequal opportunity more relevant at lower incomes, not higher incomes
+	</section>
+
+	<section data-markdown>
+	  ### Equity-efficiency tradeoff
+
+	  - Governments cannot observe genetic productivity
+
+	  - Some high-productivity people might want to work very little
+
+	  - Society loses if productive people work less
+
+	  - Since government cannot distinguish lazy from low productivity, redistribution may encourage some productive workers to work less
+
+	  - Some inequality is therefore preferred 
+	</section>
+
+	<section data-markdown>
+	  ### Solow's response to Mankiw (on Canvas)
+
+	  > The cheerful blandness of Gregory Mankiw’s "Defending the One Percent" may divert attention from its occasional unstated premises, dubious assumptions, and omitted facts. I have room to point only to a few such weaknesses; but the One Percent are pretty good at defending themselves, so that any assistance they get from the sidelines deserves scrutiny.
+	</section>
+	
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      backgroundTransition: 'none',
+      transition: 'fade',
+      viewDistance: 2,
+      controls: true,
+      progress: true,
+      center: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('Home'); } },
+      { src: 'plugin/chalkboard/chalkboard.js' },
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math-katex/math-katex.js', async: true }
+      ],
+
+      keyboard: {
+        67: function() { RevealChalkboard.toggleNotesCanvas() },
+        66: function() { RevealChalkboard.toggleChalkboard() }, 
+        46: function() { RevealChalkboard.clear() },    
+         8: function() { RevealChalkboard.reset() },    
+        68: function() { RevealChalkboard.download() }, 
+      },
+
+      chalkboard: { 
+      theme: "whiteboard",
+      color: [ 'rgba(0,0,0,1)', 'rgba(255,255,255,0.5)' ],
+      pen: [ 'crosshair', 'crosshair' ]
+      },
+      
+      });
+    </script>
+  </body>
+</html>

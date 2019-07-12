@@ -1,0 +1,121 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Uncertainty
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 
+
+* 
+*Announcements* 
+- Homework 3 on Canvas 
+  - Due /Monday, May 21/
+- Reading: Chapter 8
+
+* 
+*Uncertainty*
+- So far: Strategic uncertainty
+  - Some players unaware of the actions of other players
+  - Example: Simultaneous-move games
+- Today: External uncertainty
+  - "Nature" changes aspects of the game
+  - Players cannot control external uncertainty, must take it into account when making decisions 
+
+* 
+*Expected Utility Theory*
+- Events that happen according to some probability distribution are called /gambles/ 
+- Agents are able to rank gambles by comparing the /expected utility/ that they would receive from the potential outcomes of the gamble
+- The utility that we will use is /von Neumann-Morgenstern (VNM)/ utility
+
+* 
+*Risk preference* 
+- When there is uncertainty we can calculate the /expected value/ of a gamble
+- But people do not just consider expected value when making decisions
+- Some people might be willing to pay to avoid risk (risk aversion)
+
+* 
+*Example*
+- Suppose I flip a coin. If heads, you get $100. If tails, you get $0. 
+  - What is the expected value?
+  - How much would you pay to play this game?
+- Suppose instead the payoffs are $1 million for heads, $0 for tails. 
+
+* 
+*VNM Utility and Risk Preference*
+- Outcomes are denoted $D$ (dollars)
+- Agents in the model have preferences over outcomes represented by utility $u=u(D)$
+- The risk preference of the agent depends on the concavity of the utility function $u$
+- Agents with /diminishing marginal utility/ are risk averse
+  - Concave utility function
+
+* Risk aversion
+
+* Risk seeking
+
+* 
+*Example*
+- A farmer's crop yield depends on weather 
+- Farmer gets good weather with 50%
+- Yield with good weather is $160,000, yield in bad weather is $40,000
+- Farmer has VNM utility $u(D) = \sqrt{D}$
+
+* 
+*Risk sharing*
+- Risk averse agents willing to pay to remove risk 
+- Agents can therefore benefit from trading /state-contingent claims/ with one another 
+  - You agree to pay someone else if you have a good outcome, someone else pays you if you have a bad outcome
+
+* 
+*Example*
+- Suppose there is another farmer that has the same weather probability and outcomes (weather probability is independent of first farmer)
+- Farmers agree to a contract: If one farmer gets good luck and the other gets bad luck, lucky farmer pays $60,000 to the unlucky farmer
+- Are the farmers better off?
+
+* 
+*Example*
+- Now suppose the other farmer faces no uncertainty and will earn $100,000 with probability 1
+- The farmer with risk is willing to accept their certainty equivalence instead of the gamble
+- Is the riskless farmer willing to buy the risk in exchange for the certainty equivalence?
+
+* 
+*Example*
+- Now suppose the farmer without risk is /risk neutral/
+- What is the maximum that this farmer is willing to pay for the gamble?
+
+* 
+*Insurance and risk*
+- Suppose there are thousands of farmers with identical risk/outcomes
+- A single entity (insurance company) can buy the risk of all of the farmers and make them better off
+- Law of large numbers says that the insurance company will earn the expected value of the gamble
+
+* 
+*Manipulating Risk*
+- Sometimes agents have control over risk and can use it to their advantage
+- By increasing risk, the probability of "tail events" increases
+- This is why underdogs in sports often choose risky actions
+
+* 
+*Example*
+- A basketball team scores 60 points per game on average
+- They are playing a better opponent and must score at least 80 points to win
+- How can this team maximize their chances of winning?
+
+* 
+*Cheap Talk*
+- In coordination games, players may be able to costlessly communicate before the game begins
+- This might allow players to better coordinate on preferred outcomes
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG08.03.jpg]]

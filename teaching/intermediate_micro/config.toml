@@ -1,0 +1,85 @@
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "https://michaeljerman.com/"
+languageCode = "en-AU"
+title = "Intermediate Micro"
+
+  
+# Hero section (from here on is for icon theme)
+[params.main]
+  title = "Intermediate microeconomics"
+  term = "Winter, 2018"
+  img = "images/head_cropped.png"
+  description = "Click on a section above to get started."
+  weight = 1
+
+  [[params.main.section]]
+    title = "math&nbsp;review"
+    weight = 2
+
+    [[params.main.section.lecture]]
+      title = "algebra review"
+      # notes = "pdf_link"
+
+    [[params.main.section.lecture]]
+      title = "calculus overview"
+
+  [[params.main.section]]
+    title = "Consumer&nbsp;theory"
+    weight = 3
+
+    [[params.main.section.lecture]]
+      title = "Budget constraints"
+
+    [[params.main.section.lecture]]
+      title = "preferences"
+
+    [[params.main.section.lecture]]
+      title = "utility"
+
+    [[params.main.section.lecture]]
+      title = "choice"
+
+    [[params.main.section.lecture]]
+      title = "demand"
+
+    [[params.main.section.lecture]]
+      title = "Income and substitution effects"
+      
+    [[params.main.section.lecture]]
+      title = "intertemporal choice"      
+    
+  [[params.main.section]]
+    title = "Producer&nbsp;theory"
+    weight = 4
+
+    [[params.main.section.lecture]]
+      title = "technology"
+
+    [[params.main.section.lecture]]
+      title = "profit maximization"      
+
+    [[params.main.section.lecture]]
+      title = "cost minimization"
+
+    [[params.main.section.lecture]]
+      title = "cost curves"
+
+    [[params.main.section.lecture]]
+      title = "supply"      
+
+  [[params.main.section]]
+    title = "Markets"
+    weight = 5
+
+    [[params.main.section.lecture]]
+      title = "Perfect competition"
+
+    [[params.main.section.lecture]]
+      title = "Monopoly"
+
+    [[params.main.section.lecture]]
+      title = "monopolist behavior"
+
+    [[params.main.section.lecture]]
+      title = "oligopoly"      

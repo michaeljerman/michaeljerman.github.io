@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Uber Wage Gap</title>
+<meta name="author" content="(ECON 383: Economics of Discrimination)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">The Uber Wage Gap</h1><h3 class="author">ECON 383: Economics of Discrimination</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-org68a9e62">
+<h2 id="org68a9e62">Identification</h2>
+<p>
+Previously:
+</p>
+<ul>
+<li>Descriptive statistics vs causal estimates</li>
+<li>Quasiexperiments allow for robust estimates of causal effects</li>
+<li>Causal estimates require "identification assumptions"</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc8f6dcb">
+<h2 id="orgc8f6dcb">Estimating causal effects</h2>
+<ul>
+<li>Suppose we think that variable \(x\) causes variable \(y\)</li>
+<li>How do we estimate the causal effect?</li>
+<li>How do we interpret the causal estimate?</li>
+<li>We use <i>econometrics</i> &#x2013; a set of statistical tools applied to economic problems</li>
+<li>Standard tool: Ordinary least squares (OLS) 
+<ul>
+<li>AKA: Linear regression</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1c2e680">
+<h2 id="org1c2e680">OLS</h2>
+<ul>
+<li>Suppose the <i>true</i> (but unknown!) relationship between \(x\) and \(y\) is determined by:</li>
+
+</ul>
+<p>
+\[y_i = \beta_0 + \beta_1 x_i + u_i\]
+</p>
+<ul>
+<li>\(i\) is an index (person, state, country, etc)</li>
+<li>\(\beta_0, ~\beta_1\) are <i>parameters</i></li>
+<li>\(e_i\) is the <i>error</i>
+<ul>
+<li>Random variation that occurs in nature</li>
+<li>This error is zero on average</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org38982bc">
+<h2 id="org38982bc">OLS</h2>
+<p>
+\[y_i = \beta_0 + \beta_1 x_i + u_i\]
+</p>
+<ul>
+<li>Suppose \(x_i\) increases by one unit. What happens to \(y_i\)?
+<ul>
+<li>\(y_i\) increases by \(\beta_1\)</li>
+
+</ul></li>
+<li>\(\beta_1\) is the <i>marginal</i> effect of a change in \(x\) on \(y\)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org3620f57">
+<h2 id="org3620f57">Mean difference</h2>
+<ul>
+<li>Suppose \(x\) can take one of two values (ex: male/female)</li>
+<li>We call \(x\) a <i>dummy variable</i>
+<ul>
+<li>\(x_i = 1\) if individual \(i\) is a female</li>
+<li>\(x_i = 0\) if individual \(i\) is a male</li>
+
+</ul></li>
+<li>\(y_i\) is the outcome variable (ex: wages)
+<ul>
+<li>Average wage for women: \(\beta_0 + \beta_1\)</li>
+<li>Average wage for men: \(\beta_0\)</li>
+<li>Difference between average woman and average man: \(\beta_1\) (wage gap)</li>
+
+</ul></li>
+<li>\(\beta_1\) is the <i>marginal</i> difference between men and women</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org83fd4e9">
+<h2 id="org83fd4e9">Multiple regression</h2>
+<ul>
+<li>Now suppose the true relationship is</li>
+
+</ul>
+<p>
+\[y_i = \beta_0 + \beta_1 x_i + \beta_2 z_i + e_i\]
+</p>
+<ul>
+<li>\(y\) is determined by \(x\) <b>and</b> \(z\)</li>
+<li>Now \(\beta_1\) is the marginal effect of a change in \(x\) <i>holding \(z\) constant</i>
+<ul>
+<li>All else equal, how will a change in \(x\) affect \(y\)?</li>
+
+</ul></li>
+<li>\(z_i\) is a <i>control variable</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org359e5e1">
+<h2 id="org359e5e1">Statistical inference</h2>
+<ul>
+<li>We never observe the "true model" (i.e. the "data generating process")</li>
+<li>We must <i>estimate</i> the model parameters</li>
+<li>Randomness ensures that are estimates are never perfectly accurate</li>
+<li>We can use statistics to assign a degree of confidence to our estimates</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc5224f9">
+<h2 id="orgc5224f9">P-values</h2>
+<ul>
+<li>Given we have properly specified the model (identification assumptions), a p-value tells us how confident we are in an estimate</li>
+<li>P-value is the probability that we would see an estimate <i>at least as large</i> as the one we observe if the <i>true</i> marginal effect is zero
+<ul>
+<li>How likely is it that randomness is driving our results?</li>
+
+</ul></li>
+<li>Example: Estimate \(\hat{\beta}_1 = 0.07\) with a p-value of \(p=0.04\)
+<ul>
+<li>If the true \(\beta_1 = 0\), there's a 4% we would estimate \(\hat{\beta_1} > 0.07\) due to randomness</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org776deca">
+<h2 id="org776deca">Statistical significance</h2>
+<ul>
+<li>Research must choose a p-value that is "acceptable"
+<ul>
+<li>This is known as a "level of significance"</li>
+
+</ul></li>
+<li>In economics, this is generally \(p<0.05\)</li>
+<li>In particle physics, this \(p<0.0000003\) ("5 sigma")</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org11040f7">
+<h2 id="org11040f7">Tables in economics papers</h2>
+<ul>
+<li>Parameter estimates are usually reported in tables</li>
+<li>Ex:</li>
+
+</ul>
+<p>
+\[0.4142\]
+\[(0.002)\]
+</p>
+<ul>
+<li>The top number is \(\hat{\beta}_1\)</li>
+<li>The bottom number is the <i>standard error</i></li>
+<li>If top/bottom &gt; 1.96, then \(p<0.05\)
+<ul>
+<li>Usually (not always) use stars (\(***\)) to signify level of significance</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb05b561">
+<h2 id="orgb05b561">Uber</h2>
+<ul>
+<li>"Car-sharing" service</li>
+<li>Drivers matched with riders based on an algorithm</li>
+<li>Algorithm and riders do not observe gender of driver</li>
+<li>Driver pay also a function of the algorithm</li>
+<li>Impossible for prejudice to exist in the Uber market!</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf79ef09">
+<h2 id="orgf79ef09">Wage gap</h2>
+<ul>
+<li>Estimate the difference in earnings between men and women by estimating the equation:</li>
+
+</ul>
+<p>
+\[\ln(Earnings_d) = \beta_0 + \beta_1 isMale_d + e_d\]
+</p>
+<ul>
+<li>\(isMale_d\) is a dummy variable equal to one if driver \(d\) is male</li>
+<li>Using log earnings means the parameter estimate is (approximately) a <i>percentage</i> difference in pay</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgac4d9ed">
+<h2 id="orgac4d9ed"></h2>
+
+<div class="figure">
+<p><img src="./img/uber_tab2.png" alt="uber_tab2.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org6610a13">
+<h2 id="org6610a13">Explaining the gap</h2>
+<ul>
+<li>Not the Goldin "nonlinearity" story!</li>
+<li>What are female drivers doing differently that causes them to get lower wages?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga4165cc">
+<h2 id="orga4165cc"></h2>
+
+<div class="figure">
+<p><img src="./img/uber_tab4.png" alt="uber_tab4.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org85fc2b3">
+<h2 id="org85fc2b3"></h2>
+
+<div class="figure">
+<p><img src="./img/uber_tab5.png" alt="uber_tab5.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org56b0446">
+<h2 id="org56b0446">Residual gap</h2>
+<ul>
+<li>Location and timing accounts for a small amount of the gap</li>
+<li>Remaining pay gap is 2.1% after controlling for all of this!</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgee8e37e">
+<h2 id="orgee8e37e">Driver tenure</h2>
+<ul>
+<li>Men are more likely to work for Uber for a longer period of time than women</li>
+<li>Men also drive more frequently than women</li>
+<li>Experience may increase wages</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgae36d61">
+<h2 id="orgae36d61"></h2>
+
+<div class="figure">
+<p><img src="./img/uber_fig4.png" alt="uber_fig4.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org1d1c468">
+<h2 id="org1d1c468"></h2>
+
+<div class="figure">
+<p><img src="./img/uber_fig6.png" alt="uber_fig6.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org993d69c">
+<h2 id="org993d69c">Do men learn "faster" than women?</h2>
+<ul>
+<li>Drivers are able to get higher wages by choosing types of rides to accept</li>
+<li>Drivers can strategically cancel certain rides to get higher wages</li>
+<li>Controlling for these effects does not change residual gap
+<ul>
+<li>Men aren't learning faster than women</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org540f0e7">
+<h2 id="org540f0e7"></h2>
+
+<div class="figure">
+<p><img src="./img/uber_fig8.png" alt="uber_fig8.png" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

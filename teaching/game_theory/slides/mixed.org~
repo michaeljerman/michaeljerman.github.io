@@ -1,0 +1,18 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Mixed Games
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 

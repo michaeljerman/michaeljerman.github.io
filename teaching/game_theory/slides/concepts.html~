@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Thinking about Games</title>
+<meta name="author" content="(ECON 420: Game Theory)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Thinking about Games</h1><h3 class="author">ECON 420: Game Theory</h3><h3 class="date">Spring 2018</h3>
+</section>
+
+<section>
+<section id="slide-orgbab2d7b">
+<h2 id="orgbab2d7b">Reading</h2>
+<ul>
+<li>This week: Chapters 1 and 2</li>
+<li>Next week: Chapter 3</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1dee5da">
+<h2 id="org1dee5da">Nim</h2>
+<ul>
+<li>Today we'll play an alternative version of nim</li>
+<li>One row of 20 lines</li>
+<li>Each turn, the player must choose to remove 1, 2, or 3 lines</li>
+<li>The last person to remove a line wins</li>
+
+</ul>
+<p>
+\[|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\]
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgca533d6">
+<h2 id="orgca533d6"></h2>
+<p>
+\[|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\]
+\[|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\]
+\[|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\]
+\[|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\]
+\[|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\]
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdab0fc6">
+<h2 id="orgdab0fc6">Decisions vs games</h2>
+<ul>
+<li><i>Decisions</i> are choices that can be made "without concern for reaction or response from others"</li>
+<li><i>Strategic games</i> (or just <i>games</i>) are choices that occur among "mutually aware players"
+<ul>
+<li>Players in strategic games take into account the cross-effects of their actions and the actions of other players</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb47e598">
+<h2 id="orgb47e598">Classifying games</h2>
+<p>
+Games can be:
+</p>
+<ul>
+<li>Sequential or simultaneous</li>
+<li>Zero sum or non-zero sum</li>
+<li>Single state or repeated
+<ul>
+<li>Infinite or finite repetition</li>
+
+</ul></li>
+<li>Perfect or imperfect information</li>
+<li>Fixed or manipulable rules</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb19bd06">
+<h2 id="orgb19bd06">Sequential vs simultaneous games</h2>
+<ul>
+<li>Sequential games
+<ul>
+<li>Players take turns (one after another)</li>
+<li>Players look ahead at what might happen in the future to make choices</li>
+
+</ul></li>
+<li>Simultaneous games
+<ul>
+<li>Players make choices at the same time</li>
+<li>Must predict what other players will do contemporaneously</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgae7ab4c">
+<h2 id="orgae7ab4c">Nim</h2>
+<p>
+Sequential or simultaneous?
+</p>
+<ul>
+<li class="fragment appear"><i>sequential</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2811870">
+<h2 id="org2811870">Rock, paper, scissors</h2>
+<p>
+Sequential or simultaneous?
+</p>
+<ul>
+<li class="fragment appear"><i>simultaneous</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbacffbb">
+<h2 id="orgbacffbb">Chess</h2>
+<p>
+Sequential or simultaneous?
+</p>
+<ul>
+<li class="fragment appear"><i>sequential</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge0af5b6">
+<h2 id="orge0af5b6">A single play in American football</h2>
+<p>
+Sequential or simultaneous?
+</p>
+<ul>
+<li class="fragment appear"><i>simultaneous</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org38305d8">
+<h2 id="org38305d8">A soccer penalty kick</h2>
+<p>
+Sequential or simultaneous?
+</p>
+<ul>
+<li class="fragment appear"><i>simultaneous</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org47c2869">
+<h2 id="org47c2869">Registering for classes</h2>
+<p>
+Sequential or simultaneous?
+</p>
+<ul>
+<li class="fragment appear">?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org85563f2">
+<h2 id="org85563f2">Constant-sum vs non-constant-sum games</h2>
+<ul>
+<li>Constant sum
+<ul>
+<li>The sum total payoffs are fixed</li>
+<li>Playing the game only determines the allocation of payoffs, not the total amount</li>
+
+</ul></li>
+<li>Zero sum
+<ul>
+<li>A special case of constant sum where total payoffs are zero</li>
+<li>Often used to refer to constant-sum games</li>
+
+</ul></li>
+<li>Non-constant sum
+<ul>
+<li>Total payoffs depend on choices of players</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9119ae5">
+<h2 id="org9119ae5">Nim</h2>
+<p>
+Constant or non-constant sum?
+</p>
+<ul>
+<li class="fragment appear"><i>constant (zero)</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgeed1083">
+<h2 id="orgeed1083">Rock, paper, scissors</h2>
+<p>
+Constant or non-constant sum?
+</p>
+<ul>
+<li class="fragment appear"><i>constant (zero)</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org207dd1a">
+<h2 id="org207dd1a">Splitting the last piece of cake with someone</h2>
+<p>
+Constant or non-constant sum?
+</p>
+<ul>
+<li class="fragment appear"><i>constant (not zero)</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org5509b5f">
+<h2 id="org5509b5f">Chicken (stay straight or swerve)</h2>
+<p>
+Constant or non-constant sum?
+</p>
+<ul>
+<li class="fragment appear"><i>non-constant</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb10f52f">
+<h2 id="orgb10f52f">International trade</h2>
+<p>
+Constant or non-constant sum?
+</p>
+<ul>
+<li class="fragment appear"><i>non-constant</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org3ad7af2">
+<h2 id="org3ad7af2">Example</h2>
+<p>
+All-pay auction
+</p>
+<ul>
+<li>You will bid to receive a $5 bill</li>
+<li>You have to pay me your highest bid <i>regardless if you win or lose the auction</i></li>
+<li>Everyone who bids has to pay, but only one person will win the $5</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org4c6882e">
+<h2 id="org4c6882e">Constant-sum games</h2>
+<ul>
+<li>Constant-sum games can be either:
+<ul>
+<li>Negative sum (war, household chores)</li>
+<li>Zero sum (sports, games with a "winner" and "loser")</li>
+<li>Positive sum (eating cake)</li>
+
+</ul></li>
+<li>Non-constant-sum games can be any of the above, too
+<ul>
+<li>Sometimes positive <i>and</i> negative sums are possible in the same game (all-pay auction)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org19c5c72">
+<h2 id="org19c5c72">Single-stage and repeated games</h2>
+<ul>
+<li>Single-stage games are played (against some particular opponents) and never again</li>
+<li>Repeated games are played over and over
+<ul>
+<li>Can be finitely or infinitely repeated</li>
+<li>Choices in one round (stage) might affect later rounds (and vice versa)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org929bcbe">
+<h2 id="org929bcbe">Golden Balls (split or steal)</h2>
+<p>
+Single-stage or repeated?
+</p>
+<ul>
+<li class="fragment appear"><i>single-stage</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcaa59fc">
+<h2 id="orgcaa59fc">"Battle of wits" (poison cups)</h2>
+<p>
+Single-stage or repeated?
+</p>
+<ul>
+<li class="fragment appear"><i>single-stage</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org6686778">
+<h2 id="org6686778">A baseball plate appearance (pitcher vs batter)</h2>
+<p>
+Single-stage or repeated?
+</p>
+<ul>
+<li class="fragment appear"><i>repeated</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2fa1610">
+<h2 id="org2fa1610">OPEC oil production</h2>
+<p>
+Single-stage or repeated?
+</p>
+<ul>
+<li class="fragment appear"><i>repeated</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1070579">
+<h2 id="org1070579">Perfect and imperfect information</h2>
+<ul>
+<li>Perfect information
+<ul>
+<li>Players know exactly what choice are available to each player and what the payoffs will be (given choices)</li>
+
+</ul></li>
+<li>Imperfect information
+<ul>
+<li>Uncertainty over choices or payoffs (or both)</li>
+<li>External uncertainty: "Nature" (the state of the world) changes choices or payoffs</li>
+<li>Strategic uncertainty: Imperfect information about what other players are doing or have done in the past</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org5c388b3">
+<h2 id="org5c388b3">Nim</h2>
+<p>
+Perfect or imperfect information?
+</p>
+<ul>
+<li class="fragment appear"><i>perfect information</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd130316">
+<h2 id="orgd130316">Chess</h2>
+<p>
+Perfect or imperfect information?
+</p>
+<ul>
+<li class="fragment appear"><i>perfect information</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org599777c">
+<h2 id="org599777c">Vacation planning</h2>
+<p>
+Perfect of imperfect information?
+</p>
+<ul>
+<li class="fragment appear"><i>imperfect information (external uncertainty)</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcd0cf8b">
+<h2 id="orgcd0cf8b">Applying for jobs</h2>
+<p>
+Perfect of imperfect information?
+</p>
+<ul>
+<li class="fragment appear"><i>imperfect information (strategic uncertainty)</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbec2afe">
+<h2 id="orgbec2afe">Poker</h2>
+<p>
+Perfect of imperfect information?
+</p>
+<ul>
+<li class="fragment appear"><i>imperfect information (strategic uncertainty)</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org34d8b5a">
+<h2 id="org34d8b5a">Fixed and manipulable rules</h2>
+<ul>
+<li>Fixed rules can't be altered by players</li>
+<li>The choices available to each player are constant and known</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaa1ac64">
+<h2 id="orgaa1ac64">Nim</h2>
+<p>
+Fixed or manipulable rules?
+</p>
+<ul>
+<li class="fragment appear"><i>fixed</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1ea0244">
+<h2 id="org1ea0244">Political campaigns</h2>
+<p>
+Fixed or manipulable rules?
+</p>
+<ul>
+<li class="fragment appear"><i>manipulable</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org40464de">
+<h2 id="org40464de">Advertising</h2>
+<p>
+Fixed or manipulable rules?
+</p>
+<ul>
+<li class="fragment appear"><i>manipulable</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org80c9e78">
+<h2 id="org80c9e78">Defining a game</h2>
+<ul>
+<li>A strategic game must contain three elements:
+<ol>
+<li>Players</li>
+<li>Strategies</li>
+<li>Payoffs</li>
+
+</ol></li>
+<li>We make various assumptions about these elements</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org37e9f8e">
+<h2 id="org37e9f8e">Players</h2>
+<ul>
+<li>The participants in the game who make choices</li>
+<li>Humans, firms, "nature", etc</li>
+<li>We assume players are <i>rational</i>
+<ul>
+<li>They can calculate outcomes from different strategies and will choose the optimum</li>
+
+</ul></li>
+<li>We assume players have <i>common knowledge of the rules</i>
+<ul>
+<li>Rules are fixed <i>at some level</i>
+<ul>
+<li>Example: Releasing tax returns when running for president</li>
+<li>Example: Battle of wits</li>
+
+</ul></li>
+<li>Whether or not to follow rules is <i>itself</i> part of a larger game</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1f3daa6">
+<h2 id="org1f3daa6">Example</h2>
+<p>
+Who are the players in a game of poker?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org8b2cf84">
+<h2 id="org8b2cf84">Strategies</h2>
+<ul>
+<li>The set of choices available to the player</li>
+<li>A complete strategy is a "map" (set of instructions) on how to play a game given any possible set of choices from the other players</li>
+<li>Strategies are collections of choices</li>
+<li>A strategy is complete if you could give your instructions to someone else (or a machine) to do</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org5256898">
+<h2 id="org5256898">Payoffs</h2>
+<ul>
+<li>The outcomes of the game</li>
+<li>Can be profits, utility, money, wins and losses, etc</li>
+<li>In this class we will assume that higher payoffs are more desirable</li>
+<li>We will often need to calculate <i>expected payoffs</i> if there is some randomness or uncertainty (imperfect information)
+<ul>
+<li>For any possible outcome \(i\) with payoff \(\pi_i\), expected payoffs are \(\sum_i p_i \pi_i\), where \(p_i\) is the probability of \(i\) occurring</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgcea2b9a">
+<h2 id="orgcea2b9a">Examples</h2>
+<ol>
+<li>Suppose I flip a coin
+<ul>
+<li>Heads: You get $100</li>
+<li>Tails: You lose $50</li>
+
+</ul></li>
+<li>Suppose I flip 2 coins:
+<ul>
+<li>Heads/heads: You get $100</li>
+<li>Heads/tails: You get $20</li>
+<li>Tails/tails: You lose $40</li>
+
+</ul></li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc46d505">
+<h2 id="orgc46d505">Equilibrium</h2>
+<ul>
+<li>The outcome where nobody can do better by <i>unilaterally</i> changing their strategy</li>
+<li>At equilibrium, nobody can say "I wish I had done that differently"</li>
+<li>Equilibrium does <i>not</i> mean that the outcome is optimal</li>
+<li>We don't expect to always obtain an equilibrium</li>
+<li>There is <i>at least</i> one equilibrium in every game</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd318f11">
+<h2 id="orgd318f11">One half the average game</h2>
+<p>
+What is an equilibrium of this game?
+</p>
+<ul>
+<li class="fragment appear">Everyone picks 0</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdb62d89">
+<h2 id="orgdb62d89">Extra-credit game (choosing points)</h2>
+<p>
+What is an equilibrium of this game?
+</p>
+<ul>
+<li class="fragment appear">Everyone chooses 1 point</li>
+<li class="fragment appear">Any other equilibria?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2f44671">
+<h2 id="org2f44671">Guess the average</h2>
+<ul>
+<li>Everyone write down a number between 0 and 100</li>
+<li>The winning number is the average number guessed</li>
+<li>Trade papers after writing down your number</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org5f8cd38">
+<h2 id="org5f8cd38">Extra credit game, part 2</h2>
+<ul>
+<li>Get a blank sheet of paper and write your full name at the top</li>
+<li>You will choose to get either 2 points or 10 points extra credit on your first homework assignment
+<ul>
+<li>If 2 or fewer people choose 10 points, everyone will get their chosen number of points</li>
+<li>If more than 2 people choose 10 points, <i>nobody</i> gets any points</li>
+
+</ul></li>
+<li>You can communicate with each other if you'd like (be respectful!)</li>
+<li>I will not reveal the choices (but you can reveal your own&#x2026;)</li>
+<li>Bring your paper to the front when you've decided</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

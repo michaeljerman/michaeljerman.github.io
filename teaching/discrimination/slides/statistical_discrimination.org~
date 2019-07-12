@@ -1,0 +1,28 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Statistical Discrimination
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Audit studies
+- Bertrand and Mullainathan find that applicants with "black" names are less likely to get an interview
+- They don't observe the job offers 
+- "Audit studies" try to answer this question
+- Trained actors attend job interviews
+- Actors chosen and trained to be identical in every way except race
+* 
+[[./img/audit.png]]
+
+* audit criticisms
+** double blind
+** low amounts of discrimination
+** segregation need not imply discrimination 
+** evidence of prejudice? 
+* statistical discrimination
+* ban the box
+* source of discrimination/policy 
+** heckman, early childhood intervention, mobility
+* wage differentials 
+** which variables to control for? 
+** how to interpret controls?

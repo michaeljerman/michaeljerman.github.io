@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Sequential Games</title>
+<meta name="author" content="(ECON 420: Game Theory)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Sequential Games</h1><h3 class="author">ECON 420: Game Theory</h3><h3 class="date">Spring 2018</h3>
+</section>
+
+<section>
+<section id="slide-orgc83b874">
+<h2 id="orgc83b874">Sequential games</h2>
+<ul>
+<li>Games where there is a strict order of play</li>
+<li>Games where players take turns moving are sequential</li>
+<li>Real-world games are generally combinations of sequential and simultaneous games</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcc45e37">
+<h2 id="orgcc45e37">Game trees</h2>
+<ul>
+<li>We will visualize games using <b>game trees</b></li>
+<li>Representing a game as a tree is known as the "extensive form" of a game</li>
+<li>The tree shows all components of a game: players, actions and strategies, payoffs</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org7ca6e28">
+<h2 id="org7ca6e28">Nodes and branches</h2>
+<ul>
+<li><i>Nodes</i> are points on the tree where choices are made
+<ul>
+<li>The first node is called the <i>root node</i></li>
+<li>The last nodes (without branches) are <i>terminal nodes</i></li>
+
+</ul></li>
+<li><i>Branches</i> show the actions available for the player to choose among at any node</li>
+<li>A node (and its branches) represent a "turn" for a player</li>
+<li>Payoffs are listed at the terminal nodes
+<ul>
+<li>Each player in the game gets a payoff at each node</li>
+<li>Remember: Higher numbers are always better</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf1c7156">
+<h2 id="orgf1c7156">External uncertainty</h2>
+<ul>
+<li>With external uncertainty, we introduce nature as a "player"</li>
+<li>Nature gets its own node, branches are possible outcomes</li>
+<li>Players calculate expected payoffs across the possible outcomes of nature's "choice"</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge85c5b4">
+<h2 id="orge85c5b4"></h2>
+
+<div class="figure">
+<p><img src="./img/GAMES4_FIG03.01.jpg" alt="GAMES4_FIG03.01.jpg" height="625" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org1b6e856">
+<h2 id="org1b6e856">Moves vs strategy</h2>
+<ul>
+<li>A choice of action at a node is called a <i>move</i></li>
+<li>A strategy is a <i>complete plan of action</i>
+<ul>
+<li>A set of moves that will be performed if a certain situation arises</li>
+<li>Strategies are collections of statements like "if <i>X</i> then <i>Y</i>" for <i>any possible X</i></li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga557d16">
+<h2 id="orga557d16">Example</h2>
+<ul>
+<li>How many strategies does Ann have?</li>
+<li>What are they?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaccf713">
+<h2 id="orgaccf713">Strategies</h2>
+<ul>
+<li>Strategies must include actions at <i>each node where a player can move</i></li>
+<li>This includes the nodes that won't be reached if a player chooses a particular set of actions</li>
+<li>This is because hypothetical moves might help determine which moves should be chosen at earlier nodes</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9042e9c">
+<h2 id="org9042e9c">Finding equilibria in game trees</h2>
+<ul>
+<li>Consider one person's decision tree (is this a game?)</li>
+<li>The player (Carmen) is considering whether or not to start smoking</li>
+<li>Carmen first decides whether to start, then decides whether to continue</li>
+<li>What should Carmen do?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd727a99">
+<h2 id="orgd727a99"></h2>
+
+<div class="figure">
+<p><img src="./img/GAMES4_FIG03.02.jpg" alt="GAMES4_FIG03.02.jpg" height="625" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org5c9f229">
+<h2 id="org5c9f229">A decision tree as a game</h2>
+<ul>
+<li>Previous decision tree ignore that Carmen may become addicted if she starts smoking
+<ul>
+<li>Once addicted, quitting becomes worse (payoffs are lower)</li>
+
+</ul></li>
+<li>Carmen knows she may become addicted and that her payoffs might change if she starts smoking</li>
+<li>We can think of this as a game where the players are Carmen today and Carmen in the future (after the initial decision is made)</li>
+<li>Today's Carmen and future Carmen have different payoffs</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2507023">
+<h2 id="org2507023"></h2>
+
+<div class="figure">
+<p><img src="./img/GAMES4_FIG03.03.jpg" alt="GAMES4_FIG03.03.jpg" height="625" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org90ccbf2">
+<h2 id="org90ccbf2">Pruning</h2>
+<ul>
+<li>Starting at the end, we can "prune" the branches that we know will not be chosen</li>
+<li>When there is one action remaining at the final nodes, this means that the "final" decision moves back to the previous node (rollback)</li>
+<li>Starting at the end and moving backward by pruning allows today's Carmen to choose the best option for herself</li>
+<li>When all players use rollback analysis, the result of the game is called a <i>rollback equilibrium</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9e897aa">
+<h2 id="org9e897aa">Smoking game</h2>
+<ul>
+<li>What are the rollback equilibrium strategies?</li>
+<li>Can either player do better by changing their strategies?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org536b085">
+<h2 id="org536b085"></h2>
+
+<div class="figure">
+<p><img src="./img/GAMES4_FIG03.06.jpg" alt="GAMES4_FIG03.06.jpg" height="625" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf7b98c9">
+<h2 id="orgf7b98c9">Three-player game</h2>
+<ul>
+<li>How many strategies does each player have?</li>
+<li>What is the rollback equilibrium?</li>
+<li>What are the rollback equilibrium strategies?</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

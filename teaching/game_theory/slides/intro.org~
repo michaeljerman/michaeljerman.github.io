@@ -1,0 +1,96 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+#+Latex_header: \usepackage{fullpage}
+
+#+TITLE: Introduction
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018
+
+* Instructor
+- Michael Jerman (call me Michael)
+- Office: 342 Bexell
+- Email: michael.jerman@oregonstate.edu
+- Office hours:
+  - M/W: 10:30am-11:30am
+  - T/Th: 8:30am-9:30am
+
+* Prerequisites
+- Econ 311 or Econ 411 (intermediate micro)
+
+* Textbook
+- /Games of Strategy/, Dixit, Skeath, Reiley
+  - 4th edition
+- [[https://www.amazon.com/Games-Strategy-Fourth-Avinash-Dixit/dp/0393919684/][Amazon]]
+  - $120 new
+  - $90 used
+  - $48 rent
+- [[http://verbacompare.osubeaverstore.com/compare/2018-Spring__ECON__420__001][Bookstore]]
+  - $132 new
+  - $99 used
+
+* Canvas
+- Official course website
+- You are responsible for any and all information posted to Canvas
+- Contact canvas@oregonstate.edu if you have any issues
+
+* Participation
+- What's game theory without games?
+- We will frequently do in-class exercises and games 
+- Participation will be recorded
+- 10% of your grade just for showing up!
+
+* Homework
+- Four graded homework assignments, posted on Canvas
+- Mix of problems from the text and other problems
+- Work in groups!
+  - Each person must submit their own assignment
+- Graded primarily on effort and completion
+  - 25% of your grade just for doing the homework!
+
+* Exams
+- Midterm: Wednesday, May 2 
+  - Week 5
+- Final: Friday, June 15 at 7:30am (!)
+  - Note that the university might change the final exam date
+- No makeup exams (see syllabus)
+
+* Grade
+| Participation | 10% |
+| Homework      | 25% |
+| Midterm       | 30% |
+| Final         | 35% |
+
+* Student conduct
+- Student's are bound by the university's [[http://studentlife.oregonstate.edu/sites/studentlife.oregonstate.edu/files/code_of_student_conduct.pdf][Code of Student Conduct]]
+- Any incidence of academic misconduct will result in a grade of "F" for the course 
+  - Additional sanctions may be imposed by the university
+
+* Important dates
+(Subject to change)
+| Wednesday, April 18 | Homework 1 |
+| Monday, April 30    | Homework 2 |
+| Wednesday, May 2    | Midterm    |
+| Wednesday, May 16   | Homework 3 |
+| Wendesday, June 6   | Homework 4 |
+| Friday, June 15     | Final exam |
+
+
+
+* Econ 311
+- Agents have preferences over consumption bundles, choose bundle that optimizes their utility
+- Generally consider prices and income to be /exogenous/
+- Agents' consumption choices don't affect the choices of other agents
+- Firms maximize profits subject to constraints
+  - Perfect competition: Firms are /price takers/ -- individual production decisions don't affect prices
+- These choices are called /decisions/: isolated choices that individual agents make given objectives and constraints
+* Game theory
+- Game theory is the study of how agents make choices in environments where the choices of others affects their outcomes /and/ their choices
+- Examples:
+  - Interactions with family and friends
+  - Business decisions
+  - Athletic competition
+  - Board games
+  - Political campaigns
+  - Diplomacy
+  - Warfare
+  - Etc, etc, etc

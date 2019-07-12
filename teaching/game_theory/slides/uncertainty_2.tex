@@ -1,0 +1,174 @@
+% Created 2018-05-21 Mon 07:33
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usetheme{Boadilla}
+\author{ECON 420: Game Theory}
+\date{Spring 2018}
+\title{Uncertainty II}
+\usecolortheme{seagull}
+\usefonttheme[onlylarge]{structurebold}
+\usefonttheme[onlymath]{serif}
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}[triangle]
+\setbeamertemplate{footline}{}
+\setbeamertemplate{enumerate items}[default]
+\hypersetup{
+ pdfauthor={ECON 420: Game Theory},
+ pdftitle={Uncertainty II},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.1.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[label={sec:org6bc779d}]{}
+\alert{Market for Lemons (Akerlof, 1970)}
+\begin{itemize}
+\item Two types of used cars: high quality and low quality ("lemons")
+\item Buyers cannot directly observe car quality
+\begin{itemize}
+\item Willing to pay \$6,000 for low quality
+\item Willing to pay \$16,000 for high quality
+\end{itemize}
+\item Sellers know quality of their car
+\begin{itemize}
+\item Value of high quality: \$12,500
+\item Value of low quality: \$3,000
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org272ebec}]{}
+\alert{Buyers}
+\begin{itemize}
+\item Single market price for both cars \(p\)
+\begin{itemize}
+\item Buyers can't observe quality, so only one market
+\end{itemize}
+\item Suppose buyers can observe fraction of high quality cars in the market \(f\)
+\item Buyers will purchase a used car if \(EV > p\)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgcdfb299}]{}
+\alert{Sellers}
+\begin{itemize}
+\item High quality owners sell if \(p>12,500\)
+\item Low quality owners sell if \(p>3000\)
+\item When will high-quality cars be bought and sold on the market?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org59be174}]{}
+\alert{Market for high quality cars}
+\begin{itemize}
+\item What happens if \(f\) falls below the critical value?
+\item Consumers would be willing to pay \(p>12,500\) (if they were assured of getting high quality car)
+\item But sellers unable to find buyers at that price
+\item No high quality cars will be bought or sold!
+\begin{itemize}
+\item \(f=0\)
+\end{itemize}
+\item Market price: \(3,000<p<6,000\)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org30540b9}]{}
+\alert{Market failure}
+\begin{itemize}
+\item Sellers willing to sell high quality for \(p>12,500\)
+\item Buyers willing to buy high quality for \(p<16,000\)
+\item Market equilibrium is \emph{inefficient}
+\begin{itemize}
+\item Buyers \emph{and} sellers could be made better off without making anyone worse off
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgbb1bd38}]{}
+\alert{Adverse selection}
+\begin{itemize}
+\item Market for lemons is an example of \emph{adverse selection}
+\item With imperfect information, one side must form expectations
+\item This can make \(p\) low enough that some high-quality goods (or services) exit the market
+\item This reduces EV, further reducing price
+\item Only products that remain in market are low quality
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org994f94a}]{}
+\alert{Example: Health insurance}
+\begin{itemize}
+\item Health insurance providers do not know consumers' health as well as the individual
+\item Offer a single price to "similar" consumers
+\item Healthiest consumers may find price to be too high (expected utility greater without insurance)
+\item This reduces the average health of remaining consumers
+\item Insurance companies raise price to account for higher risk
+\begin{itemize}
+\item Process repeats
+\end{itemize}
+\item "Death spiral" -- market collapses
+\begin{itemize}
+\item Rationale behind "individual mandate" and universal systems
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgc98faaf}]{}
+\alert{Signalling}
+\begin{itemize}
+\item How do we overcome uncertainty and adverse selection?
+\item "Cheap talk" insufficient, no cost to lying about quality
+\item Quality signals must impose a cost on the player signalling in order to prevent "cheaters"
+\item Example: Product warranties
+\begin{itemize}
+\item Used car dealers sometimes offer promises to repair a car if it breaks down
+\item Unlikely to offer warranty for lemons
+\end{itemize}
+\item Example: Product design and marketing
+\begin{itemize}
+\item Producers of high-quality products can "afford" fancy design and marketing
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org36ddfc9}]{}
+\alert{Screening}
+\begin{itemize}
+\item Why do employers value some majors higher than others?
+\item In general, degrees that are harder result in higher wages
+\item Employers know that "low quality" workers are unlikely to take hard classes
+\begin{itemize}
+\item High quality workers may have an easier time, less of an investment
+\end{itemize}
+\item This separates high-quality from low-quality workers
+\item Major choice is (partly) a \emph{signal} to employers
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orga219b72}]{}
+\alert{Separating vs pooling equilibrium}
+\begin{itemize}
+\item Screening costs must be high enough to prevent low-quality players from cheating
+\item But screening costs must be \emph{low} enough to make it worth it for high-quality players to join
+\item If the screening costs are too high or too low, then all players will \emph{pool} together and be indistinguishable
+\item Examples: California food labeling laws vs "certified organic" labels
+\end{itemize}
+\end{frame}
+\end{document}

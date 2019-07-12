@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Gender Prejudice</title>
+<meta name="author" content="(ECON 383: Economics of Discrimination)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Gender Prejudice</h1><h3 class="author">ECON 383: Economics of Discrimination</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-orgc14728d">
+<h2 id="orgc14728d">Gender wage gap</h2>
+<ul>
+<li>Much of the wage gap explained by observables 
+<ul>
+<li>Education, experience</li>
+
+</ul></li>
+<li>Much of residual gap explained by wage/hour nonlinearities</li>
+<li>Majority of wage gap not due to <i>labor market</i> discrimination</li>
+<li>What about the remaining wage gap? Do we observe any prejudice in the labor markets?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org205ceb6">
+<h2 id="org205ceb6">Estimating prejudice</h2>
+<ul>
+<li>Audit studies: Applicants can't hide gender (on average)</li>
+<li>Employers may be responding to other signals 
+<ul>
+<li>Expectation of time off (statistical discrimination)</li>
+<li>Same criticism with resume studies (i.e. Bertrand and Mullainathan)</li>
+
+</ul></li>
+<li>Ideal experiment: reveal gender <i>after</i> hiring decisions made, see how hiring patterns change
+<ul>
+<li>Problem: Employers want to interview workers first, try to get more information productivity potential</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga43024d">
+<h2 id="orga43024d">Orchestras</h2>
+<ul>
+<li>Orchestra musician productivity is primarily determined based on how well they perform</li>
+<li>Other skills much less important</li>
+<li>Most (all?) orchestras hire based on performance during auditions</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org728c859">
+<h2 id="org728c859">Goldin and Rouse (2000)</h2>
+<ul>
+<li><i>Orchestrating Impartiality: The Impact of "Blind" Auditions on Female Musicians</i></li>
+<li>Prior to 1970s, orchestra auditions happen in front of musical director</li>
+<li>Many orchestras change at this time, put musicians behind a screen
+<ul>
+<li>Musical director can't see musicians, can only hear them</li>
+<li>Carpets used to muffle footsteps</li>
+
+</ul></li>
+<li>Hiring decisions made "objectively," based on skill and interpretation rather than gender</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgad72d6d">
+<h2 id="orgad72d6d">Orchestra composition</h2>
+<ul>
+<li>Orchestras have the same number of musicians</li>
+<li>Fixed proportions of instruments
+<ul>
+<li>Gender selection into instruments (i.e. harp, percussion) doesn't matter</li>
+
+</ul></li>
+<li>Gender composition must happen at the instrument level</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org569616f">
+<h2 id="org569616f"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_fig1a.png" alt="goldin_orc_fig1a.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org331d5d3">
+<h2 id="org331d5d3"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_fig1b.png" alt="goldin_orc_fig1b.png" />
+</p>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org716f39d">
+<h2 id="org716f39d">Anecdotal evidence of prejudice</h2>
+<ul>
+<li>Zubin Mehta (LASO): "I just don't think women should be in an orchestra"</li>
+<li>Many European orchestras started adding women only recently
+<ul>
+<li>Vienna Philharmonic admitted first female in late 1990s</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbfc234e">
+<h2 id="orgbfc234e">Female LFP</h2>
+<ul>
+<li>More women entering labor force during this time</li>
+<li>More female orchestra musicians to choose from
+<ul>
+<li>More likely to find a "high quality" female</li>
+
+</ul></li>
+<li>Blind auditions occurring at same time</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcc675fa">
+<h2 id="orgcc675fa"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_fig4.png" alt="goldin_orc_fig4.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org2d72efd">
+<h2 id="org2d72efd">Identification</h2>
+<ul>
+<li>Need screen to be the <i>only</i> change</li>
+<li>Variation in timing of screen can't depend on LFP, changing attitudes within orchestra</li>
+<li>Identification threat: More women in orchestra \(\rightarrow\) more likely to use blind audition</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8019ac2">
+<h2 id="org8019ac2"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_tab2.png" alt="goldin_orc_tab2.png" />
+</p>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgcab290a">
+<h2 id="orgcab290a">Auditions</h2>
+<ul>
+<li>Generally two or three rounds</li>
+<li>Preliminary round
+<ul>
+<li>Determines "acceptable" candidates</li>
+<li>Most common "blind" round</li>
+
+</ul></li>
+<li>Semifinal
+<ul>
+<li>Not done at all orchestras</li>
+<li>Sometimes blind</li>
+
+</ul></li>
+<li>Final
+<ul>
+<li>Rarely blind</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf2d8e43">
+<h2 id="orgf2d8e43"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_tab1.png" alt="goldin_orc_tab1.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org87aeed5">
+<h2 id="org87aeed5"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_tab4.png" alt="goldin_orc_tab4.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org1574c78">
+<h2 id="org1574c78">The effects of blind auditions</h2>
+<ul>
+<li>Musicians generally know beforehand if audition will be blind</li>
+<li>This may encourage different musicians to audition</li>
+<li><i>Composition</i> of applicants may change</li>
+<li>If more low-quality female musicians apply, will cause bias in estimates</li>
+<li>Solution: Compare audition results to the <i>same</i> women who apply to orchestras with and without blind auditions
+<ul>
+<li>Controls for ability of each applicant</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org6633695">
+<h2 id="org6633695"></h2>
+
+<div class="figure">
+<p><img src="./img/goldin_orc_tab5.png" alt="goldin_orc_tab5.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orge22a0ce">
+<h2 id="orge22a0ce">Results</h2>
+<ul>
+<li>Blind auditions increase a woman's chance of getting hired by 60%</li>
+<li>30% of increase in aggregate female new-hires can be explained by blind auditions</li>
+<li>25% of increase in total number of female musicians can be explained by blind auditions</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org84e1fee">
+<h2 id="org84e1fee">Identification threats</h2>
+<ul>
+<li>Final rounds not blind, may still be unobserved bias</li>
+<li>Comparing musicians across auditions assumes no change in average improvement between auditions for men and women
+<ul>
+<li>Women aren't getting better faster than men</li>
+<li>Controlling for time between auditions doesn't change results</li>
+
+</ul></li>
+<li>Musicians who get hired at first audition are better than those who don't
+<ul>
+<li>Multiple-audition musicians different than single audition musicians</li>
+<li>Very few musicians get hired any given year, unlikely a large bias</li>
+
+</ul></li>
+<li>Women may improve faster <i>and</i> target orchestras with blind auditions for next round
+<ul>
+<li>Controlling for specific orchestras doesn't change results</li>
+
+</ul></li>
+<li>Men and women may play music differently, gender "observable" to directors
+<ul>
+<li>Difficult to control for, anecdotally not important</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

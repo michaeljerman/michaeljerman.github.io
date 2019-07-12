@@ -1,0 +1,134 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none 
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+latex_class_options: [10pt]
+#+beamer_theme: Boadilla
+#+beamer_header: \usecolortheme{seagull}
+#+beamer_header: \usefonttheme[onlylarge]{structurebold}
+#+beamer_header: \usefonttheme[onlymath]{serif}
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+#+beamer_header: \setbeamertemplate{navigation symbols}{}
+#+beamer_header: \setbeamertemplate{itemize item}[triangle]
+#+beamer_header: \setbeamertemplate{footline}{}
+#+beamer_header: \setbeamertemplate{enumerate items}[default]
+
+#+TITLE: Simultaneous Games
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 
+
+* 
+*Announcements*
+- Homework due on Wednesday
+- Reading: Chapter 4
+
+* 
+*Simultaneous games*
+- Players move at the same time
+- No knowledge of what other players choose when own choices are made
+- Simultaneous games have /imperfect information/
+
+* 
+*Example*
+- Your firm is competing against another firm (randomly matched)
+- Your team is tasked with setting prices for you firm's product
+  - You can choose a price of $5 or $10 per unit
+  - Both firms are choosing price simultaneously
+- Profits:
+  - If both firms choose p=$10, profits are $8
+  - If both firms choose p=$5, profits are $6
+  - If one firm chooses $5 and the other chooses $10:
+    - Firm that chooses $5 gets $10 profit
+    - Firm that chooses $10 gets $5 profit
+
+* 
+*Strategies*
+- Recall that strategies are /complete plans of action/
+- In simultaneous games, only one choice can be made
+  - Little difference between action and strategy
+- But players may have a strategy that choose probabilistic actions
+  - Example: Rock, paper, scissors
+- For now, consider only /pure strategies/ (non-probabilistic) 
+
+* 
+*Game table*
+- Simultaneous move games can be represented with a /game table/
+- Contains information on players, strategies, and payoffs
+- Games represented as game tables are said to be in /normal form/ (or /strategic form/)
+
+* 
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.01.jpg]]
+
+* 
+*Example: American football play*
+- Offensive team chooses from among types of plays
+- Defensive team simultaneously chooses type of play to counter offense
+- Payoffs are zero-sum: whatever offense gains (in yards) is equal to what the defense loses
+
+* 
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.02.jpg]]
+
+* Example: Pricing game
+
+* 
+*Best response*
+- We can analyze simultaneous move games by describing player's /best response/ actions
+- The best response is the action that maximizes a player's payoffs /given/ the action of the opposing player(s)
+- /If/ the other player does X, /then/ I should do Y
+
+* Suppose Row plays top:
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.01.jpg]]
+
+* 
+*Nash equilibrium*
+- Nash equilibrium occurs when both players are /simultaneously/ choosing their best-response actions
+- Neither player can achieve higher payoffs by changing their actions /given/ the action of the other player
+- Not necessarily the best outcome for both players 
+
+* Nash equilibrium: (Low, Middle)
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.01.jpg]]
+
+* Still a Nash equilibrium?
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.03.jpg]]
+
+* 
+*Beliefs*
+- How can a player choose a best "response" if they are playing simultaneously?
+  - What are they responding to?
+- Players form /beliefs/ about what other players will do
+- At the Nash equilibrium:
+  - All players choose optimal actions given their beliefs about what other players are doing
+  - The beliefs are accurate
+- If either condition doesn't hold, then not a Nash equilibrium
+
+* Will Row play Low if they believe Column isn't playing Middle?
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.01.jpg]]
+
+
+* What is the Nash equilibrium?
+#+attr_html: :height 625 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG04.02.jpg]]
+
+* 
+*Extra credit*
+- Write your name at the top of a blank sheet of paper
+- Answer the following questions. For each answer that is the same for /everyone else/, you will receive 2 points extra credit on the homework
+  1. Select "Heads" or "Tails"
+  2. Choose one of the numbers 7, 100, 13, 261, 99, 555
+  3. You are to meet someone in Corvallis. You have not been instructed where to meet, you have no prior understanding with the person on where to meet, and you cannot communicate with each other. You are simply told that you will have to guess where to meet, that the other person is being told the same thing, and that you will just have to try to make your guesses coincide. Where do you go?
+  4. You are told the date but not the hour of the meeting in question 3. The two of you must guess the exact minute of the day for the meeting. At what time will you appear? 
+  5. Write some positive number. 

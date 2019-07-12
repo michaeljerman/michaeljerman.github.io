@@ -1,0 +1,282 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none 
+#+Latex_header: \usepackage{fullpage} 
+
+#+TITLE: Thinking about Games
+#+AUTHOR: ECON 420: Game Theory 
+#+DATE: Spring 2018 
+
+* Reading
+- This week: Chapters 1 and 2
+- Next week: Chapter 3
+
+* Nim 
+- Today we'll play an alternative version of nim
+- One row of 20 lines
+- Each turn, the player must choose to remove 1, 2, or 3 lines
+- The last person to remove a line wins
+$$|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|$$
+
+* 
+$$|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|$$
+$$|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|$$
+$$|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|$$
+$$|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|$$
+$$|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|$$
+
+* Decisions vs games
+- /Decisions/ are choices that can be made "without concern for reaction or response from others"
+- /Strategic games/ (or just /games/) are choices that occur among "mutually aware players"
+  - Players in strategic games take into account the cross-effects of their actions and the actions of other players
+
+* Classifying games
+Games can be:
+- Sequential or simultaneous
+- Zero sum or non-zero sum
+- Single state or repeated
+  - Infinite or finite repetition
+- Perfect or imperfect information
+- Fixed or manipulable rules
+
+* Sequential vs simultaneous games
+- Sequential games
+  - Players take turns (one after another)
+  - Players look ahead at what might happen in the future to make choices
+- Simultaneous games
+  - Players make choices at the same time
+  - Must predict what other players will do contemporaneously 
+
+* Nim
+Sequential or simultaneous?
+#+ATTR_REVEAL: :frag (appear) 
+- /sequential/
+
+* Rock, paper, scissors
+Sequential or simultaneous?
+#+ATTR_REVEAL: :frag (appear) 
+- /simultaneous/
+
+* Chess
+Sequential or simultaneous?
+#+ATTR_REVEAL: :frag (appear) 
+- /sequential/
+
+* A single play in American football
+Sequential or simultaneous?
+#+ATTR_REVEAL: :frag (appear) 
+- /simultaneous/
+
+* A soccer penalty kick
+Sequential or simultaneous?
+#+ATTR_REVEAL: :frag (appear) 
+- /simultaneous/
+
+* Registering for classes
+Sequential or simultaneous?
+#+ATTR_REVEAL: :frag (appear) 
+- ?
+
+* Constant-sum vs non-constant-sum games
+- Constant sum
+  - The sum total payoffs are fixed
+  - Playing the game only determines the allocation of payoffs, not the total amount
+- Zero sum
+  - A special case of constant sum where total payoffs are zero
+  - Often used to refer to constant-sum games
+- Non-constant sum
+  - Total payoffs depend on choices of players
+
+* Nim
+Constant or non-constant sum?
+#+ATTR_REVEAL: :frag (appear) 
+- /constant (zero)/
+
+* Rock, paper, scissors
+Constant or non-constant sum?
+#+ATTR_REVEAL: :frag (appear) 
+- /constant (zero)/
+
+* Splitting the last piece of cake with someone
+Constant or non-constant sum?
+#+ATTR_REVEAL: :frag (appear) 
+- /constant (not zero)/
+
+* Chicken (stay straight or swerve)
+Constant or non-constant sum?
+#+ATTR_REVEAL: :frag (appear) 
+- /non-constant/
+
+* International trade
+Constant or non-constant sum?
+#+ATTR_REVEAL: :frag (appear) 
+- /non-constant/
+
+* Example
+All-pay auction
+- You will bid to receive a $5 bill
+- You have to pay me your highest bid /regardless if you win or lose the auction/
+- Everyone who bids has to pay, but only one person will win the $5
+
+* Constant-sum games
+- Constant-sum games can be either:
+  - Negative sum (war, household chores)
+  - Zero sum (sports, games with a "winner" and "loser")
+  - Positive sum (eating cake)
+- Non-constant-sum games can be any of the above, too
+  - Sometimes positive /and/ negative sums are possible in the same game (all-pay auction)
+
+* Single-stage and repeated games
+- Single-stage games are played (against some particular opponents) and never again
+- Repeated games are played over and over
+  - Can be finitely or infinitely repeated
+  - Choices in one round (stage) might affect later rounds (and vice versa)
+
+* Golden Balls (split or steal)
+Single-stage or repeated?
+#+ATTR_REVEAL: :frag (appear) 
+- /single-stage/
+
+* "Battle of wits" (poison cups)
+Single-stage or repeated?
+#+ATTR_REVEAL: :frag (appear) 
+- /single-stage/
+
+* A baseball plate appearance (pitcher vs batter)
+Single-stage or repeated?
+#+ATTR_REVEAL: :frag (appear) 
+- /repeated/
+
+* OPEC oil production
+Single-stage or repeated?
+#+ATTR_REVEAL: :frag (appear) 
+- /repeated/
+
+* Perfect and imperfect information
+- Perfect information
+  - Players know exactly what choice are available to each player and what the payoffs will be (given choices)
+- Imperfect information
+  - Uncertainty over choices or payoffs (or both)
+  - External uncertainty: "Nature" (the state of the world) changes choices or payoffs
+  - Strategic uncertainty: Imperfect information about what other players are doing or have done in the past
+
+* Nim
+Perfect or imperfect information?
+#+ATTR_REVEAL: :frag (appear) 
+- /perfect information/
+
+* Chess
+Perfect or imperfect information?
+#+ATTR_REVEAL: :frag (appear) 
+- /perfect information/
+
+* Vacation planning
+Perfect of imperfect information?
+#+ATTR_REVEAL: :frag (appear) 
+- /imperfect information (external uncertainty)/
+
+* Applying for jobs
+Perfect of imperfect information?
+#+ATTR_REVEAL: :frag (appear) 
+- /imperfect information (strategic uncertainty)/
+
+* Poker
+Perfect of imperfect information?
+#+ATTR_REVEAL: :frag (appear) 
+- /imperfect information (strategic uncertainty)/
+
+* Fixed and manipulable rules
+- Fixed rules can't be altered by players
+- The choices available to each player are constant and known
+
+* Nim
+Fixed or manipulable rules?
+#+ATTR_REVEAL: :frag (appear) 
+- /fixed/
+
+* Political campaigns
+Fixed or manipulable rules?
+#+ATTR_REVEAL: :frag (appear) 
+- /manipulable/
+
+* Advertising
+Fixed or manipulable rules?
+#+ATTR_REVEAL: :frag (appear) 
+- /manipulable/
+
+* Defining a game
+- A strategic game must contain three elements:
+  1. Players
+  2. Strategies
+  3. Payoffs
+- We make various assumptions about these elements
+
+* Players
+- The participants in the game who make choices
+- Humans, firms, "nature", etc
+- We assume players are /rational/
+  - They can calculate outcomes from different strategies and will choose the optimum
+- We assume players have /common knowledge of the rules/
+  - Rules are fixed /at some level/
+    - Example: Releasing tax returns when running for president
+    - Example: Battle of wits
+  - Whether or not to follow rules is /itself/ part of a larger game
+
+* Example
+Who are the players in a game of poker?
+
+* Strategies
+- The set of choices available to the player
+- A complete strategy is a "map" (set of instructions) on how to play a game given any possible set of choices from the other players
+- Strategies are collections of choices
+- A strategy is complete if you could give your instructions to someone else (or a machine) to do
+
+* Payoffs
+- The outcomes of the game
+- Can be profits, utility, money, wins and losses, etc
+- In this class we will assume that higher payoffs are more desirable
+- We will often need to calculate /expected payoffs/ if there is some randomness or uncertainty (imperfect information)
+  - For any possible outcome $i$ with payoff $\pi_i$, expected payoffs are $\sum_i p_i \pi_i$, where $p_i$ is the probability of $i$ occurring 
+* Examples
+1. Suppose I flip a coin
+  - Heads: You get $100
+  - Tails: You lose $50
+2. Suppose I flip 2 coins:
+  - Heads/heads: You get $100
+  - Heads/tails: You get $20
+  - Tails/tails: You lose $40
+
+* Equilibrium
+- The outcome where nobody can do better by /unilaterally/ changing their strategy
+- At equilibrium, nobody can say "I wish I had done that differently"
+- Equilibrium does /not/ mean that the outcome is optimal
+- We don't expect to always obtain an equilibrium
+- There is /at least/ one equilibrium in every game
+
+* One half the average game
+What is an equilibrium of this game?
+#+ATTR_REVEAL: :frag (appear) 
+- Everyone picks 0
+
+* Extra-credit game (choosing points)
+What is an equilibrium of this game?
+#+ATTR_REVEAL: :frag (appear) 
+- Everyone chooses 1 point
+- Any other equilibria?
+
+* Guess the average
+- Everyone write down a number between 0 and 100
+- The winning number is the average number guessed
+- Trade papers after writing down your number
+
+* Extra credit game, part 2
+- Get a blank sheet of paper and write your full name at the top
+- You will choose to get either 2 points or 10 points extra credit on your first homework assignment
+  - If 2 or fewer people choose 10 points, everyone will get their chosen number of points
+  - If more than 2 people choose 10 points, /nobody/ gets any points
+- You can communicate with each other if you'd like (be respectful!)
+- I will not reveal the choices (but you can reveal your own...)
+- Bring your paper to the front when you've decided
+
+
+
+

@@ -1,0 +1,20 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: The Gender Gap
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Raw wage gap
+- The average female earns 77 cents for every dollar the average man earns
+- Controlling for observables (education, occupation) shrinks the gap considerably
+- Which observables explain the raw wage gap? What explains the "residual"?
+
+* Goldin (2014)
+- /A Grand Gender Convergence: Its Last Chapter 
+#+BEGIN_QUOTE
+The converging roles of men and women are among the grandest advances in society and the economy in the last century. These aspects of the grand gender convergence are figurative chapters in a history of gender roles. But what must the “last” chapter contain for there to be equality in the labor market?
+#+END_QUOTE
+
+* Wage gap
+#+REVEAL_HTML: <iframe src="https://fred.stlouisfed.org/graph/fredgraph.png?g=iuDe" height=550 width=100%></iframe>

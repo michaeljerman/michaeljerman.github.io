@@ -1,0 +1,286 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Efficiency and Government
+#+AUTHOR: ECON 499: Growth and Development
+#+DATE: Spring 2018 
+
+* 
+*Technology and growth*
+- Solow model: long run growth (steady state) determined by growth rate in productivity
+- Endogenous growth: technology is *created*, can be transferred across countries
+- Long-run growth rate of productivity the same across all countries
+	  
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/7.6.png]]
+
+*   
+*Efficiency and technology*
+- Technology alone cannot account for cross-country differences in income/growth/productivity
+- Given a level of technology, countries likely differ in their ability to transform that tech into output (along with productive factors)
+- Some countries may be more /efficient/ than others
+
+* 
+*Pareto efficiency*
+- Efficiency in economics usually refers to /Pareto efficiency/
+- An allocation is Pareto efficient if no person can be made better off without making someone else worse off
+- All resources (factors) are being employed in their most effective way
+
+* 
+*First fundamental theorem of welfare economics*
+- In short: "market" allocations are Pareto efficient
+- Markets must be competitive and agents must be "well-behaved" (rational consumers, profit-maximizing firms)
+- Markets with incomplete information will not be Pareto efficient (Greenwald/Stiglitz, Akerlof, etc) 
+
+* 
+*ECON 311*
+- Profit maximizing firms employ factors until the value of the marginal product is equal to factor compensation
+- $pMPL = w$
+- In competitive markets, everyone who wants to work at the market wage can find a job, everyone who wants to employ a worker at the market wage can find an employee (supply=demand)
+
+* 	
+*5 types of inefficiency*
+1. Unproductive activities
+2. Idle resources
+3. Factor misallocation
+4. Misallocation among firms
+5. Technology blocking
+
+* 
+*1. Unproductive activities*
+- Theft and other crime is "unproductive," people spend resources to protect themselves that could be spent elsewhere
+- Example: Average Russian retail firm pays 20% of revenue for "protection"
+- Using the government to protect unproductive work is called /rent seeking/
+- Examples: Licenses, monopolies, import quotas, tariffs, etc
+
+* 
+*2. Idle resources*
+- Factors that are not utilized or underutilized are considered idle (unemployed workers, unused factories, etc)
+- Large bureaucratic institutions often have underemployed resources, hire more than is necessary
+- Agriculture subsidies in US -- landowners paid to /not/ grow crops
+
+* 
+*3. Misallocation among sectors*
+- Workers and resources can be misallocated between industries
+- Competitive markets: $w = pMPL$
+- Higher wages should attract workers, eliminating differences
+- Some /friction/ is required to keep markets from allocating efficiently across sectors
+
+* 
+*Frictions*
+- Mobility
+  - Workers may not move to new sector because of geography, laws, culture, etc
+  - Minimum wages in certain regions/sectors can prevent firms from hiring lower-wage workers
+- Wages and MPL
+  - Some firms may allocate surplus evenly across workers (co-ops, family farms, etc). These workers are earning pAPL, not pMPL
+  - Discrimination may prevent employers from hiring otherwise qualified applicants
+	  
+* 	  
+*4. Misallocation among firms*
+- Firms within industries have different productivities
+- Governments may subsidize certain firms, exempt from regulation
+- Within-industry productivities vary more in developing countries 
+
+* 
+*5. Technology blocking*
+- Technological improvements often disadvantage some workers
+- These workers can use political power to stop technology from being implemented
+- Examples: Printing press, Luddites, railroads, AC electricity, margarine, AI, pharmaceuticals
+- For many, it is rational to oppose technological change despite impact on growth
+
+* 
+*Central planning in the USSR*
+- Higher factor accumulation than US, similar technology
+- GDP per capita was 1/3 of US in 1985
+- Labor, capital, raw materials allocated by government bureaucrats rather than market
+- Different incentives for workers -- managers trying to meet quotas (not maximizing profits), workers paid regardless of effort
+
+* 
+*Hayek's local information*
+- Friedrich Hayek: /local information/ makes planning ineffective
+#+begin_quote	  
+	  "To know of and put to use a machine not fully employed, or somebody's skill which could be better utilized, or to be aware of a surplus stock which can be drawn upon during an interruption of supplies, is socially quite as useful as the knowledge of better alternative techniques. And the shipper who earns his living from using otherwise empty or half-filled journeys of tramp-steamers, or the estate agent whose whole knowledge is almost exclusively one of temporary opportunities, or the arbitrageur who gains from local differences of commodity prices, are all performing eminently useful functions based on special knowledge of circumstances of the fleeting moment not known to others."
+#+end_quote
+
+* 
+*Chinese economic reform*
+- Command economy after the civil war (1950)
+- Collective agriculture, no foreign investment, public ownership of firms
+- Low growth, poor distribution of resources (frequent famines)
+- Deng Xiaoping reforms in 1978: private control over farm plots, state-owned enterprises allowed to sell excess production in markets
+- 1980s: Increased privatization, opened credit markets
+- Rapid growth followed from reforsm
+
+* 	
+*Finance*
+- Robust financial sector is highly correlated with growth
+- Investors seek to maximize returns
+- Returns on investment are the productivity of capital ($r=MPK$)
+- Financial system allocates capital to most productive processes
+- Financial system can also allocate /risk/ efficiently (in theory...)
+
+* 
+*Proximate causes of growth*
+- Factor accumulation
+- Human capital
+- Efficiency
+- Technology
+- Trade openness
+
+* 
+*Fundamental causes*
+- Why do some countries accumulate capital? Why do some have higher technology? Efficiency? etc
+- What explains differences in proximate causes?
+- Government/institutions, culture, geography, natural resources...
+
+* 	
+*Market failures*
+- Public goods
+- Externalities
+- Monopoly
+- Coordination failure
+- Distributional concerns
+
+* 
+*Government failures*
+- Inefficient factor employment (post office, DMV, etc)
+- Deregulation often results in lower prices, more access (airlines, telecoms)
+- Equity/efficiency trade-off?
+
+* 
+*Government and growth*
+- How do government policies impact growth? Four dimensions:
+  1. Rule of law
+  2. Size of government
+  3. Planning/nationalization
+  4. Civil conflict
+
+* 
+*Rule of law*
+- Firms enter into contractual agreements
+- Government enforces contracts
+- Courts and bureaucracy respond to rules or politics?
+- Investment risky when contracts not enforced
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/12.1.png]]
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/12.2.png]]
+
+* 
+*Size of government*
+- Governments that spend must also raise revenue (tax)
+- Taxation is often inefficient (ECON201)
+- Wagner's law: Developed economies more complex, need larger government to enforce complex rules
+- Trade-off between rule of law enforcement and tax DWL
+
+* 
+*Planning*
+- State enterprises often are not maximizing profits $\rightarrow$ inefficient
+- Costs usually fall after privatization
+Benefits of planning:
+- "Infant industries:" Korean steel and chemicals
+- Technology: Taiwan allowed FDI only if firms transfer tech to local firms
+- Korean and Taiwanese firms quickly privatized once competitive internationally
+
+* 
+*Civil conflict*
+- Wars and conflict destroy factors, infrastructure, human capital acquisition
+- Poverty and crime have similar effects
+- Strong governments can prevent conflict, encouraging growth
+- "Conflict trap:" Low growth $\rightarrow$ conflict $\rightarrow$ low growth
+
+* 	
+*Extractive institutions*
+- Some governments enact policy that benefits government officials and their associates
+- Taxation and policy transfer wealth from workers to government officials
+- Policies that create opportunity for bribery
+- Self preservation: growth increases education and awareness, may hasten political reform
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/12.5.png]]
+
+* 	
+*Causation*
+- Government institutions and growth are correlated
+  - Growth causes government?
+  - Government causes growth?
+  - Cause each other?
+  - Third factor causes both?
+  - Instruments?
+
+* 
+*Acemoglu, Johnson, Robinson (2001)*
+- /Colonial Origins of Comparative Development/
+- Use early settler mortality as an instrument for current governmental institutions
+- Settler mortality $\rightarrow$ early institutions $\rightarrow$ modern institutions
+- Results: Government has substantial impact on growth
+
+* 
+*Inequality*
+- Equity/efficiency trade-off?
+- Does redistribution decrease growth?
+- Gini coefficient:
+  - $=0$ if no inequality
+  - $=1$ if "perfect" inequality
+
+* 
+*Kuznets hypothesis*
+- "Inverted-U"
+- Low income, agricultural societies have low inequality
+- Urban areas develop, urban incomes diverge
+- Labor mobility decreases inequality as country develops
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/13.3.png]]
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/13.4.png]]
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/13.5.png]]
+
+* 
+*Inequality and physical capital*
+- More inequality $\rightarrow$ more income in hands of the rich
+- Rich save a higher percentage of income than poor
+- Average savings rate $(\gamma )$ increases, higher SS
+
+* Human capital and physical capital
+#+attr_latex: :width .75\textwidth 
+[[./img/13.11.png]]
+	
+* 
+*Redistribution and growth*
+- Second fundamental theorem of welfare economics: "Lump sum" transfers are efficient
+- Rich may hide assets, cheat to avoid taxes
+- Unrest: high inequality may cause political unrest, crime
+- Reducing inequality can alleviate social pressures that are bad for growth
+- Causality?
+
+* 
+*Empirical evidence*
+- Lower human capital in places with inequality
+- Inequality does not appear to be related to unrest
+- Inequality does not cause more redistribution
+

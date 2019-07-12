@@ -1,0 +1,121 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Continuous Strategies and Rationalizability
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 
+
+
+* 
+*Announcements*
+- Reading: Chapter 5 and 6
+- Homework due next Monday
+- Midterm exam next Wednesday
+
+
+* 
+*Continuous strategies*
+- So far: Games with /discrete/ strategies
+  - Choosing from a finite set of actions
+- Many games have many (or infinite) available actions
+- Can we generalize the notion of /best response/ to these settings?
+
+
+* 
+*Price-setting game*
+- Suppose there are two competing restaurants (they make only one dish)
+- Both firms must choose their prices $p_1$ and $p_2$
+- The number of dishes each restaurant sells is $Q_i = 44 - 2p_i + p_j$
+  - After a price change, half of your usual customers will leave to go to the other restaurant
+- The dishes cost $8 to make for each restaurant
+- Which price should each restaurant choose?
+
+* 
+*Best response*
+- Profit depends on the pricing choice of the other firm
+- Restaurants try to profit maximize given the price that they think the other will choose
+- This pricing strategy is the /best response/ of the restaurant
+
+* 
+*Can the restaurants do better?*
+- Suppose an outside company buys both restaurants
+- The firm is now a monopolist, chooses one price for both locations
+- What is the optimal price? What are the profits?
+
+* 
+*Collusion*
+- The pricing game is a form of a prisoners' dilemma (with continuous strategies)
+- The firms could cooperate to split the monopolist profits
+- But each can do better (individually) by choosing something /other/ than the monopolist price
+- Cooperation is /never/ a best response
+
+* 
+*Limitations of NE?*
+
+Example:
+- Player A: Chooses "Up" or "Down"
+- Player B: Chooses "Left" or "Right"
+- Payoffs (A, B):
+  - Up, Left: (2 chocolates, 2 chocolates)
+  - Up, Right: (1 chocolates, 1 chocolates)
+  - Down, Left: (3 chocolates, 2 chocolates)
+  - Down, Right: (50% penalty on midterm, 1 chocolate) 
+
+* 
+*Why might we not see a NE?*
+- Often, player A won't choose Down, because it is risky
+- Why is it risky?
+  - A might think B doesn't like chocolate
+  - A might be concerned the B will try to "spite" them
+- These options might mean that the game is /misspecified/
+  - A has uncertainty about B's payoffs
+
+* Example
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG05.03.jpg]]
+
+* 
+*Rationalization*
+- Suppose games are properly specified 
+- Nash equilibrium:
+  - The choice of each player is their best response given their beliefs about what the other players are doing
+  - The beliefs are accurate
+- Does this mean that purely rational players will achieve the NE?
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG05.05.jpg]]
+
+* 
+*Rationalizability*
+- Multiple outcomes can be supported by rational "chains" of thought
+  - Not necessarily NE
+- But not /every/ outcome is supported by rationality
+- For instance: It is never rational to play a strategy that is /never a best response/
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/GAMES4_FIG05.06.jpg]]
+
+* 
+*Rationalizability*
+- Note: Not all strategies that are never a best response are dominated by some other strategy
+- Sometimes rationalizability can lead to a NE (but not always)
+* 
+*Cournot competition*
+- Suppose there are two fishing boats that choose how many fish to catch each day
+- The local fish market buys the fish for a price $P=60-Y$
+- Boat one has costs of 30 per fish and boat 2 has costs 36 per fish

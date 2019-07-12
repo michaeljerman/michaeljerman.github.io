@@ -1,0 +1,615 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title> EC 399 </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/slide_white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- C-x C-k S for slide, M for markdown -->
+
+	<section data-markdown>
+	  # Measuring Inequality
+
+	  ## EC 399: Economics of Inequality
+
+	  ## Spring 2017
+	</section>
+
+
+	<section data-markdown>
+	  ### What is inequality?
+
+	  - We can use an inequality index to rank distributions
+	  - There might be disagreements on what inequality means
+	  - Different indices have different properties that we might agree on
+	
+	</section>
+	
+	<section data-markdown>
+	  ### Notation
+	  - Suppose there are $N$ people in the economy (for the US, $N\approx 242,000,000$)
+	  - Each person is (arbitrarily) assigned an index number $i$ between 1 and $N$
+	  - The income of person $i$ is $x_i$
+	  - Our income distribution is then a *vector*
+	  $$ x = (x_1, x_2, x_3, ..., x_N) $$
+	  - Since the indices are arbitrary, we can assign them such that
+	  $$ x_1 \leq x_2 \leq x_3 \leq ... \leq x_N $$
+	</section>
+
+	<section data-markdown>
+	  ### Example
+
+	  | Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|
+	  |2|5|9|20|30|
+
+	  ---
+
+	  - Income distribution:
+	  $$ x = (2,5,9,20,30) $$
+
+	</section>
+	
+	<section data-markdown>
+	  ### Inequality indices
+
+	  - An inequality index is a function that maps from a vector (distribution) to a real number
+	  $$ I = I(x) $$
+	  - In other words, it's just a number!
+	  - Allows us to rank distributions
+	  - Higher numbers mean more inequality
+	  - $I=0$ means $x_1 = x_2 = x_3 = ... = x_N$ (perfect equality)
+	</section>
+	
+	<section data-markdown>
+	  ### Index properties
+
+	  - It is common to disagree on which distributions have more inequality
+	  - A possible solution is to consider a set of *values* that we think are important
+	  - We can (hopefully) construct indices that reflect these values 
+	  - In general, there is no "best" set of values --- reasonable people can disagree!
+	</section>
+
+	<section data-markdown>
+	  ### Pigou-Dalton Principle of Transfers
+
+	  - Suppose we have a distribution $x$
+	  - We take some income from a relatively wealthy person $i$ and give it to a relatively poor person $k$, where $i>k$
+	  - This is called a *progressive transfer*
+	  - Call the new distribution $x'$
+	  - The Pigou-Dalton transfer principle says $ I(x) > I(x') $
+	  - Inequality is higher before the transfer
+	</section>
+
+	<section data-markdown>
+	  ### Example
+
+	  |||||||
+	  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$~x$|$=$|$(2,$|$~5,$|$~9,$|$~20,$|$~30)$|
+	  |$~$|||||||
+	  |$~$|||||||
+	  |$~$|||||||
+	  
+	  ||
+	  |:---:|
+	  |$~$|
+	  |$~$|
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Example
+
+	  |||||||
+	  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$~x$|$=$|$(2,$|$~5,$|$~9,$|$~20,$|$~30)$|
+	  ||||**+1**|**-1**|||
+	  |$~$|||||||
+	  |$~$|||||||
+
+	  ||
+	  |:---:|
+	  |$~$|
+	  |$~$|
+	</section>
+	
+	<section data-markdown>
+	  ### Example
+
+	  |||||||
+	  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$~x$|$=$|$(2,$|$~5,$|$~9,$|$~20,$|$~30)$|
+	  ||||**+1**|**-1**|||
+	  ||||$\downarrow$|$\downarrow$|||
+	  |$x'$|$=$|$(2,$|$~6,$|$~8,$|$~20,$|$~30)$|
+
+	  ||
+	  |:---:|
+	  |$~$|
+	  |$~$|
+
+	</section>
+
+	<section data-markdown>
+	  ### Example
+
+	  |||||||
+	  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$~x$|$=$|$(2,$|$~5,$|$~9,$|$~20,$|$~30)$|
+	  ||||**+1**|**-1**|||
+	  ||||$\downarrow$|$\downarrow$|||
+	  |$x'$|$=$|$(2,$|$~6,$|$~8,$|$~20,$|$~30)$|
+
+	  ||
+	  |:---:|
+	  |$~$|
+	  |Pigou-Dalton $\Rightarrow~I(x) > I(x')$|
+
+	</section>
+
+	<section data-markdown>
+	  ### More examples
+	  |A|B|
+	  |:-:|:-:|
+	  |$(2,5,9,20,30)$|$(2,5,9,20,30)$|
+	  |$(2,5,9,20,30)$|$(3,5,9,20,29)$|
+	  |$(2,5,9,20,30)$|$(2,6,9,20,29)$|
+	  |$(10,10,10,10,30)$|$(10,10,10,20,20)$|
+	  |$(2,5,9,20,30)$|$(2,6,9,19,30)$|
+
+	  - Column B distributions are formed by a progressive transfer of column A distributions
+
+	</section>
+
+	<section data-markdown>
+	  ### How important is the Pigou-Dalton principle of transfers?
+	  - Amiel and Cowell (2001) perform an experiment where they asked participants to rank these distributions in terms of inequality
+	  - 1,153 participants 
+	</section>
+
+	<section data-markdown>
+	  |Which distribution is more unequal?|
+	  |:-:|
+	  |![](img/amielcowell.png)|
+	</section>
+
+	<section data-markdown>
+	  ### Index properties
+
+	  - We disagree on what equality is when we see it
+	  - Describing inequality in terms of underlying properties can allow us to overcome this disagreement
+	  - Reframing the argument: Discuss *principles* rather than *outcomes*
+	</section>
+
+	<section data-markdown>
+	  ### Common index properties
+
+	  1. Principle of transfers (Pigou-Dalton)
+	  1. Symmetry
+	  2. Population invariance
+	  3. Scale invariance
+	  4. Transfer sensitivity
+	  5. Subgroup consistency
+
+	</section>
+
+	<section data-markdown>
+	  ### Symmetry
+
+	  - Permutations of the same distribution have the same inequality
+	  - The inequality measure is anonymous: an individual's index doesn't matter 
+	</section>
+
+	<section data-markdown>
+	  ### Symmetry example
+
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x:$|2|5|9|20|30|
+
+	  ---
+	  
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x':$|2|5|**20**|**9**|30|
+
+	  ---
+	  
+	  ||
+	  |:-:|
+	  |Symmetry $\Rightarrow ~I(x) = I(x')$|
+
+	</section>
+
+	<section data-markdown>
+	  ### Population invariance
+
+	  - The size of the population shouldn't impact our inequality index
+	  - If we make an identical clone of everyone and add them to our distribution, our inequality index will remain unchanged
+	</section>
+
+	<section data-markdown>
+	  ### Population invariance example
+
+	  ||
+	  |-|
+	  |$x=$(2,5,9,20,30)|
+	  |$x'=$(2,5,9,20,30,**2**,**5**,**9**,**20**,**30**)|
+	  |$x'=(x,x)$|
+
+	  ||
+	  |:-:|
+	  |Population invariance $\Rightarrow ~I(x) = I(x')$|
+	</section>
+		
+	<section data-markdown>
+	  ### Scale invariance
+
+	  - The inequality index is not sensitive to scaling of income
+	  - If we change the currency that everyone is paid (dollars to euros, for instance), then inequality remains unchanged
+	  - We don't have to worry about inflation or purchasing power of currency
+	</section>
+
+	<section data-markdown>
+	  ### Scale invariance example
+
+	  ||
+	  |-|
+	  |$x=$(2,5,9,20,30)|
+	  |$x'=$(6,15,27,60,90)|
+	  |$x'=3x$|
+
+	  ||
+	  |:-:|
+	  |Scale invariance $\Rightarrow ~I(x) = I(x')$|
+	  
+	</section>
+		
+	<section data-markdown>
+	  ### Transfer sensitivity
+
+	  - Consider a transfer between two poor people (the relatively richer of the two gives to the relatively poorer)
+	  - Now consider the *same* transfer between two rich people
+	  - For the rich people, the transfer accounts for less of a percentage of their income
+	  - Transfer sensitivity says an index should reflect this difference
+	  - Inequality at the bottom of the distribution is weighted more heavily
+	</section>
+	
+	<section data-markdown>
+	  ### Transfer sensitivity example
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x:$|2|5|9|20|30|
+
+	  ---
+	  
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x':$|3|4|9|19|31|
+
+	  ---
+
+	  ||
+	  |:-:|
+	  |Transfer sensitivity $\Rightarrow ~I(x) > I(x')$|
+	  
+	</section>
+	
+	<section data-markdown>
+	  ### Subgroup consistency
+
+	  - Partition the distribution into disjoint subgroups
+	  - If the inequality in one subgroup goes up and remains the same in all others, then the inequality of the entire population must go up
+	</section>
+
+	<section data-markdown>
+	  ### Subgroup consistency example
+
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x:$|2|5|9|20|30|
+
+	  ---
+
+	  #### Divide population into two distinct groups:
+
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x_H:$||5|9|20||
+	  |$x_A:$|2||||30|
+
+	  ---
+
+	  #### Increase inequality in one group:
+
+	  ||
+	  |:-:|
+	  |$x_A' = (1,31)$|
+	  |Then $I(x_H, x_A) < I(x_H, x_A')$|
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Inequality indices
+
+	  There are many, many different inequality indices. We will focus on the 4 most common:
+
+	  1. Gini coefficient
+	  2. Quantile ratio
+	  3. Atkinson measure
+	  4. Theil index
+	</section>
+
+	<section>
+	  <h3> Gini coefficient </h3>
+
+	  <p>Given a distribution $x = (x_1, x_2, x_3, ..., x_N)$, the Gini index is: </p>
+
+	  $$I_G(x) = \dfrac{1}{2N^2\mu} \sum_{i=1}^N\sum_{j=1}^N |x_i - x_j|$$
+
+	  <p> It looks scary, but it's just an average of the difference in income between each pair of people in the economy </p>
+	</section>
+
+	<section>
+	  <h3> Example: </h3>
+	  	  $$I_G(x) = \dfrac{1}{2N^2\mu} \sum_{i=1}^N\sum_{j=1}^N |x_i - x_j|$$
+
+	  <p> $x = (2,5,9,20,30)$ </p>
+	  <ul>
+	    <li> $\mu = \dfrac{2+5+9+20+30}{5} = 13.2$ <br> &nbsp;</li>
+	    <li> $\dfrac{1}{2N^2\mu} = \dfrac{1}{2(5^2)(13.2)} = 660$ </li>
+	</section>
+	
+	<section>
+	  <h3> Example, continued: </h3>
+	  	  $$I_G(x) = \dfrac{1}{2N^2\mu} \sum_{i=1}^N\sum_{j=1}^N |x_i - x_j|$$
+
+	  <p> $x = (2,5,9,20,30)$ </p>
+
+	  <p> $\sum_{j=1}^N|x_1-x_j|=|2-2|+|2-5|+|2-9|+|2-20|+|2-30|=56$ </p>
+	  <p> $\sum_{j=1}^N|x_2-x_j|=|5-2|+|5-5|+|5-9|+|5-20|+|5-30|=47$ </p>
+	  <p> $\sum_{j=1}^N|x_3-x_j|=|9-2|+|9-5|+|9-9|+|9-20|+|9-30|=43$ </p>
+	  <p> $\sum_{j=1}^N|x_4-x_j|=|20-2|+|20-5|+|20-9|+|20-20|+|20-30|=54$ </p>
+	  <p> $\sum_{j=1}^N|x_5-x_j|=|30-2|+|30-5|+|30-9|+|30-20|+|30-30|=84$ </p>
+	  <p> $\sum_{i=1}^N\sum_{j=1}^N|x_i-x_j|=56+47+43+54+84=284$ </p>
+	  
+	</section>
+
+	<section>
+	  <h3> Example, continued: </h3>
+	  	  $$I_G(x) = \dfrac{1}{2N^2\mu} \sum_{i=1}^N\sum_{j=1}^N |x_i - x_j|$$
+
+	  <p> $x = (2,5,9,20,30)$ </p>
+
+	  <p> $I_G(x) = \dfrac{1}{660}(284) = 0.430303$ </p>
+	</section>
+
+
+	<section>
+	  <h3>Question: </h3>
+
+	  <ul>
+	    <li> What happens if everyone has the same income? </li>
+	  </ul>
+
+	  $$I_G(x) = \dfrac{1}{2N^2\mu} \sum_{i=1}^N\sum_{j=1}^N |x_i - x_j|$$
+
+	</section>
+
+	<section data-markdown>
+	  ### Gini properties
+
+	  The Gini index has the following properties:
+	  - Principle of transfers
+	  - Symmetry
+	  - Population invariance
+	  - Scale invariance
+
+	  The Gini does **not** satisfy:
+	  - Transfer sensitivity
+	  - Subgroup consistency
+	  
+	</section>
+	
+
+	<section data-markdown>
+	  ### Quantile ratio
+
+	  - A *quantile* is ranked income
+	  - Example: A person with income at the 90th percentile of the income distribution has more income than 90% of the population, less income than 10% of the population. This income of this person is the 90% quantile. 
+	  - A quantile ratio is a simple fraction of the incomes of people at various points in the distribution
+	  - Common ratios: 90/10, 90/50, 50/10, 80/20 (Kuznets ratio)
+	  - Intuition for the 90/10 ratio: how much more income does a person richer than 90% of the population have than someone who is poorer than 90% of the population?
+	  - Sometimes called "income gap"
+	</section>
+
+	<section data-markdown>
+	  ### Example
+
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x:$|2|5|9|20|30|
+	  |Percentile:|0|25|50|75|100|
+
+	  $I_{75/25}(x) = 20/5 = 4$
+
+	</section>
+	
+	<section data-markdown>
+	  ### Quantile ratio properties
+
+	  The quantile ratio has the following properties:
+	  - Symmetry
+	  - Population invariance
+	  - Scale invariance
+
+	  The quantile ratio does **not** satisfy:
+	  - Principle of transfers
+	  - Transfer sensitivity
+	  - Subgroup consistency
+
+	</section>
+
+	<section data-markdown>
+	  ### Principle of transfers example:
+
+	  || Obie | Michael | Llewelyn | Rudy | Kitty |
+	  |:---:|:---:|:---:|:---:|:---:|:---:|
+	  |$x:$|2|5|9|20|30|
+	  |$x':$|1|5|9|20|31|
+	  |Percentile:|0|25|50|75|100|
+
+	  $I_{75/25}(x) = 20/5 = 4$
+
+	  $I_{75/25}(x') = 20/5 = 4$
+
+	</section>
+
+	
+	<section>
+	  <h3> Atkinson measure </h3>
+
+	  $$ I_A(x, \epsilon) = 1 - \left(\dfrac{1}{N}\sum_{i=1}^N\left(\dfrac{x_i}{\mu}\right)^{1-\epsilon}\right)^{\frac{1}{1-\epsilon}} $$
+
+	  <p> &nbsp; </p>
+	  <ul>
+	    <li> A "weighted average" of each income's deviation from the mean </li>
+	    <li> Index goes up as incomes become more "spread out" </li>
+	    <li> Depends on an additional parameter $\epsilon$, which captures the amount of inequality aversion </li>
+	    <li> $\epsilon=0 \Rightarrow I_A(x,\epsilon) = 0$, for all distributions. This means we don't care about inequality </li>
+	    <li> $\epsilon = \infty \Rightarrow I_A(x, \epsilon) = 1$, for all distributions. Inequality is infinitely bad! </li>
+	  </ul>
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Atkinson properties
+
+	  - The Atkinson measure satisfies all 6 of our properties!
+	</section>
+	
+	<section>
+	  <h3> Theil Index </h3>
+	  
+	  $$ I_T(x) = \dfrac{1}{N}\sum_{i=1}^N\dfrac{x_i}{\mu}\ln\left(\dfrac{x_i}{\mu}\right) $$
+	  <p> &nbsp; </p>
+
+	  <ul>
+	    <li> In a class of measures called "generalized entropy measures" </li>
+	    <li> *Entropy* is a concept from physics that measures the amount of disorder in a system </li>
+	    <li> Here, disorder is a deviation from perfect equality </li>
+	  </ul>
+	</section>
+	
+	<section data-markdown>
+	  ### Theil properties
+
+	  - The Theil measure also satisfies all 6 of our properties!
+	</section>
+
+	<section data-markdown>
+	  ### Pros and cons
+
+	  Gini:
+	  - Pros: Commonly used, easy to interpret (we'll see this later)
+	  - Cons: Does not satisfy transfer sensitivity or subgroup consistency
+
+	  Quantile ratio:
+	  - Pros: Very easy to calculate, very easy to interpret
+	  - Cons: Does not capture much information about the distribution, does not satisfy Pigou-Dalton
+
+	</section>
+
+	<section data-markdown>
+	  ### Pros and cons, continued
+	  
+	  Atkinson:
+	  - Pros: Satisfies all properties, has important normative interpretation (we'll see this later)
+	  - Cons: Difficult to interpret, depends on normative parameter
+
+	  Theil:
+	  - Pros: Satisfies all properties
+	  - Cons: Difficult to interpret, can be greater than 1, normative properties not clear
+	</section>
+	
+	<section data-markdown>
+	  ### Additional reading (optional, on Canvas)
+
+	  - Foster et al, chapter 2
+	  
+	</section>
+
+	<!--
+	<section>
+	  <h4> Lorenz curve for $X=(1,2,3,4,5)$ </h4>
+	  
+	  <img src="lorenz_test.png" width=60%/>
+	</section>
+	-->
+	
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      backgroundTransition: 'none',
+      transition: 'fade',
+      viewDistance: 2,
+      controls: true,
+      progress: true,
+      center: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('Home'); } },
+      { src: 'plugin/chalkboard/chalkboard.js' },
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math-katex/math-katex.js', async: true }
+      ],
+
+      keyboard: {
+        67: function() { RevealChalkboard.toggleNotesCanvas() },
+        66: function() { RevealChalkboard.toggleChalkboard() }, 
+        46: function() { RevealChalkboard.clear() },    
+         8: function() { RevealChalkboard.reset() },    
+        68: function() { RevealChalkboard.download() }, 
+      },
+
+      chalkboard: { 
+      theme: "whiteboard",
+      color: [ 'rgba(0,0,0,1)', 'rgba(255,255,255,0.5)' ]
+      },
+      
+      });
+    </script>
+  </body>
+</html>

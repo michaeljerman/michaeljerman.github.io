@@ -1,0 +1,50 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Uncertainty II
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 
+
+* 
+*Market for Lemons (Akerlof, 1970)*
+- Two types of used cars: high quality and low quality ("lemons")
+- Buyers cannot directly observe car quality
+  - Willing to pay $6,000 for low quality
+  - Willing to pay $16,000 for high quality
+- Sellers know quality of their car
+  - Value of high quality: $12,500
+  - Value of low quality: $3,000
+
+* 
+*Buyers*
+- Single market price for both cars $p$
+  - Buyers can't observe quality, so only one market
+- Suppose buyers can observe fraction of high quality cars in the market $f$
+- Buyers will purchase a used car if $EV > p$
+
+* 
+*Sellers*
+- High quality owners sell if $p>12,500$
+- Low quality owners sell if $p>3000$
+- When will high-quality cars be bought and sold on the market?
+
+* 
+*Market for high quality cars*
+- What happens if $f$ falls below the critical value?
+- Consumers would be willing to pay $p>12,500$ (if they were assured of getting high quality car)
+- But sellers unable to find buyers at that price 
+- No high quality cars will be bought or sold!
+  - $f=0$
+- Market price: $3,000<p<6,000$

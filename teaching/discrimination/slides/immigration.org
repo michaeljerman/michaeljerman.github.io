@@ -1,0 +1,132 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Immigration
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Rich and poor countries
+- Institutional differences seem to drive most of the difference in national wealth
+- Culture, history, genes, etc do not seem to be very important
+* Immigrants and economics
+- 2 questions:
+  1. What are the economic outcomes for immigrants after they arrive?
+  2. How are the economic outcomes of local workers affected by the arrival of immigrants?
+- These questions are *empirical*--they can be answered with data
+* Empirical economics 
+- In contrast with pure theory, empirical (or quantitative) methods use data and statistics to answer questions and describe the world
+- Two forms of empirical results:
+  1. Descriptive analysis
+  2. Causal analysis
+* Descriptive analysis
+- Simple comparison of statistics (means, medians, variances, etc)
+- Examples: 
+  1. The average American is 5 feet, 7 inches tall
+  2. The median household income in the United States is $59,000
+- Descriptive statistics are /just math/
+- If the measurements are correct, and the math is correct, then descriptive statistics are correct
+* Descriptive statistics of US immigrants
+- 14.6% of US population are immigrants (1.9% arrived before age 11)
+- 27.5% from Mexico, 20.5% from Asia, 9.1% from Caribbean
+- On average, immigrants have less education than US born citizens (1.7 years)
+- Immigrants /more likely/ to have an advanced degree (masters or above)
+- Immigrants have more labor-force pariticipation, higher unemployment and employment
+- Immigrants earn less on average than US born workers
+* #BuildTheWall?
+- Immigration is a /choice/, we should expect to attract workers from low income countries
+- People are unlikely to immigrate if they expect their wages (and their children's wages) will be higher in their home country
+- Compositionally decreaes average income (and increases inequality)
+- Does not imply that US born workers are /necessarily/ worse off! (A /causal/ claim)
+* 2nd generation
+- Differences between immigrant's children and US born (non-immigrant) children are mostly insignificant
+- Children of immigrants achieve slightly more schooling, more likely to be in professional fields
+- No wage gap or employment gap
+- Economically, children of immigrants indistinguishable from local population
+* Causal analysis
+- Most economic analysis tries to uncover /causality/
+- If we change variable X, what happens to Y?
+- Causal claims require /theory/ 
+- In practice, theory takes the form of /identification assumptions/
+- If we estimate a causal effect, an identification assumption tells us what needs to be true for the estimate to be accurate
+* Correlation and spurious results
+- Correlations are purely descriptive
+- Interpreting causality from correlations requires identifying assumptions 
+- Incorrect identifying assumptions can lead to false conclusions (bias)
+- Bad assumptions can also show causality among completely unrelated phenomena (spurious relationships)
+* Examples
+- Omitted variable bias
+  - People who attend class more get better grades. Therefore, attending class causes better grades (/motivation/ determines attendance and grades)
+- Reverse causality
+  - Areas with more police officers tend to have more crime. Therefore, police cause crime (crime likely causes police)
+- Selection bias
+  - People who attend job-training workshops get higher wages. Therefore job training increases wages (people who choose to attend are more motivated to find better work)
+* Spurious correlation examples
+[[http://www.tylervigen.com/spurious-correlations]]
+* Example
+- Imagine you are tasked with testing the effectiveness of a new drug (pain killer)
+- How do you decide whether or not it is effective?
+* Randomization
+- Gold standard of empirical analysis is "randomized control trial" (RCT)
+- Identifying assumption: Those who are given the drug (treatment group) would have the same results as the control group /if they hadn't taken the drug/
+- If selection into treatment is truly random, then this assumption is true /on average/
+- If people are allowed to choose treatment, then those who choose the drug are on average /different/ than those who do not choose to take the drug
+  - Identifying assumption likely false!
+* Quasi-experimental research design
+- RCT's common in development economics, game theory, behavioral economics
+- Difficult in other settings
+- Instead use "quasi-experimental" data
+- Look for changes (policy or otherwise) that are /as if/ they are random
+- We want settings where agents are unable to manipulate their treatment assignment
+* Card (1990)
+#+BEGIN_QUOTE
+"The locational choices of immigrants and natives presumably depend on the expected labor market opportunities. Immigrants tend to move to cities where the growth in demand for labor can accommodate their supply...These considerations illustrate the difficulty of using the correlation across cities between wages and immigrant densities to measure the effect of immigration on labor market opportunities for natives
+#+END_QUOTE
+- Immigrant locational choice is /non-random/
+* Mariel Boatlift
+- April 20, 1980: Fidel Castro announces that any Cuban citizen may emigrate to the US from Mariel, Cuba
+- May-September, 1980: 125,000 Cuban immigrants land in Miami
+- Increased the Miami labor force by 7%
+- Claim: Influx of immigrants to Miami is "quasi-random," not due to labor market conditions in Miami
+* Mariel characteristics
+- Compared to average Cuban worker in Miami, Muriel workers:
+  - had less education than average Cuban in Miami
+  - had less work experience
+  - were younger
+  - were more likely to work as laborers or in services
+- Primarily low-skill workers, competing with other low-skill workers
+* Causal estimates
+- Compare average wages of low-skill workers in Miami before 1980 to wages after 1980
+- Attribute any change in wages to the unexpected change in number of immigrants
+- Identification assumption: Average wages of low-skilled workers in Miami would /not/ have changed if Mariel Boatlift never occurred 
+* 
+#+ATTR_HTML: :height 625px
+[[./img/card_fig5.png]]
+* Identification threat
+- Recall that Card is assuming Miami wages would remain the same if no immigration happened
+- What happens if Miami wages would have increased instead?
+- Can't observe the counterfactual
+- Compare to other "similar" cities as a control
+* 
+#+ATTR_HTML: :height 625px
+[[./img/card_fig3.png]]
+* Surprising result
+- Economic theory suggests that an increase in the supply of workers should decrease wages
+- Surprisingly, this is not what happened in Miami 
+- Unemployment doesn't seem to be affected either
+- Result is robust to various considerations
+  - Even Cubans already in Miami didn't see a decrease in wages!
+- Other studies have since shown very similar outcomes
+- What could be causing this?
+* Task specialization
+- Immigrants and locals have different skills (language)
+- Local workers have comparative advantages in communication-based tasks
+- Immigrants have comparative advantage in manual labor tasks
+- Before immigration, local workers do both tasks
+- Immigration allows for specialization
+- Increased efficiency $\rightarrow$ Pareto improvements (everyone does better)
+* Peri and Sparber (2009)
+#+ATTR_HTML: :height 525px
+[[./img/peri_tab1.png]]
+* Peri and Sparber (2009)
+#+ATTR_HTML: :height 525px
+[[./img/peri_fig2.png]]

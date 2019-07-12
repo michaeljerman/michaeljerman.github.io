@@ -1,0 +1,81 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Productivity
+#+AUTHOR: ECON 499: Growth and Development
+#+DATE: Spring 2018 
+
+* 
+*Announcements*
+- Reading
+  - Chapter 7
+- Homework due Friday
+- Midterm next Thursday
+
+* 
+*Explaining cross-country differences*
+- So far: $Y_t = K_t^\alpha (h_tL_t)^{1-\alpha}$
+- We've tried to explain cross-country differences in terms of population growth, physical capital, human capital
+- Large differences remain 
+- Factor accumulation alone not enough to explain differences in growth an income
+
+* Physical Capital Predicted vs Actual
+#+attr_latex: :width .75\textwidth 
+[[./img/3.7.png]]
+
+* Human Capital Predicted vs Actual 
+#+attr_latex: :width .75\textwidth 
+[[./img/6.12.png]]
+
+* 	
+*Productivity*
+- Some countries might be better at combining factors into output
+- Technology, efficiency, work-ethic, etc
+- How effective a country is at turning factors into output is called *productivity*
+- Problem: Productivity is not directly observed, we must infer from other data using "accounting" techniques
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/tab7.2.png]]
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/7.3.png]]
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/7.4.png]]
+
+* 
+*Productivity and income*
+- A large amount of the difference in income across countries is explained by productivity differences
+- Rich countries are more productive than poor countries
+- Productivity and factor accumulation are (roughly) equally responsible for cross-country income differences
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/7.5.png]]
+
+* 
+#+attr_latex: :width .75\textwidth 
+[[./img/7.6.png]]
+
+* 
+*Productivity and growth*
+- Factor growth and productivity growth contribute to income per capita growth
+- Productivity growth relatively more important at explaining differences in income growth
+- Countries with lowest growth have negative productivity growth, despite positive factor growth
+- Low-growth countries are getting *worse* at transforming factors into output over time
+

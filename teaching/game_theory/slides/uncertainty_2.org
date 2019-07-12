@@ -1,0 +1,103 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Uncertainty II
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 
+
+* 
+*Market for Lemons (Akerlof, 1970)*
+- Two types of used cars: high quality and low quality ("lemons")
+- Buyers cannot directly observe car quality
+  - Willing to pay $6,000 for low quality
+  - Willing to pay $16,000 for high quality
+- Sellers know quality of their car
+  - Value of high quality: $12,500
+  - Value of low quality: $3,000
+
+* 
+*Buyers*
+- Single market price for both cars $p$
+  - Buyers can't observe quality, so only one market
+- Suppose buyers can observe fraction of high quality cars in the market $f$
+- Buyers will purchase a used car if $EV > p$
+
+* 
+*Sellers*
+- High quality owners sell if $p>12,500$
+- Low quality owners sell if $p>3000$
+- When will high-quality cars be bought and sold on the market?
+
+* 
+*Market for high quality cars*
+- What happens if $f$ falls below the critical value?
+- Consumers would be willing to pay $p>12,500$ (if they were assured of getting high quality car)
+- But sellers unable to find buyers at that price 
+- No high quality cars will be bought or sold!
+  - $f=0$
+- Market price: $3,000<p<6,000$
+
+* 
+*Market failure*
+- Sellers willing to sell high quality for $p>12,500$
+- Buyers willing to buy high quality for $p<16,000$
+- Market equilibrium is /inefficient/
+  - Buyers /and/ sellers could be made better off without making anyone worse off
+
+* 
+*Adverse selection*
+- Market for lemons is an example of /adverse selection/
+- With imperfect information, one side must form expectations
+- This can make $p$ low enough that some high-quality goods (or services) exit the market
+- This reduces EV, further reducing price
+- Only products that remain in market are low quality
+
+* 
+*Example: Health insurance*
+- Health insurance providers do not know consumers' health as well as the individual
+- Offer a single price to "similar" consumers
+- Healthiest consumers may find price to be too high (expected utility greater without insurance)
+- This reduces the average health of remaining consumers
+- Insurance companies raise price to account for higher risk
+  - Process repeats
+- "Death spiral" -- market collapses
+  - Rationale behind "individual mandate" and universal systems
+
+* 
+*Signalling*
+- How do we overcome uncertainty and adverse selection?
+- "Cheap talk" insufficient, no cost to lying about quality
+- Quality signals must impose a cost on the player signalling in order to prevent "cheaters"
+- Example: Product warranties
+  - Used car dealers sometimes offer promises to repair a car if it breaks down 
+  - Unlikely to offer warranty for lemons
+- Example: Product design and marketing
+  - Producers of high-quality products can "afford" fancy design and marketing
+
+* 
+*Screening*
+- Why do employers value some majors higher than others?
+- In general, degrees that are harder result in higher wages
+- Employers know that "low quality" workers are unlikely to take hard classes
+  - High quality workers may have an easier time, less of an investment
+- This separates high-quality from low-quality workers
+- Major choice is (partly) a /signal/ to employers 
+
+* 
+*Separating vs pooling equilibrium*
+- Screening costs must be high enough to prevent low-quality players from cheating
+- But screening costs must be /low/ enough to make it worth it for high-quality players to join
+- If the screening costs are too high or too low, then all players will /pool/ together and be indistinguishable
+- Examples: California food labeling laws vs "certified organic" labels

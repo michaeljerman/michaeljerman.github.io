@@ -1,0 +1,107 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Statistical Discrimination
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Audit studies
+- Bertrand and Mullainathan find that applicants with "black" names are less likely to get an interview
+- They don't observe the job offers 
+- "Audit studies" try to answer this question
+- Trained actors attend job interviews
+- Actors chosen and trained to be identical in every way except race
+* 
+[[./img/audit.png]]
+
+* Audit criticisms
+- The "auditors" (presumably) know their race
+- Studies are not double-blind!
+- Can't control for experience, unconscious biases of auditors
+* Audit criticisms, continued
+James Heckman:
+- Audit studies actually show that labor market discrimination is very /low/
+- Even if the differences are caused by prejudice, ~90% of firms don't discriminate at all!
+#+BEGIN_QUOTE
+Only a zealot can see evidence in these data of pervasive discrimination in the U.S. labor market. 
+#+END_QUOTE
+
+* Heckman:
+#+BEGIN_QUOTE
+While undoubtedly there are still employers and employees with discriminatory intentions, labor market discrimination is no longer a first-order quantitative problem in American society. At this time, the goal of achieving black economic progress is better served by policies that promote skill formation, like improving family environments, schools and neighborhoods, not by strengthening the content and enforcement of civil rights laws--the solution to the problem of an earlier era.
+#+END_QUOTE
+- The marginal benefits of reducing labor-market discrimination are lower than the marginal benefits of other social policy
+* Audit criticisms, continued
+- Audit studies find evidence of /discrimination/, not prejudice
+- Prejudice /could/ cause discrimination (like in the Becker model)
+- Are there other situations that could give rise to discrimination?
+* Statistical discrimination
+- Real world labor markets are not perfectly competitive
+- Workers and firms have /imperfect information/
+- A firm does not know the true productivity of a worker until /after/ they are hired and have worked for a while
+- Hiring mistakes are costly!
+* Situation A
+- Suppose two types of workers, A and B
+- Both types of workers have heterogeneous productivities (some are more productive than others)
+- Firms cannot observe each worker's individual productivity
+- But firms know the average of the distribution of productivities
+- If A workers have higher average productivity, then firms will choose to hire A workers
+- Based on profit maximization and (perceptions of) productivity, not prejudice!
+* Situation B
+- Suppose A and B have the same average productivity
+- B workers have higher /variance/ (more likely to be high productivity and low productivity)
+- If firms are /risk averse/, they will choose the workers with lower variance
+- If they are sufficiently risk averse, they may choose A workers even if they are /lower/
+   productivity on average!
+* Audit criticisms, continued
+- Firms that discriminate in the audit studies may be /statistically discriminating/
+- Policy implications much different in this case!
+* Doleac and Hansen (2017)
+- Convicted criminals find it difficult to find employment
+- Working is a strong predictor of recidivism (those with jobs unlikely to commit crimes again)
+- Clear social benefit to providing work for ex-criminals
+- Problem: Firms don't like to hire ex-criminals 
+- Solution: Don't let employers know about criminal history
+* Ban the box
+- Some states and regions have "ban the box" policies (employers can't ask about criminal history)
+- How do employment rates change in states that adopt ban-the-box policies vs those that don't?
+- Compare outcomes for workers after ban-the-box polices to outcomes before policy and with other regions that don't have the policy (difference-in-differences approach)
+* 
+[[./img/doleac_fig1.png]]
+* Theory
+- Different races more likely to have criminal convictions
+- If firms cannot observe which individual has criminal conviction, may use group averages instead (statistical discrimination)
+- Employment for groups with high rates of criminal convictions (black, Hispanic) might /decrease/ as a result
+* 
+[[./img/doleac_fig2.png]]
+* 
+[[./img/doleac_fig3.png]]
+* 
+[[./img/doleac_fig4.png]]
+* Results
+- Ban-the-box policies reduce the probability of employment by:
+  - 3.4%, black men, age 25-34, no college degree
+  - 2.3%, Hispanic men, age 25-34, no college degree
+- Firms more likely to discriminate when unemployment is low
+- Firms seem to substitute to older black men (35-64, no college degree)
+- No significant effect on women (much less likely to commit violent crime)
+- Effect appears to grow over time
+* Wage differentials
+- We can compare average wages across groups (descriptive analysis)
+- In general, wage gaps decrease when controls are added
+  - Age
+  - Education
+  - "Ability"
+- Two questions:
+  1. Which controls should we add?
+  2. How do we interpret the controls?
+* 
+[[./img/lang_113.jpg]]
+* Controls
+- Wage gap decreases when controls are included
+- Two ways to interpret:
+  - Wrong way: "Wage gaps are overstated! Race not very important!"
+  - Right way: Most economically significant discrimination occurs /before/ people enter the labor market 
+- Heckman: Education, opportunities, community resources are driving outcomes, not labor market discrimination
+- Policy should focus here, not the labor market
+ 

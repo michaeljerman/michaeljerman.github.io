@@ -1,0 +1,13 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Poverty and Credit
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* The consumer's problem
+- Economic models have optimizing consumers
+- The "consumer's problem" is to maximize their lifetime utility:
+$$\max \sum_{t=0}^T u(c_t)$$
+- Consumers can save, borrow, invest in skills, etc to maximize well being
+- As $T\rightarrow \infty$, agents will end up consuming the same amount each period regardless of initial state ($t=0$)

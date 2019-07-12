@@ -1,0 +1,165 @@
+#+OPTIONS: toc:nil num:nil
+#+REVEAL_TRANS: none 
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+latex_class_options: [10pt]
+#+beamer_theme: Boadilla
+#+beamer_header: \usecolortheme{seagull}
+#+beamer_header: \usefonttheme[onlylarge]{structurebold}
+#+beamer_header: \usefonttheme[onlymath]{serif}
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+#+beamer_header: \setbeamertemplate{navigation symbols}{}
+#+beamer_header: \setbeamertemplate{itemize item}[triangle]
+#+beamer_header: \setbeamertemplate{footline}{}
+
+#+TITLE: Introduction
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018
+
+* Instructor
+- Michael Jerman (call me Michael)
+- Office: 342 Bexell
+- Email: michael.jerman@oregonstate.edu
+- Office hours:
+  - M/W: 10:30am-11:30am
+  - T/Th: 8:30am-9:30am
+
+* Prerequisites
+- Econ 311 or Econ 411 (intermediate micro)
+
+* Textbook
+- /Games of Strategy/, Dixit, Skeath, Reiley
+  - 4th edition
+- [[https://www.amazon.com/Games-Strategy-Fourth-Avinash-Dixit/dp/0393919684/][Amazon]]
+  - $120 new
+  - $90 used
+  - $36 rent (electronic version)
+- [[http://verbacompare.osubeaverstore.com/compare/2018-Spring__ECON__420__001][Bookstore]]
+  - $132 new
+  - $99 used
+
+* Canvas
+- Official course website
+- You are responsible for any and all information posted to Canvas
+- Contact canvas@oregonstate.edu if you have any issues
+
+* Participation
+- What's game theory without games?
+- We will frequently do in-class exercises and games 
+- Participation will be recorded
+- 10% of your grade just for showing up!
+
+* Homework
+- Four graded homework assignments, posted on Canvas
+- Mix of problems from the text and other problems
+- Work in groups!
+  - Each person must submit their own assignment
+- Graded primarily on effort and completion
+  - 25% of your grade just for doing the homework!
+
+* Exams
+- Midterm: Wednesday, May 2 
+  - Week 5
+- Final: Friday, June 15 at 7:30am (!)
+  - Note that the university might change the final exam date
+- No makeup exams (see syllabus)
+
+* Grade
+#+ATTR_HTML: :border 0 :rules none :frame none
+| Participation | 10% |
+| Homework      | 25% |
+| Midterm       | 30% |
+| Final         | 35% |
+
+* Student conduct
+- Student's are bound by the university's [[http://studentlife.oregonstate.edu/sites/studentlife.oregonstate.edu/files/code_of_student_conduct.pdf][Code of Student Conduct]]
+- Any incidence of academic misconduct will result in a grade of "F" for the course 
+  - Additional sanctions may be imposed by the university
+
+* Important dates
+(Subject to change)
+#+ATTR_HTML: :border 0 :rules none :frame none
+| Wednesday, April 18 | Homework 1 |
+| Monday, April 30    | Homework 2 |
+| Wednesday, May 2    | Midterm    |
+| Wednesday, May 16   | Homework 3 |
+| Wednesday, June 6   | Homework 4 |
+| Friday, June 15     | Final exam |
+
+* Half the average game
+- Take out a blank piece of paper and write your name on the top
+- Next pick a number between 0 and 100 (don't write it just yet)
+  - We will record all of the numbers and calculate the average
+  - The winner will be the person whose chosen number is /one half/ the class average
+- Once you've decided, write your number on the paper
+- Trade papers with someone else 
+
+* "Standard" economics (econ 311)
+- Agents have preferences over consumption bundles, choose bundle that optimizes their utility
+- Generally consider prices and income to be /exogenous/
+- Agents' consumption choices don't affect the choices of other agents
+- Firms maximize profits subject to constraints
+  - Perfect competition: Firms are /price takers/ -- individual production decisions don't affect prices
+- These choices are called /decisions/: isolated choices that individual agents make given objectives and constraints
+* Game theory
+- Game theory is the study of how agents make choices in environments where the choices of others affects their outcomes /and/ their choices
+- Examples:
+  - Interactions with family and friends
+  - Business decisions
+  - Athletic competition
+  - Board games
+  - Political campaigns
+  - Diplomacy 
+  - Warfare
+  - Etc, etc, etc
+* Example: Bertrand competition
+- Two firms selling perfect substitutes
+- Consumers perfectly observe the prices charged by each firm
+- No transportation cost -- consumers only buy from cheaper firm
+* 
+#+attr_latex: :height .5\textwidth
+[[./img/gas.png]]
+
+* Firm choices
+#+ATTR_HTML: :border 0 :rules none :frame none
+|    76 | Mobil |
+| $3.30 | $3.20 |
+- Where will customers go?
+- What will 76 do?
+- What will Mobil do in response?
+
+* Strategic interaction
+- Game-theoretic situations differ from decision-theoretic (Econ 311) situations because they are /strategic/
+- When playing a game, a player must consider the other player's preferences when making their choices
+  - But the player must /also/ recognize that the other player is considering their preferences as well
+    - The first player must also recognize that the other player recognizes that player 1 recognizes that the other player is considering player 1's preferences
+      - ...
+        - ... 
+
+* Example
+#+REVEAL_HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/rMz7JBRbmNo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+* Example
+#+reveal_html: <iframe width="560" height="315" src="https://www.youtube.com/embed/p3Uos2fzIJ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+* Example: Nim
+1. At the start of the game there are two rows of lines (which represent matchsticks, coins, rocks...).  For today, the rows start with three and four lines respectively:
+  $$ |~|~|~\phantom{|} \\ |~|~|~| $$
+2. On a player’s turn the player chooses one of the rows and removes (or scratches out) any number of lines as long as they are in that same row. At least one line must be removed per turn.
+3. Turns alternate until the last line is removed.
+4. The player who removes the last line of all wins. 
+
+
+* Nim
+- Does either player have an advantage?
+- What are the optimal decisions?
+
+* Split the extra-credit points
+- Get a blank sheet of paper and write your full name at the top
+- Now choose the amount of extra credit that you would like to receive on the midterm exam (as a percentage)
+- Bring your paper to me on your way out
+- I will add up all of the points chosen
+  - If the total number of points is /less/ than the number of people in the class, then each of you will get your chosen amount of extra credit on your midterm
+  - If the total number of points is /greater/ than the number of people in the class, then /nobody/ gets any extra credit
+- You can communicate with each other if you'd like (be respectful!)

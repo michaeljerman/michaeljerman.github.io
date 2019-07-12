@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Mortality</title>
+<meta name="author" content="(ECON 499: Economics of Inequality)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Mortality</h1><h3 class="author">ECON 499: Economics of Inequality</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-orgd7a0cfa">
+<h2 id="orgd7a0cfa">What are the consequences of inequality?</h2>
+<ul>
+<li>Philosophical debates on inequality are hard to resolve</li>
+<li>Can instead focus on outcomes</li>
+<li>Does inequality make people worse off in an objective way?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org774ecb6">
+<h2 id="org774ecb6">Chetty et al (2016)</h2>
+<ul>
+<li><i>The Association Between Income and Life Expectancy
+in the United States, 2001-2014</i></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9669814">
+<h2 id="org9669814">Life expectancy</h2>
+<ul>
+<li>Calculate the mortality rates for the cross section of every age</li>
+<li>Use the mortality rates to calculate life expectancy at any given age</li>
+<li>Alternatively, calculate the percentage of people who survive to a given age</li>
+<li>Compare that to the distribution of income at each age</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org70a137e">
+<h2 id="org70a137e"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig1a.png" alt="chetty_fig1a.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org7699da3">
+<h2 id="org7699da3"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig1b.png" alt="chetty_fig1b.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdf94bde">
+<h2 id="orgdf94bde"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig2.png" alt="chetty_fig2.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orge69e078">
+<h2 id="orge69e078">Life expectancy and income</h2>
+<ul>
+<li>Men in the top 1% live 14.6 years longer than men in the lowest 1%</li>
+<li>Women in the top 1% live 10.1 years longer than women in the lowest 1%</li>
+<li>Gap between men and women lower at high incomes</li>
+<li>How has this changed over time?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org40f3004">
+<h2 id="org40f3004"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig3a.png" alt="chetty_fig3a.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org9cea334">
+<h2 id="org9cea334"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig3b.png" alt="chetty_fig3b.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org62a515b">
+<h2 id="org62a515b"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig3c.png" alt="chetty_fig3c.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org0871c9e">
+<h2 id="org0871c9e"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig3d.png" alt="chetty_fig3d.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org15fbdbc">
+<h2 id="org15fbdbc">Change in life expectancy</h2>
+<ul>
+<li>Life expectancy across most income groups growing</li>
+<li>Growing slowly for people low in the distribution, higher for the wealthy</li>
+<li>Poorest 5% do not appear to be living longer at all</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0b24af0">
+<h2 id="org0b24af0"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig5a.png" alt="chetty_fig5a.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org4483819">
+<h2 id="org4483819"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig5b.png" alt="chetty_fig5b.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf9f5c12">
+<h2 id="orgf9f5c12"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig5c.png" alt="chetty_fig5c.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb6fea4e">
+<h2 id="orgb6fea4e"></h2>
+
+<div class="figure">
+<p><img src="./img/chetty_fig5d.png" alt="chetty_fig5d.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org0d7927b">
+<h2 id="org0d7927b">Geography and mortality</h2>
+<ul>
+<li>There are large geographic variations in mortality rates</li>
+<li>Low-income people die more frequently in the rust belt, midwest, south, and southeast</li>
+<li>High-income people in coastal areas living longest</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org7fc9ab8">
+<h2 id="org7fc9ab8">Causes</h2>
+<ul>
+<li>Geographical variation allows to compare other geographical outcomes</li>
+<li>Calculate correlation between life expectancy in bottom quartiles and local characteristics</li>
+<li>Use top quartile and bottom quartile (top 25%, lowest 25%)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9faccb2">
+<h2 id="org9faccb2"></h2>
+<p>
+Bottom quartile 
+<img src="./img/chetty_cor1.png" alt="chetty_cor1.png" />
+Top quartile 
+<img src="./img/chetty_cor1b.png" alt="chetty_cor1b.png" />
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfb539e7">
+<h2 id="orgfb539e7"></h2>
+<p>
+Bottom quartile
+<img src="./img/chetty_cor2.png" alt="chetty_cor2.png" />
+Top quartile 
+<img src="./img/chetty_cor2b.png" alt="chetty_cor2b.png" />
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org2447b11">
+<h2 id="org2447b11"></h2>
+<p>
+Bottom quartile
+<img src="./img/chetty_cor3.png" alt="chetty_cor3.png" />
+Top quartile 
+<img src="./img/chetty_cor3b.png" alt="chetty_cor3b.png" />
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org6d72861">
+<h2 id="org6d72861"></h2>
+<p>
+Bottom quartile 
+<img src="./img/chetty_cor4.png" alt="chetty_cor4.png" />
+Top quartile
+<img src="./img/chetty_cor4b.png" alt="chetty_cor4b.png" />
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdac545c">
+<h2 id="orgdac545c"></h2>
+<p>
+Bottom quartile
+<img src="./img/chetty_cor5.png" alt="chetty_cor5.png" />
+Top quartile
+<img src="./img/chetty_cor5b.png" alt="chetty_cor5b.png" />
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org255dd7b">
+<h2 id="org255dd7b"></h2>
+<p>
+Bottom quartile
+<img src="./img/chetty_cor6.png" alt="chetty_cor6.png" />
+ Top quartile
+<img src="./img/chetty_cor6b.png" alt="chetty_cor6b.png" />
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb621603">
+<h2 id="orgb621603">Mechanisms</h2>
+<ul>
+<li>We've only described correlations, not causation</li>
+<li>Public policy (smoking bans, public services, etc)</li>
+<li>Peer effects&#x2014;wealthier, healthier neighbors may induce healthy behavior</li>
+<li>Compositional/sorting</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org40aff63">
+<h2 id="org40aff63">Case and Deaton (2015, 2017)</h2>
+<ul>
+<li><i>Rising morbidity and mortality in midlife among white non-Hispanic Americans in the 21st century</i> (2015)</li>
+<li><i>Mortality and morbidity in the 21st century</i> (2017)</li>
+<li>Look at mortality by race and gender instead of income</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc83eef3">
+<h2 id="orgc83eef3">All-cause mortality, ages 45-54</h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton1.jpg" alt="case_deaton1.jpg" height="575" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orga08b996">
+<h2 id="orga08b996"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton2.jpg" alt="case_deaton2.jpg" height="575" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orga1fb455">
+<h2 id="orga1fb455"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton4.jpg" alt="case_deaton4.jpg" height="575" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org693d18c">
+<h2 id="org693d18c">Mid-life mortality</h2>
+<ul>
+<li>Deaths due to drug and alcohol poisoning, suicide, and liver disease are increasing for all age groups of non-Hispanic white men</li>
+<li>For middle-age, it has increased enough to reduce overall life expectancy</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org28ac788">
+<h2 id="org28ac788"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig1.1.png" alt="case_deaton_fig1.1.png" height="575" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org658604a">
+<h2 id="org658604a"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig18.png" alt="case_deaton_fig18.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org4e6c2c4">
+<h2 id="org4e6c2c4"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig19.png" alt="case_deaton_fig19.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org95b78d1">
+<h2 id="org95b78d1"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig110.png" alt="case_deaton_fig110.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc8f8d70">
+<h2 id="orgc8f8d70"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig111.png" alt="case_deaton_fig111.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org5993506">
+<h2 id="org5993506">Causes</h2>
+<ul>
+<li>Income highly correlated with mortality</li>
+<li>Cannot explain everything, income for whites shows similar patterns as other groups</li>
+<li>Case and Deaton suggest "cumulative deprivation" (fewer prospects in life)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org28840d9">
+<h2 id="org28840d9"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig21.png" alt="case_deaton_fig21.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org32e0bc8">
+<h2 id="org32e0bc8"></h2>
+
+<div class="figure">
+<p><img src="./img/case_deaton_fig23.png" alt="case_deaton_fig23.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org238bf40">
+<h2 id="org238bf40">Summary</h2>
+<ul>
+<li>Income is highly correlated with life expectancy</li>
+<li>Increasing inequality increases the gap in mortality between rich and poor</li>
+<li>For some groups (non-Hispanic white men) life expectancy is decreasing</li>
+<li>The same people who are losing jobs to trade and automation?</li>
+<li>How do these people vote?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org00516ed">
+<h2 id="org00516ed"></h2>
+
+<div class="figure">
+<p><img src="./img/nyt1.png" alt="nyt1.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org1afdfb0">
+<h2 id="org1afdfb0"></h2>
+
+<div class="figure">
+<p><img src="./img/nyt2.png" alt="nyt2.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcc08eca">
+<h2 id="orgcc08eca"></h2>
+
+<div class="figure">
+<p><img src="./img/nyt3.png" alt="nyt3.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbef5bf5">
+<h2 id="orgbef5bf5"></h2>
+
+<div class="figure">
+<p><img src="./img/nyt4.png" alt="nyt4.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org9c3a106">
+<h2 id="org9c3a106"></h2>
+
+<div class="figure">
+<p><img src="./img/nyt5.png" alt="nyt5.png" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

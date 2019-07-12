@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Do Firms Discriminate?</title>
+<meta name="author" content="(ECON 383: Economics of Discrimination)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Do Firms Discriminate?</h1><h3 class="author">ECON 383: Economics of Discrimination</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-org6a1508e">
+<h2 id="org6a1508e">Becker model</h2>
+<ul>
+<li>Prejudiced firms earn less profits than non-prejudiced firms</li>
+<li>Competition decreases discrimination</li>
+<li>Segregated firms in the long run</li>
+<li>What do we observe in the real world?</li>
+<li>Bertrand and Mullainathan</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org4457938">
+<h2 id="org4457938">Reading an economics journal article</h2>
+<ul>
+<li>A "thorough" reading of a published research article can take many hours (or even days)</li>
+<li>With time constraints, we need a strategy to get the main ideas in less time</li>
+<li>Practice!</li>
+<li>Develop a plan/checklist</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org98d252c">
+<h2 id="org98d252c">Strategy</h2>
+<ul>
+<li>Read the abstract carefully. This is the information the authors think is most important for the reader to know.</li>
+<li>Read the introduction</li>
+<li>Skip to the conclusion (or read this first)</li>
+<li>Look at every table/figure, try to understand its purpose (may have to refer to main text &#x2013; Ctrl-F can be your friend!)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf9a9fc5">
+<h2 id="orgf9a9fc5">Questions to answer</h2>
+<p>
+Every time you pick up a (empirical) journal article, you should be able to answer the following questions:
+</p>
+<ol>
+<li>What is the main research question? (<i>Question</i>)</li>
+<li>Why is this question important? (<i>Motivation</i>)</li>
+<li>How do the authors attempt to answer the question? (<i>Methods</i>)</li>
+<li>What are the main results? (<i>Results</i>)</li>
+<li>What are the caveats/limitations of the main results? (<i>Policy implications</i>)</li>
+
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-org0b0da26">
+<h2 id="org0b0da26">1. Research question</h2>
+<ul>
+<li>Should be established in the abstract/introduction</li>
+<li>Often very simple and straight-forward, sometimes very arcane and obscure (we won't be reading many of these papers)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga32a04a">
+<h2 id="orga32a04a">2. Why is this paper important?</h2>
+<ul>
+<li>This is the <i>motivation</i> of the research</li>
+<li>What do we know about this research question already?</li>
+<li>What do we <i>not</i> know?</li>
+<li>How will knowing the answer to this question improve our theoretical knowledge/policy?</li>
+<li>Usually in the introduction or "literature review"/"background"</li>
+<li>Sometimes this seems obvious &#x2013; that's a good thing!</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org6cd3c7c">
+<h2 id="org6cd3c7c">3. Methodology</h2>
+<ul>
+<li>What kind of data? (Survey, observational, cross-sectional, panel, experiment, etc)</li>
+<li>What is the <i>identification strategy</i>?
+<ul>
+<li>How do the authors use the data to answer the question?</li>
+
+</ul></li>
+<li>What are the identification assumptions?</li>
+<li>Usually described in the abstract/introduction, details in the main text somewhere</li>
+<li>Expect to spend the most time on this part</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org63ba846">
+<h2 id="org63ba846">4. Results</h2>
+<ul>
+<li>The main findings of the paper</li>
+<li>Often include various "robustness tests" &#x2013; how sensitive are the results to various assumptions?</li>
+<li>Figures and tables are the main source</li>
+<li>Well-written papers will have informative figures, but may need to look at main text</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org7f93c93">
+<h2 id="org7f93c93">5. Caveats and limitations</h2>
+<ul>
+<li>What can we conclude? What <i>can't</i> we conclude?</li>
+<li>What are the implications of the research?</li>
+<li>Closely related to our identification assumptions
+<ul>
+<li>What happens to our results if assumptions are violated?</li>
+
+</ul></li>
+<li>Good papers should be clear about the limitations of the methods/findings. Sometimes authors may want to hide it!</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org21181ec">
+<h2 id="org21181ec">Bertrand and Mullainathan</h2>
+<blockquote nil>
+<p>
+We study race in the labor market by sending fictitious resumes to help-wanted ads in Boston and Chicago newspapers. To manipulate perceived race, resumes are randomly assigned African-American- or White-sounding names. White names receive 50 percent more callbacks for interviews. Callbacks are also more responsive to resume quality for White names than for African-American ones. The racial gap is uniform across occupation, industry, and employer size. We also find little evidence that employers are inferring social class from the names. Differential treatment by race still appears to still be prominent in the U.S. labor market.
+</p>
+</blockquote>
+</section>
+</section>
+<section>
+<section id="slide-org092c420">
+<h2 id="org092c420">1. Research question</h2>
+<p>
+What is the research question for this article?
+</p>
+<ul>
+<li class="fragment appear">Are firms more likely to hire applicants with "White-sounding names" than "Black-sounding names"?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org94da41d">
+<h2 id="org94da41d">2. Motivation</h2>
+<p>
+Why is this question important?
+</p>
+<ul>
+<li class="fragment appear">Large racial wage gaps</li>
+<li class="fragment appear">To what extent are these gaps driven by employer discrimination?</li>
+<li class="fragment appear">Some evidence of discrimination from previous studies, but existing survey and audit studies are not well identified (selection bias, not double-blind, etc)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org519eb4e">
+<h2 id="org519eb4e">3. Methodology</h2>
+<p>
+How do the authors attempt to answer this question?
+</p>
+<ul>
+<li class="fragment appear">Real-world experiment</li>
+<li class="fragment appear">Create fake resumes (control all aspects of applicant)</li>
+<li class="fragment appear">Randomly assign each resume a name that is either "black" or "white"</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org71b1c8b">
+<h2 id="org71b1c8b"></h2>
+
+<div class="figure">
+<p><img src="./img/bertrand_tablea1.png" alt="bertrand_tablea1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org4047ffd">
+<h2 id="org4047ffd">3. Methodology, cont.</h2>
+<ul>
+<li>Find jobs from newspaper advertisements in Boston and Chicago</li>
+<li>Send 4 resumes to each job: high skill/low skill and black/white</li>
+<li>Record which jobs respond to resume to set up interview</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org60aac45">
+<h2 id="org60aac45">3. Methodology, cont</h2>
+<p>
+Identification
+</p>
+<ul>
+<li>The identification assumption is that black/white resumes would have the same call-back rates if not for the names</li>
+<li>Not identifying hiring rates, simply interviews</li>
+<li>Discrimination may occur <i>after</i> interview (or may be less likely to occur after interview)</li>
+<li>"Most black" names and "most white" names are (by definition) not representative of the <i>average</i> black or white applicant</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgdeac739">
+<h2 id="orgdeac739">4. Results</h2>
+<p>
+What do they find?
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org15d5482">
+<h2 id="org15d5482">5. Caveats and limitations</h2>
+<ul>
+<li>Does not imply the existence of prejudice</li>
+<li>Firms may see names as signals of other labor characteristics (statistical discrimination)</li>
+<li>Only considering newspaper adds &#x2013; people get jobs in lots of ways</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

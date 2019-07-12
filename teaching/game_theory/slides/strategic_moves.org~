@@ -1,0 +1,42 @@
+#+OPTIONS: toc:nil num:nil 
+ 
+#+startup: beamer 
+#+LaTeX_CLASS: beamer 
+#+latex_class_options: [10pt] 
+#+beamer_theme: Boadilla 
+#+beamer_header: \usecolortheme{seagull} 
+#+beamer_header: \usefonttheme[onlylarge]{structurebold} 
+#+beamer_header: \usefonttheme[onlymath]{serif} 
+#+beamer_header: \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} 
+#+beamer_header: \setbeamertemplate{navigation symbols}{} 
+#+beamer_header: \setbeamertemplate{itemize item}[triangle] 
+#+beamer_header: \setbeamertemplate{footline}{} 
+#+beamer_header: \setbeamertemplate{enumerate items}[default] 
+
+#+TITLE: Strategic Moves
+#+AUTHOR: ECON 420: Game Theory
+#+DATE: Spring 2018 
+
+* 
+*Cheap Talk*
+- Players may attempt to communicate their intentions before the game begins
+- This adds a new first-stage to the game
+- Communication may be /credible/ or /non-credible/
+
+* 
+*Strategic Moves*
+- Any action that changes the rules of the game is a strategic move
+  - Adding stages, changing payoffs, adding/removing choices
+- Examples: Commitments, threats, promises 
+- The goal of a strategic move is to alter subsequent stages to the advantage of a player
+- Strategic moves must be /observable/ and /irreversible/
+
+* 
+*Unconditional strategic moves*
+- Sometimes useful for players to /commit/ to a certain strategy 
+  - "Whatever you choose, I am going to do /X/"
+- Creates a first-mover advantage for the player
+- Example: Extra-credit game (splitting points)
+
+* 
+*Conditional strategic moves*

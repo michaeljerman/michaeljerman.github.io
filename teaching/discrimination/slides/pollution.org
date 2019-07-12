@@ -1,0 +1,121 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: "Pollution" Theory
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Gender discrimination
+- Residual wage gaps persist after controlling for observable characteristics
+- Much of the residual gap can be explained by women's preferences (supply side)
+- How might male preferences impact the gap? (demand side)
+- What sort of preferences would "rationalize" demand-side prejudice?
+
+* Men vs women in sports
+- Kinesiology (study of human movement and performance): 
+  - Top male athletes have advantages in short, quick speeds (sprint)
+  - Top female athletes have advantages in longer, endurance-based activities (long-distance)
+  - /Extremely/ simplified explanation!
+- Differences not /necessarily/ due to biology
+  - More men are exposed to sports, more resources used for training men, different cultural expectations, etc
+- Male advantage is lesser in longer-distance events
+  - Fastest 50m male swimmer is 12% faster than fastest woman
+  - Fastest 1500m male swimmer is 9% faster than fastest woman
+  - Many endurance records held by women
+
+* Winter Olympics
+- Men and women (usually) compete separately
+- Many male events not offered to women
+- Events not available to women tend to be /longer/, where men have /less/ of an advantage
+
+* Examples
+- Luge
+  - Women's track: 1,201m
+  - Men's track: 1,344m
+- Unclear "natural" advantage for either gender
+- Doubles luge is men only
+
+* Cross-country
+- Women's length: 10km
+- Men's length: 15km
+
+* Speed skating
+- Women's longest distance: 10,000m
+- Men's longest distance: 15,000m
+
+* Ski jumping
+- Women's event (normal hill):
+  - One trial
+  - Two scored jumps
+- Men's event (normal hill)
+  - Two training sessions
+  - Qualification round
+  - One trial
+  - Two scored jumps
+- Women's event (large hill)
+  - Doesn't exist!
+  - Women hold records at many facilities
+
+* Alpine skiing
+- Women's downhill: 
+  - 2,710m with 730m drop
+- Men's downhill
+  - 2,857m with 825m drop
+
+* Alpine skiing
+[[./img/ski1.png]]
+
+* Alpine skiing
+#+attr_html: :height 575
+[[./img/ski2.png]]
+
+* Justifications
+- Pierre de Coubertin (first IOC president, founder of modern Olympics): 
+#+begin_quote
+Women have but one task, that of the role of crowning the winner with garlands … in public competitions, women’s participation must be absolutely prohibited. It is indecent that spectators should be exposed to the risk of seeing the body of a women being smashed before their eyes.
+#+end_quote
+
+- Gian Franco Kasper (head of International Ski Federation): Ski jumping is not "appropriate for ladies from a medical point of view."
+
+* Goldin (2014)
+- /A Pollution Theory of Discrimination: Male and Female Differences in Occupations and Earnings/
+- Some jobs have a level of "prestige" for men
+- Women working in the job lowers the level of prestige for men
+  - Prestige is "polluted" by women
+
+* Skills and prestige
+- Jobs require a minimum level of skill in a certain characteristic (intelligence, education, strength, etc)
+- Society confers prestige by the minimum level needed to perform the job
+  - Programmers have higher "prestige" than dishwashers
+- Individual skills not observed, employers substitute averages (statistical discrimination)
+- Technology changes can affect the minimum skill required, but they do /not/ affect the level of prestige
+
+* Equilibrium
+- Suppose men are the only workers in every field initially 
+  - Initial prejudice
+- When women enter market, only hired in jobs where the average female characteristic skill level is greater than the minimum level required
+  - Prestige does not change, everyone knows (average) women can do the job when they are hired
+
+* Technology changes
+- Now suppose technology changes 
+  - Women more productive, more educated, etc
+- The average woman can succeed in more jobs (skills increase)
+- /Prestige/ remains unchanged, as does /perception/ of women's skills
+- Adding women to male fields suggests that the field is /less prestigious/ (requires lower skills), even if it is not
+
+* Integration and segregation
+- Model predicts that integrated jobs will be those that require low skill (below female median)
+  - Prestige will not be affected
+- Qualified women above the median will not find work in high-prestige jobs (perceptions of prestige will decrease)
+- /Perceptions/ of skills determine prestige
+  - If technology changes the minimum necessary skill to below the female median, job will remain segregated 
+
+* Feedback loops
+- Perceptions are a function of outcomes
+- If women don't work certain jobs, can lead to the perception that they are incapable (regardless of actual skills)
+- Example: Ski jump
+  - Added to Olympics for women in 2014 after lawsuits
+  - Lack of women contributes to perception that men are better at ski jump
+  - Women competing with men would decrease the perceived difficulty of ski jumping 
+  - Successful women "pollute" ski jumping for men
+  - Men try to prevent qualified women from competing, fearing the perceived pollution

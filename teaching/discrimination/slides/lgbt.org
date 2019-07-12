@@ -1,0 +1,145 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: LGBT Discrimination
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Labor market outcomes
+- How do gender and sexual orientation affect labor market outcomes (employment, wages, etc)?
+- How are group perceptions formed? How might they change?
+- Two recent papers:
+  - /Gender, Sexual Orientation, and Behavioral Norms in the Labor Market/
+  - /Do Laws Shape Attitudes? Evidence from Same-Sex Relationship Recognition Policies in Europe/
+
+* 
+[[./img/gender_tab1.png]]
+
+* 
+[[./img/gender_tab2.png]]
+
+
+* 
+[[./img/gender_tab3.png]]
+
+* Causality
+- Why do men in same-sex couples earn/work less? Why do women in same-sex couples earn/work more? (Relative to opposite-sex couples)
+- Demand side: Are employers discriminating/prejudiced?
+- Supply side: Are the work decisions different on average for same-sex couples?
+
+* 
+[[./img/gender_fig1.png]]
+
+* Preferences vs perceptions
+- Are people in same-sex relationships more likely to have "opposite gender" traits?
+- Do employers /perceive/ people in same-sex relationships to have opposite gender traits?
+- These questions likely not independent of each other (outcomes cause perceptions which cause outcomes)
+
+* Experiment
+- Send fictitious resumes to employers
+- Manipulate sex, gender traits, sexual orientation
+- Do employers have expectations about how women /should/ act with respect to gender traits? 
+- Do employers have expectations about how LGBT applicants should act?
+  - Are the gender expectations different for LGBT applicants?
+
+* Manipulating gender traits
+- Assign different words to "objective" portion of resume
+- Male words:
+#+begin_quote
+aggressive, enterprising, assertive, bold, confident, self-starter, achiever, dynamic
+#+end_quote
+- Female words:
+#+begin_quote
+nurturing, caring, sympathetic, kind, supportive, encouraging, helpful, cooperative
+#+end_quote
+
+* 
+[[./img/gender_fig2.png]]
+
+* Manipulating sexual orientation
+- Randomize membership in various college groups
+- LGBT groups:
+#+begin_quote
+For example, one non-LGBT activity was
+labeled “Student Activities Board” and described how the applicant “planned and organized
+events promoting diversity.”
+#+end_quote
+
+* Mechanical Turk
+- Resumes evaluated on Mechanical Turk platform
+- Participants told they were helping sort resumes for a real company
+- Resumes scored based on predetermined characteristics
+
+* 
+[[./img/gender_fig5.png]]
+
+* 
+[[./img/gender_fig81.png]]
+
+* 
+[[./img/gender_fig82.png]]
+
+* 
+[[./img/gender_tab4.png]]
+
+* Backlash effect
+- Women experience negative reactions when they engage in "male" behavior
+- In this case, are females punished for using "male" words in their resumes?
+
+* 
+[[./img/gender_fig9.png]]
+
+* 
+[[./img/gender_fig10.png]]
+
+* 
+[[./img/gender_fig_8.png]]
+
+* Female respondents 
+[[./img/gender_tab7.png]]
+
+* Social attitudes
+- Where do these attitudes about gender and sexual orientation come from?
+- Can they change?
+- Research question: How do changes in laws affect attitudes toward certain groups?
+
+* Measuring attitudes
+- European Social Surveys, 2002-2016
+- Survey performed in 30 European countries
+- Primary question of interest:
+#+begin_quote
+Do you believe that gay men and lesbians should be free to live their own life as they wish?
+#+end_quote
+
+* Policy changes
+- Many countries are expanding rights for LGBT citizens
+- This study: implementation of same-sex marriage or civil partnership laws
+- Varies across countries, overall social attitudes not likely to affect years immediately before and after policy change
+
+* 
+#+attr_html: :height 625
+[[./img/lgbt_tab1.png]]
+
+* Event study analysis
+- Compare average attitudes before and after policy change
+- Policy changes in "year 0"
+
+* 
+[[./img/lgbt_fig2.png]]
+
+* 
+[[./img/lgbt_tab3.png]]
+
+* Placebo tests
+- Identification threat: Countries that change policy are countries where social attitudes are changing
+  - Sudden shifts in social attitudes might /cause/ policy changes
+- LGBT attitudes likely to be related to attitudes toward other causes
+  - Sudden shifts toward "liberal" causes, in general
+- Changes in policy would therefore be similarly correlated with other large shifts
+
+* 
+[[./img/lgbt_tab5.png]]
+
+* 
+#+attr_html: :height 625
+[[./img/lgbt_tab6.png]]

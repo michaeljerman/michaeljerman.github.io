@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title> EC 399 </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/slide_white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- C-x C-k S for slide, M for markdown -->
+
+	<section data-markdown>
+	  # Normative Theory
+
+	  ## EC 399: Economics of Inequality
+
+	  ## spring 2017
+	</section>
+
+	<section data-markdown>
+	  ### Normative theory
+
+	  - We have seen various ways to measure inequality and different properties of measures
+
+	  - Indices can disagree with one another!
+
+	  - Can we project our personal (or societal) values onto different distributions?
+
+	  - When can we say that one distribution is *better* or *worse* than another?
+	</section>
+
+	<section data-markdown>
+	  Positive vs normative
+
+	  - Much of economics can be broken down into *normative* vs *positive* analysis
+
+	  - Positive claims can be verified, normative claims reflect values
+
+	  - Positive claim: The Gini index for the US in 2016 was 45.0
+
+	  - Normative claim: The Gini index for the US should be lower
+	</section>
+
+	<section data-markdown>
+	  ### Normative theory
+
+	  - Start with a set of values, then see what the implications of those values are
+
+	  - Alternatively: Start with result, then see what kind of values we would need to have to make that result hold
+	</section>
+
+	<section data-markdown>
+	  ### A (very) brief overview of utility thoery
+
+	  - Economists tend to think about value in terms of *utility*
+
+	  - Utility is (roughly) our well-being, satisfaction, or happiness
+	  
+	  - Long history in philosophy, but very specific meaning in economics
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Economic agents
+
+	  - We assume people derive satisfaction from their ability to consume goods and service
+
+	  - The more goods and services people are able to choose from, the better off they are
+
+	  - Utility is the satisfaction that people get from the ability to choose
+
+	  - Express utility as a number that allows us to rank different alternatives (higher utility means more satisfaction)
+	</section>
+
+	<section data-markdown>
+	  ### Utility and income
+
+	  - All else equal, more income allows us to buy more things
+
+	  - Our utility increases as income increases
+
+	  - **Diminishing marginal utility**: Our enjoyment of additional income get's lower as our income gets higher
+
+	  - I'd be extremely happy if someone gave me \$100 --- Mark Zuckerberg probably wouldn't care very much
+	</section>
+	
+	<section>
+	  <h4>Utility </h4>
+	  
+	  <img src="img/utilty.png" width=60%/>
+
+	</section>
+	
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      backgroundTransition: 'none',
+      transition: 'fade',
+      viewDistance: 2,
+      controls: true,
+      progress: true,
+      center: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('Home'); } },
+      { src: 'plugin/chalkboard/chalkboard.js' },
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math-katex/math-katex.js', async: true }
+      ],
+
+      keyboard: {
+        67: function() { RevealChalkboard.toggleNotesCanvas() },
+        66: function() { RevealChalkboard.toggleChalkboard() }, 
+        46: function() { RevealChalkboard.clear() },    
+         8: function() { RevealChalkboard.reset() },    
+        68: function() { RevealChalkboard.download() }, 
+      },
+
+      chalkboard: { 
+      theme: "whiteboard",
+      color: [ 'rgba(0,0,0,1)', 'rgba(255,255,255,0.5)' ]
+      },
+      
+      });
+    </script>
+  </body>
+</html>

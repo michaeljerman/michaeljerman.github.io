@@ -1,0 +1,98 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Transgender Outcomes
+#+AUTHOR: ECON 383: Economics of Discrimination
+#+DATE: Winter 2018
+
+* Causal effects of gender
+- Difficult to establish causality with respect to gender outcomes
+- Can't experimentally alter gender
+  - Resumes can be altered, don't tell the whole story
+- Ideal experiment: Change gender of workers, compare outcomes before and after
+
+* Transgender people in the labor market
+- People who transition from one gender to another seem to fit this criteria
+- We can observe differences in pay before and after transition
+- Can we attribute these differences to gender discrimination?
+- How close is this to our "ideal" experiment?
+
+* Schilt and Wiswall (2016)
+- /Before and After: Gender Transitions, Human Capital, and Workplace Experiences/
+- Use survey data to analyze labor market outcomes before and after transitioning
+
+* Data
+- Voluntary survey conducted at three conferences (Transunity, A Gender Odyssey, International Foundation of Gender Expression)
+- Survey posted online at /transacademics.org/
+- 64 survey respondents
+- Questions on earnings before transitioning, immediately after, and current job
+
+* 
+[[./img/trans_tab4.png]]
+
+* 
+#+attr_html: :height 625
+[[./img/trans_tab5.png]]
+
+* Wage differences
+- Transgender women see a decrease in earnings after transitioning
+- Authors speculate that this may impact timing of transition 
+- Timing observed in survey
+
+* 
+#+attr_html: :height 625
+[[./img/trans_tab3.png]]
+
+* Identification assumptions
+- Data is representative of population
+- Transition decision independent of other labor market outcomes
+- Male transgender individuals similar to female transgender individuals (identifying differences)
+- Average transgender male has finite (and fairly small!) willingness-to-pay for transitioning
+
+* Data
+#+attr_html: :height 575
+[[./img/trans_tab1.png]]
+
+* Sample
+- Respondents at a conference, engaged in the "community"
+- By definition, not representative of average transgender person
+- Experiences and background determine community involvement and labor market outcomes
+
+* Identification
+- Causal effect of transitioning on labor market outcomes requires no other contemporaneous changes that affect work
+- A major life event, likely to change many facets of a person's life
+- Social influences important: if society treats transgender men and transgender women differently from each other, then expect experiences to diverge from cisgender men and women
+  - Example: If transgender women face more hostility than transgender men, would expect wages to decrease independently of "pure" gender effects
+
+* 
+#+attr_html: :height 625
+[[./img/trans_fig_discrim.png]]
+
+* Identification
+- Transgender men earn 10-12% less after transitioning 
+- Transition 9 years later
+- Implies a willingness to pay of $64,000 over 10 years (undiscounted)
+- Not very high! 
+- Unlikely to be caused by labor market considerations exclusively
+
+* Limits of economic methodology
+- Economists obtain causal estimates from well-identified problems using representative data
+- /None/ of these things are present in the current context!
+- Economic outcomes of transgender people may be beyond economic methodology
+- Other forms of knowledge more valuable in these settings
+- People who have actually lived (outwardly) as "both" genders have unique perspectives on gender differences that can't be observed empirically
+
+* Experiential knowledge
+#+begin_quote
+How did they know when other people started seeing them as men? Aside from being addressed as “sir,” they were treated in “strikingly different” ways, they told her.
+
+“For one person, it was like, suddenly he knew how to use electronics and set up computers,” Abelson says. Their experiences varied, but for many interviewees, it was a “night and day change.”
+#+end_quote
+
+* Heterogeneity and intersectionality
+- Small sample sizes mean low statistical power
+- Impossible to estimate causal differences on subsamples (too few observations)
+- Outcomes for transgender people vary greatly based on other characteristics 
+
+* 
+[[./img/trans_fig_unemp.png]]
