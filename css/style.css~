@@ -563,7 +563,6 @@ p {
 #fh5co-services {
   position: relative;
   padding: 7em 0;
-  background: #e8ecf1;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services {
@@ -628,7 +627,7 @@ p {
   padding-right: 10px;
   margin-bottom: 0px;
   padding: 20px 20px 20px 20px;
-  background: #e8ecf1;
+  background: #fff;
   border: 1px solid transparent;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -676,8 +675,7 @@ p.links {
 
 
 #fh5co-services .service:hover, #fh5co-services .service:focus {
-    border: 1px solid #e6e6e6;
-    background: #eff2f5;
+  border: 1px solid #e6e6e6;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
@@ -742,7 +740,7 @@ p.links {
 #fh5co-team {
   clear: both;
   padding: 7em 0;
-  background: #d0d8e2;
+  background: #E8ECF1;
 }
 @media screen and (max-width: 768px) {
   #fh5co-team {
@@ -760,7 +758,7 @@ p.links {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  background: #d0d8e2;
+  background: #fff;
 }
 #fh5co-team .person img {
   width: 190px;
@@ -804,11 +802,10 @@ p.links {
   padding: 10px;
 }
 #fh5co-team .person .social li a:hover {
-    text-decoration: none;
-    background: #dfe5ec;
+  text-decoration: none;
 }
 #fh5co-team .person:focus, #fh5co-team .person:hover {
-  background: #dfe5ec;
+  background: #fff;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
