@@ -1,0 +1,59 @@
+<div id="fh5co-about" data-section="teaching">
+
+  <div class="container">
+    
+    {{ with .Site.Params.teaching }}
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+      <h2>{{ .title }}</h2>
+      <p>{{ .description | markdownify }}</p>
+    </div>
+    {{end}}
+    
+
+    <div class="fh5co-1col">
+
+      
+      
+      <div class="fh5co-1col-inner center">
+	
+	<div class="fh5co-tabs-container">
+	  <ul class="fh5co-tabs fh5co-three">
+	    {{ range .Site.Params.teaching.item }}
+	    {{ if eq .weight 1}}<li class="active">{{ else }}<li>{{ end }}
+	      <a href="#" data-tab={{ .name }}>{{ .title }}</a>
+	    </li>
+	    {{ end }}
+	  </ul>
+
+	  {{ range .Site.Params.teaching.item }}
+	  {{ if eq .weight 1}}
+	  <div class="fh5co-tab-content active" data-tab-content={{ .name }}>
+	    {{ else }}
+	    <div class="fh5co-tab-content" data-tab-content={{ .name }}>
+	      {{ end }}
+	      
+	      <h2>{{ .subtitle }}</h2>
+	      {{ .description | markdownify }}
+	    </div>
+	    {{ end }}
+
+
+	  </div>
+	  
+	</div>
+	
+      </div>
+      
+      <!-- <div class="fh5co-1col fh5co-text"> -->
+      <!--   <div class="fh5co-grid"> -->
+      <!--     {{ if .Site.Params.teaching.images.enable }} -->
+      <!--     {{ range .Site.Params.teaching.images.list }} -->
+      <!--     <div class="fh5co-grid-item" style="background-image: url({{ with .img }}{{ . | absURL }}{{ end }});"></div> -->
+      <!--     {{ end }} -->
+      <!--     {{ end }} -->
+      
+      <!--   </div> -->
+
+    </div>
+  </div>
+</div> <!-- END fh5co-about -->

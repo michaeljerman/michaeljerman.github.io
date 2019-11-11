@@ -1,0 +1,31 @@
+<div class="js-sticky">
+  <div class="fh5co-main-nav">
+    <div class="container">
+      <div class="fh5co-menu-1">
+
+	<a href="#" data-nav-section="home">{{ with .Site.Params.nav }}{{ if isset . "logo" }}<img src={{ .logo | absURL }} height="20" alt="">{{ end }}{{ if (not (isset . "logo")) }}Home{{ end }}{{ end }}</a>
+
+	<!-- {{ if .Site.Params.about.enable }} -->
+	<!-- <a href="#" data-nav-section="about">{{ with .Site.Params.nav.about }}{{ . | markdownify }}{{ end }}</a> -->
+	<!-- {{ end }} -->
+
+	{{ if .Site.Params.teaching.enable }}
+	<a href="#" data-nav-section="teaching">{{ with .Site.Params.nav.teaching }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.research.enable }}
+	<a href="#" data-nav-section="research">{{ with .Site.Params.nav.research }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.cv.enable }}
+	<a href="#" data-nav-section="cv">{{ with .Site.Params.nav.cv }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.contact.enable }}
+	<a href="#" data-nav-section="contact">{{ with .Site.Params.nav.contact }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+	
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div id="fh5co-team" data-section="research">
+  <div class="container">
+    {{ with .Site.Params.research }}
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+      <h2>{{ .title }}</h2>
+      <p>{{ .description | markdownify }}</p>
+    </div>
+    {{ range .item }}
+    <div class="col-md-4">
+      <div class="person">
+	<h3>{{ .paper_title }}</h3>
+	<p class="links">
+	  <a href={{ .pdf }} class="btn btn-primary btn-outline fh5co-content-nav"> pdf </a>
+	  {{ if isset . "website" }}
+	  <a href={{.website}} class="btn btn-primary btn-outline fh5co-content-nav"> project website </a>
+	  {{ end }}
+	  </p>
+
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div> <!-- END fh5co-team -->

@@ -1,0 +1,22 @@
+<div id="fh5co-services" data-section="teaching">
+  {{ with .Site.Params.teaching }}
+  <div class="container">
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+      <h2>{{ .title }}</h2>
+      <p>{{ .description | markdownify }}</p>
+    </div>
+    
+    {{ range .item }}
+    <div class="col-md-4">
+      <div class="service">
+	<h3>{{ .name }}</h3>
+	<p class="terms">{{ .terms | markdownify }}</p>
+	<p class="links"><a href={{ .syllabus }} class="btn btn-primary btn-outline fh5co-content-nav"> syllabus </a> <a href={{ .website }} class="btn btn-primary btn-outline fh5co-content-nav"> Course Website </a> </p>
+      </div>
+    </div>
+    {{ end }}
+    
+    
+  </div>
+  {{ end }}
+</div> <!-- END fh5co-teaching -->

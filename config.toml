@@ -1,0 +1,119 @@
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "https://michaeljerman.com/"
+languageCode = "en-AU"
+title = "Michael Jerman"
+
+# Metadata
+[params]
+  author = "Michael Jerman"
+  email = "mail@michaeljerman.com"
+  github = "http://github.com/michaeljerman"
+  phone = "612-564-5355"
+  skype = "michaeljerman"
+  address = "1285 Univerity of Oregon <br> Eugene, OR 97403"
+  office_hours = "By appointment"
+  description = "" 
+
+# Hero section (from here on is for icon theme)
+[params.hero2]
+  img = "images/head_cropped1.png"
+  title = "Michael Jerman"
+  description = "Department of Economics <br> University of Oregon"
+  back_img = "images/background.jpg"
+
+# Navigation section
+[params.nav]
+  about = "About"
+  teaching = "Teaching"
+  research = "Research"
+  contact = "Contact"
+  cv = "cv"
+  # Include logo instead if HOME:
+  # logo = "path/to/logo"
+
+# About section
+[params.about]
+  enable= true
+  title = "about"
+  blurb = "I am a Ph.D. candidate in the Department of Economics at the University of Oregon. My research interests include economic growth and development, environmental economics, inequality, remote sensing, and machine learning. <br> <br> I will be available for interviews at the 2020 ASSA meetings."
+
+# Teaching section
+[params.teaching]
+  enable = true
+  title = "teaching"
+  description = ""	
+
+  [[params.teaching.item]]
+    name = "Intermediate&nbsp;Micro"
+    terms = "Spring 2018"
+    website = "teaching/intermediate_micro/index.html"
+    syllabus = "teaching/intermediate_micro/syllabus_spring2018.pdf"
+
+  [[params.teaching.item]]
+    name = "Economics&nbsp;of&nbsp;Inequality"
+    terms = "Winter 2018"
+    website = "teaching/inequality/index.html"
+    syllabus = "teaching/inequality/syllabus_winter2018.pdf"
+
+  [[params.teaching.item]]
+    name = "Economics&nbsp;of&nbsp;Discrimination"
+    terms = "Winter 2018"
+    website = "teaching/discrimination/index.html"
+    syllabus = "teaching/discrimination/slides/discrimination_syllabus_winter2018.pdf"
+
+  [[params.teaching.item]]
+    name = "Game&nbsp;Theory"
+    terms = "Spring 2018"
+    website = "teaching/game_theory/index.html"
+    syllabus = "teaching/game_theory/slides/syllabus_spring2018.pdf"
+
+  [[params.teaching.item]]
+    name = "Growth&nbsp;and&nbsp;Development"
+    terms = "Spring 2018"
+    website = "teaching/growth/index.html"
+    syllabus = "teaching/growth/slides/syllabus_spring2018.pdf"
+
+  [[params.teaching.item]]
+    name = "Econometrics"
+    terms = "Summer 2016"
+    syllabus = "teaching/421_syllabus.pdf"
+
+
+# Research section
+[params.research]
+  enable = true
+  title = "Meet The Research"
+  description = "blurb here"
+
+  [[params.research.item]]
+    paper_title = "paper title"
+    pdf = "paper.pdf"
+    website = "test"
+
+  [[params.research.item]]
+    paper_title = "paper title"
+    pdf = "paper.pdf"
+
+# Contact section
+[params.contact]
+  enable = true
+
+# CV section
+[params.cv]
+  enable = false
+  path = "images/jerman_cv.pdf"
+
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = false
+  note = "<p><tiny>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></tiny></p>"
+  # mail = "mailto:mjerman@uoregon.edu"
+  # github = "https://github.com/michaeljerman"
+  # twitter = ""
+  # facebook = ""
+  # vine = ""
+  # linkedin = ""
+  # instagram = ""
+  
