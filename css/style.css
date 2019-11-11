@@ -27,7 +27,7 @@ a:hover, a:focus, a:active {
   color: #3da1a7;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Arial, sans-serif;
   color: #000;
   margin-bottom: 30px;
@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5 {
 p {
   margin-bottom: 30px;
 }
-
 
 .btn {
   margin-right: 4px;
@@ -676,10 +675,9 @@ p.links {
 }
 
 
-
 #fh5co-services .service:hover, #fh5co-services .service:focus {
     border: 1px solid #e6e6e6;
-    backgroud: #eff2f5;
+    background: #eff2f5;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
@@ -754,7 +752,7 @@ p.links {
 #fh5co-team .person {
   padding: 30px;
   margin-bottom: 30px;
-  /* text-align: center; */
+  text-align: center;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -762,7 +760,7 @@ p.links {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  background: #d0d8e2;  
+  background: #d0d8e2;
 }
 #fh5co-team .person img {
   width: 190px;
@@ -807,24 +805,15 @@ p.links {
 }
 #fh5co-team .person .social li a:hover {
     text-decoration: none;
-    background: #fff;    
+    background: #dfe5ec;
 }
 #fh5co-team .person:focus, #fh5co-team .person:hover {
-  background: #d0d8e2;
+  background: #dfe5ec;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
 }
-
-#fh5co-team .person p {
-    text-align: left;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 0px;
-}
-
-
 
 #fh5co-gallery {
   clear: both;
@@ -1355,7 +1344,5 @@ article {
      -moz-column-gap: 0em;
           column-gap: 0em;
 }
-
-
 
 /*# sourceMappingURL=style.css.map */
