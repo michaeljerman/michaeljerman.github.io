@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Top 1%</title>
+<meta name="author" content="(ECON 499: Economics of Inquality)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">The Top 1%</h1><h3 class="author">ECON 499: Economics of Inquality</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-org015ec14">
+<h2 id="org015ec14">Four questions:</h2>
+<ul>
+<li>What is inequality?</li>
+<li>What causes inequality?</li>
+<li>What are the consequences of inequality?</li>
+<li>What can we do about inequality?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org032637c">
+<h2 id="org032637c"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig2.png" alt="piketty_fig2.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgfdee0a2">
+<h2 id="orgfdee0a2">What's causing top incomes to diverge?</h2>
+<ul>
+<li>Piketty and Saez speculate that tax rates and "social attitudes" are responsible</li>
+<li>Do not provide conclusive evidence</li>
+<li>Other explanations: Political "capture," exploitation, fraud, skills, etc</li>
+<li>Matters for policy (LeBron James parable)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge0fe066">
+<h2 id="orge0fe066">Kaplan and Rauh (2013)</h2>
+<ul>
+<li>"It's the Market: The Broad-Based Rise in the Return to Top Talent"</li>
+<li>Does the top 1% "earn" their income, or do the get it though other means?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb41e59d">
+<h2 id="orgb41e59d">Economic rents</h2>
+<ul>
+<li>Things that are used in production of goods and services are called <i>factors of production</i> (labor, machines, factories, etc)</li>
+<li>Factors are compensated because they are productive (wages, interest, etc)</li>
+<li>A payment received by a factor beyond what can be explained by their productivity is a <b>rent</b>
+<ul>
+<li>Examples: Occupational licensing, monopolies, patents</li>
+
+</ul></li>
+<li>A rent is wealth that is earned through a process that does not itself create wealth</li>
+<li>Are top wage earners very productive, or do they receive rents?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org0467b73">
+<h2 id="org0467b73">Executive power</h2>
+<ul>
+<li>Top CEOs exert power over their companies and boards</li>
+<li>They might be able to use this power to pay themselves more than what they are otherwise worth (extract rents)</li>
+<li>If so, we expect CEO pay to diverge from other top earners</li>
+<li>This is not what we observe</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org367d67f">
+<h2 id="org367d67f"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_fig2.png" alt="kaplan_fig2.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3b89ff9">
+<h2 id="org3b89ff9">Top CEOs</h2>
+<ul>
+<li>It does not appear that executive pay is driving the change in top earnings</li>
+<li>Whatever the cause, it is affecting executives and their non-executive peers equally</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org8b65e0a">
+<h2 id="org8b65e0a">Other industries</h2>
+<ul>
+<li>If CEOs are leveraging their power to get higher incomes, then their income should be rising faster than other high-payed workers</li>
+<li>Kaplan and Rauh consider hedge-fund managers, lawyers, and professional athletes</li>
+<li>Managerial power is unlikely to explain rises in all these professions</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf969123">
+<h2 id="orgf969123"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_tab1.png" alt="kaplan_tab1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org9d7172c">
+<h2 id="org9d7172c"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_fig3.png" alt="kaplan_fig3.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org57728d7">
+<h2 id="org57728d7">Kaplan and Rauh:</h2>
+<blockquote nil>
+<p>
+&#x2026;the breadth of the occupations that have seen a rise in top income levels is much more consistent with the argument that the increase in "superstar" pay (or pay at the top) has been driven by the growth of information and communications technology, and the ways this technology allows individuals with particular skills that are in high demand to expand the scale of their performance
+</p>
+</blockquote>
+</section>
+</section>
+<section>
+<section id="slide-org457b3bc">
+<h2 id="org457b3bc">Piketty and Saez top incomes</h2>
+<ul>
+<li>Piketty and Saez measure top incomes at a "peak"</li>
+<li>Extended time series more volatile</li>
+<li>While increasing "by any measure," less severe when looking at longer time periods</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgcecc283">
+<h2 id="orgcecc283"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_fig4.png" alt="kaplan_fig4.png" height="650" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org82cabad">
+<h2 id="org82cabad">Inherited wealth</h2>
+<ul>
+<li>Do high income earners have an unfair advantage at birth?</li>
+<li>Can parents "buy" income for their children?</li>
+<li>Do the wealthy create institutions that prevent the non-wealthy from participating?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf26c455">
+<h2 id="orgf26c455"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_fig5.png" alt="kaplan_fig5.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgcec8e33">
+<h2 id="orgcec8e33"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_fig6.png" alt="kaplan_fig6.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgca1a7b1">
+<h2 id="orgca1a7b1">Inherited wealth</h2>
+<ul>
+<li>High income earners today are <i>less</i> likely have high-income parents than in the past</li>
+<li>However, they are <i>more</i> likely to have upper middle class parents</li>
+<li>No change in the number of top income earners from low-income backgrounds</li>
+<li>Very few of the wealthiest CEOs are from poor families</li>
+<li>High income earners have more education than in the past (much more on this later in the course)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf9994b3">
+<h2 id="orgf9994b3">Access to education</h2>
+<ul>
+<li>Family wealth allows for parents to invest in education</li>
+<li>If top incomes are the results of skills, then education becomes more important</li>
+<li>Share of Forbes 400 who graduated college increased 77-87% between 1982 and 2011</li>
+<li>Share of those without any college dropped from 17% to 5%</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb56bfc6">
+<h2 id="orgb56bfc6">Skills</h2>
+<ul>
+<li>Most of the pay increase is in industries that require specialized skills</li>
+<li>Computers and IT require education, finance has become extremely complex</li>
+<li>Executives in these fields must be highly trained, oversee many other highly trained employees</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf6b5413">
+<h2 id="orgf6b5413"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_tab2.png" alt="kaplan_tab2.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org7f43d09">
+<h2 id="org7f43d09">Family wealth</h2>
+<ul>
+<li>Having (some) family wealth seems to be more important in the US than in other countries</li>
+<li>This might be due to education being more expensive, or education more rewarded in US markets</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org3d41879">
+<h2 id="org3d41879"></h2>
+
+<div class="figure">
+<p><img src="./img/kaplan_fig8.png" alt="kaplan_fig8.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org488fabf">
+<h2 id="org488fabf">Bonica et al (2013)</h2>
+<ul>
+<li>"Why Hasn't Democracy Slowed Rising Inequality?"</li>
+<li>Anecdotally, people seem to care as much (or more) about inequality today as in the past</li>
+<li>Why haven't voters demanded redistribution?</li>
+<li>Article written by prominent political scientists (in an economics journal)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb4d5d7a">
+<h2 id="orgb4d5d7a"></h2>
+
+<div class="figure">
+<p><img src="./img/bonica_fig1.png" alt="bonica_fig1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org6c1f3d2">
+<h2 id="org6c1f3d2"></h2>
+
+<div class="figure">
+<p><img src="./img/bonica_fig2.png" alt="bonica_fig2.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orga18de2e">
+<h2 id="orga18de2e">Causality?</h2>
+<ul>
+<li>Inequality could cause polarization to increase &#x2014; wealthier people may have different political preferences than non-wealthy</li>
+<li>Polarization might cause inequality &#x2014; more legislative gridlock, government less responsive to market changes that increase inequality</li>
+<li>A third factor might be causing both simultaneously</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org3c13436">
+<h2 id="org3c13436">Deregulation</h2>
+<ul>
+<li>Fewer financial regulations encourage highly-educated people to go into finance</li>
+<li>Educated people are more skilled, get higher wages</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1476157">
+<h2 id="org1476157"></h2>
+
+<div class="figure">
+<p><img src="./img/bonica_fig3.png" alt="bonica_fig3.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgba55ac0">
+<h2 id="orgba55ac0">Voting</h2>
+<ul>
+<li>Wealthier people more likely to vote</li>
+<li>May be more likely to vote for policies that favor the wealthy</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1ceb285">
+<h2 id="org1ceb285"></h2>
+
+<div class="figure">
+<p><img src="./img/bonica_fig4.png" alt="bonica_fig4.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org13d1a07">
+<h2 id="org13d1a07"></h2>
+
+<div class="figure">
+<p><img src="./img/bonica_fig5.png" alt="bonica_fig5.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3098139">
+<h2 id="org3098139">Left vs right?</h2>
+<ul>
+<li>US political system is largely "winner-takes-all"</li>
+<li>If wealthy are affiliated with one party, then redistribution policies might be enacted if other party is in power</li>
+<li>If wealthy are in both parties, then neither party will support redistribution</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org7ece603">
+<h2 id="org7ece603"></h2>
+
+<div class="figure">
+<p><img src="./img/bonica_fig7.png" alt="bonica_fig7.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgcff00d8">
+<h2 id="orgcff00d8">Summary</h2>
+<ul>
+<li>Top incomes are largely driven by market forces, return to talent</li>
+<li>Top earners give more money to politicians than anyone else</li>
+<li>Top earners and donations are (for the most part) evenly distributed on the left-right divide</li>
+<li>Gridlock means government cannot respond to changes in market that give rise to inequality</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

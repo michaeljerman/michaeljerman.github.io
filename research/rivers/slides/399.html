@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title> EC 399 </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/slide_white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- C-x C-k S for slide, M for markdown -->
+
+	<section data-markdown data-state="no-title-footer">
+	  ### EC 399: Economics of Inequality
+
+	  [Lecture slides](#/lecture_slides)
+
+	  ![Shares](shares.png)
+	</section>
+
+	<section id="lecture_slides">
+	  <h3> Lecture Slides </h3>
+	  
+	  <table>
+	    <tr>
+	      <td> <em> What is inequality? </em> </td>
+	      <td> <em> What causes inequality? </em> </td>
+	    </tr>
+	    <tr>
+	      <td>
+		<ol>
+		  <li> <a href="intro.html">Introduction</a> </li>
+		  <li> <a href="measures.html">Measuring Inequality</a> </li>
+		  <li> <a href="normative_theory.html">Normative Theory </a> </li>
+		  <li> <a href="us_inequality.html">Inequality in the United States </li>
+		  <li> <a href="world.html">World Inequality </li>
+		</ol>
+	      </td>
+	      <td>
+		<ol start="6">
+		  <li> <a href="top_causes.html">The Top 1%</a> </li>
+		  <li> <a href="labor_polarization.html">Labor Market Polarization </a> </li>
+		  <li> <a href="mobility.html">Intergenerational Mobility </a> </li>
+		  <li> <a href="globalization.html">Globalization </a> </li>
+		  <li> <a href="growth.html">Economic Growth </a> &nbsp <a href="img/growth_notes.pdf">(Pictures)</a></li>
+		</ol>
+	      </td>
+	    </tr>
+	    <tr><td> <em> What are the consequences? </em></td>
+	    <td> <em> What can we do about it? </em></td></tr>
+	    <tr>
+	      <td>
+		<ol start="11">
+		  <li> <a href="piketty.html">Piketty's <em>Capital</em></a> </li>
+		  <li> <a href="mortality.html">Mortality</a></li>
+		  <li> <a href="race_gender.html">Race and Gender</a></li>
+		</ol>
+	      </td>
+	      <td>
+		<ol start="14">
+		  <li> <a href="policy.html">Policy</a> </li>
+		</ol>
+	      </td>
+
+	    </tr>
+
+
+	  </table>
+	  
+	</section>
+	
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      backgroundTransition: 'none',
+      transition: 'fade',
+      viewDistance: 2,
+      controls: false,
+      progress: false,
+      center: false,
+      keyboard: false,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('Home'); } },
+      { src: 'plugin/chalkboard/chalkboard.js' },
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math-katex/math-katex.js', async: true }
+      ],
+
+      keyboard: {
+        67: function() { RevealChalkboard.toggleNotesCanvas() },
+        66: function() { RevealChalkboard.toggleChalkboard() }, 
+        46: function() { RevealChalkboard.clear() },    
+         8: function() { RevealChalkboard.reset() },    
+        68: function() { RevealChalkboard.download() }, 
+      },
+
+      chalkboard: { 
+      theme: "whiteboard",
+      color: [ 'rgba(0,0,0,1)', 'rgba(255,255,255,0.5)' ]
+      },
+      
+      });
+    </script>
+  </body>
+</html>

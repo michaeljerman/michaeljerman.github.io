@@ -83,17 +83,43 @@ title = "Michael Jerman"
 # Research section
 [params.research]
   enable = true
-  title = "Meet The Research"
-  description = "blurb here"
+  title = "Research"
+  # description = "blurb here"
 
   [[params.research.item]]
-    paper_title = "paper title"
-    pdf = "paper.pdf"
-    website = "test"
+    paper_title = "Measuring the Effects of Pollution Abatement in the Presence of Treatment Externalities: An Example Using Indian Data"
+    status = "Working paper"    
+    pdf = "research/rivers/rivers.pdf"
+    # slides = ""
+    abstract = "research/rivers/abstract.pdf"
 
-  [[params.research.item]]
-    paper_title = "paper title"
-    pdf = "paper.pdf"
+  # [[params.research.item]]
+  #   paper_title = "Inequality"
+  #   status = "Working paper"      
+  #   pdf = "paper.pdf"
+  #   slides = "slides.pdf"    
+  #   abstract = ""	
+
+  # [[params.research.item]]
+  #   paper_title = "FEMA"
+  #   status = "Working paper"      
+  #   pdf = "paper.pdf"
+  #   slides = ""    
+  #   abstract = ""
+
+  # [[params.research.item]]
+  #   paper_title = "Elections"
+  #   status = "Preliminary"          
+  #   # pdf = "paper.pdf"
+  #   slides = ""    
+  #   abstract = ""
+
+  # [[params.research.item]]
+  #   paper_title = "RF Kernels"
+  #   status = "Preliminary"      
+  #   # pdf = "paper.pdf"
+  #   slides = ""    
+  #   abstract = ""    
 
 # Contact section
 [params.contact]

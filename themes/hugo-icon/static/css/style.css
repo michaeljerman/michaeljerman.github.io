@@ -651,7 +651,7 @@ p {
   text-align: left;
   font-size: 16px;
   font-weight: 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #368f95;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -775,7 +775,7 @@ p.links {
   text-align: left;
   font-size: 16px;
   font-weight: 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #368f95;
   margin-bottom: 0px;
   padding-bottom: 0px;
