@@ -91,7 +91,7 @@ title = "Michael Jerman"
     status = "Working paper"    
     pdf = "research/rivers/rivers.pdf"
     # slides = ""
-    abstract = "research/rivers/abstract.pdf"
+    abstract = "research/rivers/abstract.html"
 
   # [[params.research.item]]
   #   paper_title = "Inequality"
