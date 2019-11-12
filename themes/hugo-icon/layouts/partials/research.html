@@ -23,6 +23,9 @@
 	  {{ if isset . "slides" }}
 	  <a href={{.slides}} class="btn btn-primary btn-outline popup-vimeo"> slides </a>
 	  {{ end }}
+	  {{ if isset . "pdfslides" }}
+	  <a href={{.pdfslides}} class="btn btn-primary btn-outline" target="_blank"> slides </a>
+	  {{ end }}
 	  </p>
 
       </div>

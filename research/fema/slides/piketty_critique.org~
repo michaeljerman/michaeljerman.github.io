@@ -1,0 +1,163 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Critiques of Piketty's Capital
+#+AUTHOR: ECON 499: Economics of Inequality
+#+DATE: Winter 2018
+
+* Piketty's "first fundamental law of capitalism"
+$$\text{Capital share of income}=\alpha =r\dfrac{K}{Y}$$
+- Just a definition
+- $r$ is the return on capital 
+- $rK$ is capital income per year
+- $rK/Y$ is share of capital income to total income (Y)
+
+* 
+[[./img/alpha.png]]
+
+* Why is $\alpha$ changing?
+- Changes in r, s, g not enough to explain changes in $\alpha$
+- Evidence suggests that increase in $\alpha$ mostly attributed to rising home prices
+- Housing more evenly distributed than other forms of wealth
+
+* Piketty's "second fundamental law of capitalism"
+$$\dfrac{\bar{K}}{\bar{Y}} = \dfrac{s}{g}$$
+- $s$ is the /net/ savings rate 
+- $g$ long-run growth rate
+- $Y$ is /net/ income
+
+* Savings rates
+- Basic Solow: constant /gross/ savings rate
+- Piketty's Solow: constant /net/ savings rate
+- If $g$ falls, $\frac{K}{Y}$ rises if $s$ remains unchanged
+- How will $k/y$ change as $g$ falls in both models?
+
+* 
+[[./img/krussel_tab1.png]]
+
+* Which model is better?
+- The savings rate is a decision variable
+- Models with /endogenous/ savings seem to suggest that "basic" Solow is closer to "microfounded" agent behavior
+- With competitive markets, net savings is theoretically 0!
+- What do the data say?
+
+* 
+[[./img/krussel_fig2.png]]
+	
+
+	<section data-markdown>
+	  ### $r-g$ in theory
+
+	  - $r>g$ does not necessarily imply more inequality
+
+	  - Small amounts of social mobility mean $r>g$ can lead to a *decrease* in inequality
+
+	  - High returns on capital encourage people to save more, accumulate wealth
+	</section>
+
+	<section data-markdown>
+	  ### $r-g$ in history
+
+	  - Piketty does not show any correlations between $r-g$ and inequality
+	  
+	  From 1870 to 2012:
+
+	  - Increases in $r-g$ are not associated with rising top income share
+
+	  - Same holds for many definitions of $r$
+
+	  - No long term effects in the data either
+	</section>
+
+	<section data-markdown>
+	  ### Capital mobility and capital returns
+
+	  - Capital is generally very mobile across national boundaries
+
+	  - The rich can earn a high return even if there are low returns in their home country
+
+	  - Returns should equalize across countries
+
+	  - Wealth accumulation should occur everywhere
+	</section>
+
+	<section>
+	  <img src="img/sa_sweed.png"/>
+	</section>
+
+	<section>
+	  <img src="img/sweed.png"/>
+	</section>
+
+	<section>
+	  <img src="img/sa.png"/>
+	</section>
+	
+	<section data-markdown>
+	  ### South Africa and Sweden
+
+	  - Both countries capitalist
+	  
+	  - Inequality in SA much different than inequality in Sweden
+
+	  - SA inequality was/is institutionalized (apartheid)
+
+	  - Changes in inequality reflect changes in institutions more than $r-g$
+	</section>
+	
+	<section data-markdown>
+	  ### Is inequality good for the economy?
+
+	  Mankiw (2013): "Defending the One Percent" (on Canvas)
+	</section>
+
+	<section data-markdown>
+	  ### LeBron James parable
+
+	  - Steve Jobs improved the economic well being of many people
+
+	  - Was compensated very well for his efforts
+
+	  - Is it bad that he accumulated wealth?
+	</section>
+
+	<section data-markdown>
+	  ### Equality of opportunity
+
+	  - Inequality is bad if it means unequal access to opportunity
+
+	  - Great Gatsby curve, Moving to Opportunity, etc
+
+	  - Genetics likely play a large part
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Genetics and economic outcomes
+
+	  - Studies on twins (same genes) raised in separate households suggest genes factor heavily into economic outcomes
+
+	  - Low intergenerational mobility is largely due to genes, rather than environment
+
+	  - Unequal opportunity more relevant at lower incomes, not higher incomes
+	</section>
+
+	<section data-markdown>
+	  ### Equity-efficiency tradeoff
+
+	  - Governments cannot observe genetic productivity
+
+	  - Some high-productivity people might want to work very little
+
+	  - Society loses if productive people work less
+
+	  - Since government cannot distinguish lazy from low productivity, redistribution may encourage some productive workers to work less
+
+	  - Some inequality is therefore preferred 
+	</section>
+
+	<section data-markdown>
+	  ### Solow's response to Mankiw (on Canvas)
+
+	  > The cheerful blandness of Gregory Mankiw’s "Defending the One Percent" may divert attention from its occasional unstated premises, dubious assumptions, and omitted facts. I have room to point only to a few such weaknesses; but the One Percent are pretty good at defending themselves, so that any assistance they get from the sidelines deserves scrutiny.
+	</section>

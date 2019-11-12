@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title> Michael Jerman </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/slide_white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- C-x C-k S for slide, M for markdown -->
+
+		<section data-state='no-title-footer' data-transition="convex-in fade-out">
+	  
+	  <h2> Measuring the Effects of Pollution Abatement in the Presence of Treatment Externalities </h2>
+
+	  <h4> Michael Jerman </h4>
+	  <h6>  Department of Economics <br>
+	    University of Oregon <br>
+	    May 31, 2017 
+	  </h6>
+
+
+	</section>
+
+	
+	<section data-markdown>
+	  ### Background
+
+	  - India's rivers are heavily utilized and dangerously polluted
+
+	  - 14,780 sewage treatment plants (STPs) in the United States, 234 in India
+
+	  - Nearly 1 trillion USD has been spent by the government of India to combat pollution levels, widely believed to be ineffective
+
+	  - No systematic study of the effectiveness of any specific policy intervention at the national level
+	</section>
+	
+	<section data-markdown>
+	  ### Overview
+
+	  - Estimate the effects of a specific policy intervention (the construction of new STPs in 1995)
+
+	  - Develop a novel econometric model to account for downstream pollution and treatment spillovers
+
+	  - Failing to account for downstream effects can significantly bias estimated treatment effects
+
+	  - Propose a methodology to analyze the political economy of STP placement and operational effectiveness 
+	</section>
+
+	<section data-markdown>
+	  ### Previous literature
+
+	  - Greenstone and Hanna (2014): Find no pollution reduction on Indian river segments designated as "problem areas" by the government using a simple difference-in-differences approach
+
+	  - Lipscomb and Mobarak (2015): Estimate downstream spillovers in Brazil using exogenous shifts in administrative boundaries
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Data
+
+	  River monitoring stations:
+
+	  - 447 stations across India
+
+	  - Located along 60 river systems
+
+	  - Monthly observations of fecal coliform bacteria (fcoli) from 1986 to 2004 (many missing observations)
+
+	  Sewage treatment plants (STPs)
+
+	  - Ministry of Environment and Forests periodically attempts to collect information on the known universe of STPs
+
+	  - 107 were build in 1995 as part of the National River Conservation Plan (NRCP)
+	</section>
+	
+	<section>
+	  <h4> STP and Monitoring Station Locations </h4>
+	  <img src='img/fig2p4.png'>
+	</section>
+
+	<section>
+	  <h3> Naive difference-in-differences </h3>
+	  <p> Estimate by OLS: </p>
+	  <img src='img/eq2p1.png'/>
+	  <ul>
+	    <li> $P_{it}$: fcoli levels measured at station <em>i</em> at time <em>t</em></li>
+	    <li> $T_{it}$: Treatment variable equal to 1 if an STP is immediately upstream of station <em>i</em></li>
+	    <li> $D_{it}$: Equal to one if station <em>i</em> is ever treated in the sample</li>
+	  </ul>
+	    
+	</section>
+
+	<section>
+	  <h4> Naive Diff-in-Diff Estimation Results </h4>
+	  <img src='img/naiveols.png'>
+	</section>
+
+	<section>
+	  <h4> Time Interacted with Treatment </h4>
+	  <img src='img/interact.png'>
+	</section>
+	
+	<section data-markdown>
+	  ### Treatment externalities
+
+	  - 447 monitoring stations along 60 river systems
+	  
+	  - Each river system has 7.45 monitoring stations on average
+
+	  - 28 river systems have one monitoring station
+
+	  - The Ganga system has 109 stations
+
+	  - A single STP is likely to decrease measured pollution at multiple stations, biasing the diff-in-diff
+	</section>
+	
+	<section>
+	  <h4> Distribution of Downstream Monitor Distance </h4>
+	  <img src='img/downdist.png' width=65%>
+	</section>
+
+	<section>
+	  <h3> Estimating treatment externalities </h3>
+
+	  <img src='img/eqext.png' width=45%>
+
+	  <ul>
+	    <li> $\tilde{T}_{sit}$: Equal to one if station <em>i</em> downstream of STP <em>s</em></li>
+	    <li> $\Phi$: Polynomial in distance of station <em>i</em> from upstream STP <em>s</em>
+	  </ul>
+	  
+	</section>
+	
+	<section>
+	  <h4> Treatment Externalities </h4>
+	  <img src='img/tabext.png' width=75%>
+	</section>
+
+	<section>
+	  <img src='img/figext.png' width=66%>
+	</section>
+
+	<section data-markdown>
+	  ### Downstream effects
+
+	  - Pollution levels measured at each monitoring station are a function of upstream pollution levels
+
+	  - Shocks and treatment persist downstream, contaminating observations at each downstream station
+
+	  - Biases treatment effect estimates and standard errors
+
+	  - I account for this with a spatial model, where pollution observations are allowed to be functions of upstream pollution observations
+	</section>
+	
+	<section>
+	  <h3> Spatial model </h3>
+	  <img src='img/eqspat.png' width=40%>
+
+	  <ul>
+	    <li> W and M are spatial weight matrices which describe the spatial spillovers </li>
+	  </ul>
+	  
+	</section>
+
+	<section>
+	  <h3> Spatial weights </h3>
+	  <img src='img/eqweights1.png' width=75%>
+
+	  <ul>
+	    <li>  $\rho$: Captures the rate of pollution decay through introduction of cleaner water into the system or natural organic processes</li>
+	  </ul>
+	  
+	</section>
+
+	<section>
+	  <h3> Solving the spatial model </h3>
+	  <img src='img/eqspatsolved.png' width=75%>
+
+	  <img src='img/eqspatsum.png' width=58%>
+
+	  <ul>
+	    <li>  Each entry of the matrix $W(\rho)^k$ gives the exponential of distance between an STP and the monitoring station k stations downstream </li>
+	    <li> The infinite sum therefore captures the total downstream effects of an STP on all downstream stations </li>
+	    <li> This result obtains from the novel exponential specification of the spatial weights matrix </li>
+	    <li> The error term is similarly a function of upstream errors </li>
+	  </ul>
+	  
+	</section>
+
+	<section>
+	  <section data-markdown>
+	    ### Estimating the spatial model
+
+	    - There are 1,124 parameters to be estimated
+
+	    - MLE computationally inefficient, unlikely to converge, with unreliable Hessian estimates
+
+	    - Estimated instead as a Bayesian model with uniform priors (No-U-Turn sampler)
+
+	    ##### (More)
+	  </section>
+
+	  <section data-markdown>
+	    ### Priors
+
+	    - $\rho$, $\lambda$: Exponential(1). Likelihood function is approximately uniform for large values.
+
+	    - Fixed effects: Uniform
+
+	    - Treatment effects: Uniform
+	  </section>
+
+	  <section>
+	    <h4> Convergence </h4>
+	    <img src='img/convergence.png' width=45%>
+	  </section>
+	  
+	</section>
+
+	<section>
+	  <section>
+	    <h4> Bayesian Estimation Results </h4>
+	    <img src='img/tabbayes.png' width=65%>
+	  </section>
+
+	  <section>
+	    <h4> Bayesian Estimation Results </h4>
+	    <img src='img/figbayes.png' width=45%>
+	  </section>
+
+	</section>
+
+	<section>
+	  <h4> Exponential Downstream Effects </h4>
+	  <img src='img/figspatdown.png' width=70%>
+	</section>
+
+	<section data-markdown>
+	  ### Health benefits
+
+	  - Increasing fcoli by 2.3 doubles the likelihood of contracting a gastrointestinal illness
+
+	  - Estimated treatment effect will reduce this likelihood by 15% immediately downstream of a STP
+
+	  - Maha Kumbh festival attracts 120 million attendees, most of whom bath in the Ganga
+
+	  - An operational STP immediately upstream of the festival would eliminate approximately 600,000 cases of gastrointestinal disease
+	</section>
+
+	<section data-markdown>
+	  ### Accounting for the decrease in effectiveness
+
+	  - Government officials inspected 84 of 236 known STPs in 2007
+
+	  - 55% were rated as being in "poor" or "very poor" working condition
+
+	  - Many stations were entirely abandoned and overgrown with vegetation
+	</section>
+
+	<section data-markdown>
+	  ### Ongoing research
+
+	  - Use remotely-sensed luminosity, population, and watershed data to predict pollution levels along all river stretches with the spatial model described above
+
+	  - Estimate optimal placement of STPs, compare to actual placement
+
+	  - Investigate the political economy of STP placement and ongoing operation (elections of 1996)
+	</section>
+	
+	
+	
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      backgroundTransition: 'none',
+      transition: 'none',
+      viewDistance: 3,
+      controls: true,
+      progress: true,
+      center: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('Michael Jerman | Pollution Abatement and Treatment Externalities | May 31, 2017'); } },
+      { src: 'plugin/chalkboard/chalkboard.js' },
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math-katex/math-katex.js', async: true }
+      ],
+
+      keyboard: {
+        67: function() { RevealChalkboard.toggleNotesCanvas() },
+        66: function() { RevealChalkboard.toggleChalkboard() }, 
+        46: function() { RevealChalkboard.clear() },    
+         8: function() { RevealChalkboard.reset() },    
+        68: function() { RevealChalkboard.download() }, 
+      },
+
+      chalkboard: { 
+      theme: "whiteboard",
+      color: [ 'rgba(0,0,0,1)', 'rgba(255,255,255,0.5)' ],
+      pen: [ 'crosshair', 'crosshair' ]
+      },
+      
+      });
+    </script>
+  </body>
+</html>

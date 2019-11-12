@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Economic Growth</title>
+<meta name="author" content="(ECON 499: Economics of Inequality)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Economic Growth</h1><h3 class="author">ECON 499: Economics of Inequality</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-org7eebd1f">
+<h2 id="org7eebd1f">Global inequality</h2>
+<ul>
+<li>Most international inequality is <i>between</i> country, not <i>within</i> country</li>
+<li>Some countries/regions grow at different rates than others</li>
+<li>If poor countries grow slower than rich countries, global inequality will increase</li>
+<li>Rule of 70: Small changes in growth can have large consequences on the global distribution of income</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfff9d53">
+<h2 id="orgfff9d53"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_converge.png" alt="acemoglu_converge.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgea9e992">
+<h2 id="orgea9e992">Growth theory</h2>
+<ul>
+<li>Why do countries grow? What determines their growth rate?</li>
+<li>Standard economic growth model: Solow-Swan model</li>
+<li>Growth is determined by <i>factor accumulation</i> and <i>technology</i></li>
+<li>All else equal, countries will reach a <i>steady state growth path</i>, where they grow at a constant rate</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1a698ee">
+<h2 id="org1a698ee">Solow model</h2>
+<p>
+Setup: 
+</p>
+<ul>
+<li>Output \(Y_t\) (GDP) is produced with capital \(K_t\)</li>
+<li>Assume constant labor (no population growth)</li>
+<li>Capital transformed into output by a <i>production function</i></li>
+<li>\(Y_t = f(K_t)\), \(f''(K_t)<0\) (diminishing marginal returns)</li>
+<li>Existing capital depreciates at a rate \(\delta\) every period \(t\)</li>
+<li>Each period, output is either saved (as new capital) at rate \(s\) or consumed: \(Y_t = I_t + C_t = K_t + C_t\)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org95ea048">
+<h2 id="org95ea048"></h2>
+<iframe src="https://www.youtube.com/embed/ZEl-Y1NvBVI" height=625 width = 100%></iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-org772c8ff">
+<h2 id="org772c8ff">Convergence</h2>
+<ul>
+<li>The steady-state level of capital is determined by the shape of the production function and the savings rate</li>
+<li>Countries with different production processes and different savings rates will have different steady-states</li>
+<li>This explains why we don't observe absolute convergence</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org31a4e2d">
+<h2 id="org31a4e2d">Adding steady-state growth</h2>
+<ul>
+<li>In the simple model there is no growth in the steady state</li>
+<li>Data suggests that most countries have positive growth in the steady state</li>
+<li>We might think that our production process \(f(K)\) gets better over time</li>
+<li>We can add an <b>exogenous</b> technology process \(A\) that increases productivity</li>
+<li>\(Y_t = A_tf(K_t)\)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0b320d3">
+<h2 id="org0b320d3">Technological change</h2>
+<ul>
+<li>Suppose \(A\) grows at some constant rate \(g\)</li>
+<li>Then at the steady state, \(Y\) is growing at the same rate</li>
+<li>\(Y_t = A_tf(\bar{K})\)</li>
+<li>\(\bar{K}\) constant, \(A\) grows at \(g\), \(\rightarrow\) \(Y\) grows at rate \(g\)</li>
+<li>Capital accumulation happens as before</li>
+<li>Long-run (steady-state) growth determined by technology growth</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org6a5a185">
+<h2 id="org6a5a185">Poverty traps</h2>
+<ul>
+<li>Suppose capital has diminishing marginal returns when it is abundant, increasing marginal returns when it is scarce</li>
+<li>Simple machines/tools less marginally productive than advanced machines/tools</li>
+<li>This can give rise to <i>multiple steady-states</i></li>
+<li>Countries can get "stuck" at lower steady-state, unable to get to higher income level</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1b0f553">
+<h2 id="org1b0f553">Proximate causes</h2>
+<ul>
+<li>In the simple model, steady states determined by technology, productivity, savings</li>
+<li>What determines these things?</li>
+<li>Are there other things that matter?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org20cfaf5">
+<h2 id="org20cfaf5">Human capital</h2>
+<ul>
+<li>So far we've only considered physical capital (\(K\))</li>
+<li>The ability to efficiently use capital and technology a function of worker ability or skills (human capital)</li>
+<li>Countries with more human capital (education) have a higher steady state, will grow faster than countries with lower human capital from the same initial level of wealth</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga5a8d96">
+<h2 id="orga5a8d96">Other possibilities</h2>
+<ul>
+<li>Rule of law</li>
+<li>Openness to trade</li>
+<li>Democracy</li>
+<li>Fertility rate</li>
+<li>Government spending</li>
+<li>Health</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga1d15ed">
+<h2 id="orga1d15ed"></h2>
+
+<div class="figure">
+<p><img src="./img/barro_school.png" alt="barro_school.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org26f09ed">
+<h2 id="org26f09ed"></h2>
+
+<div class="figure">
+<p><img src="./img/barro_life.png" alt="barro_life.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orge450c0d">
+<h2 id="orge450c0d"></h2>
+
+<div class="figure">
+<p><img src="./img/barro_fertility.png" alt="barro_fertility.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org5223a0a">
+<h2 id="org5223a0a"></h2>
+
+<div class="figure">
+<p><img src="./img/barro_law.png" alt="barro_law.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org5a46810">
+<h2 id="org5a46810"></h2>
+
+<div class="figure">
+<p><img src="./img/barro_democracy.png" alt="barro_democracy.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org172db59">
+<h2 id="org172db59">Fundamental causes of growth</h2>
+<ul>
+<li>Many factors that correlate strongly with growth seem to be related</li>
+<li>There are likely some underlying factors that are causing everything</li>
+<li>If human capital creates growth, why don't all countries improve human capital? (Fertility, health outcomes, etc.)</li>
+<li>North and Thomas (1973):</li>
+
+</ul>
+<blockquote nil>
+<p>
+The factors we have listed &#x2026; are not causes of growth, <i>they are growth</i>
+</p>
+</blockquote>
+
+</section>
+</section>
+<section>
+<section id="slide-org6567827">
+<h2 id="org6567827">Fundamental causes?</h2>
+<ol>
+<li>Luck</li>
+<li>Geography</li>
+<li>Culture</li>
+<li>Institutions</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org061a7da">
+<h2 id="org061a7da">Luck</h2>
+<ul>
+<li>Poverty trap model: Steady state income depends on initial level of capital</li>
+<li>What determines initial capital?</li>
+<li>Some countries may be lucky or unlucky</li>
+<li>Natural disasters can push countries to a low steady-state path early in development process</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga80a194">
+<h2 id="orga80a194">Arguments against luck</h2>
+<ul>
+<li>It seems unlikely that the vast differences between the United States and Nigeria can be explained only by small, random occurrences</li>
+
+<li>Are we stuck with randomness?
+<ul>
+<li>If yes, then there's nothing we can do about growth!</li>
+<li>If no, then why don't poor countries do something about it?</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org186748f">
+<h2 id="org186748f">Geography</h2>
+<ul>
+<li>Jared Diamond: <b>Guns, Germs, and Steel</b> (1997)</li>
+<li>Some climates more conducive to agriculture</li>
+<li>Tropical diseases</li>
+<li>Natural resources</li>
+<li>Strong correlation between latitude and wealth</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfa918c3">
+<h2 id="orgfa918c3"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_geo.png" alt="acemoglu_geo.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc327b37">
+<h2 id="orgc327b37">Arguments against geography</h2>
+<ul>
+<li>Countries diverge after industrialization, not during agricultural times</li>
+<li>Low agricultural prospects should create comparative advantage in industry</li>
+<li>Diseases are caused by wealth: Richer countries can afford to eliminate disease (black plague in Europe, malaria in US South)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge462fc6">
+<h2 id="orge462fc6">Culture</h2>
+<ul>
+<li>Max Weber: <i>The Protestant Ethic and the Spirit of Capitalism</i> (1905)</li>
+<li>Protestantism values hard work and capital</li>
+<li>Some cultures more trusting, harder working than others (?)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge010d34">
+<h2 id="orge010d34">Arguments against culture?</h2>
+<ul>
+<li>What is "culture"? How do we measure it?</li>
+<li>How do we account for similar cultures with vastly different growth/wealth? (North and South Korea, Nogales Sonora, Nogales Arizona)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org90b1b00">
+<h2 id="org90b1b00">Institutions</h2>
+<ul>
+<li>New-institutional economics (Acemoglu, Johnson, Robinson: <b>Why Nations Fail</b> (2012))</li>
+<li>Douglass North (1990): "Institutions are the rules of the game in a society or, more formally, are the humanly devised constraints that shape human interaction."</li>
+<li>Institutions explain many facts that other explanations struggle with</li>
+<li>Extreme example: North and South Korea</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org18b0259">
+<h2 id="org18b0259"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_korea.png" alt="acemoglu_korea.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org6c72979">
+<h2 id="org6c72979">Reversal of fortunes</h2>
+<ul>
+<li>Many European colonies that were rich in 1500 are poor today</li>
+<li>Many that were poor in 1500 are rich today</li>
+<li>Opposite is true among non-colonies</li>
+<li>Difficult to explain by geography, luck, or culture</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org87dcf43">
+<h2 id="org87dcf43"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_reversal.png" alt="acemoglu_reversal.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orge913c25">
+<h2 id="orge913c25"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_reversal2.png" alt="acemoglu_reversal2.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc93be3a">
+<h2 id="orgc93be3a">The reversal and institutions</h2>
+<ul>
+<li>Institutions can explain the reversal of fortune among former colonies</li>
+<li>Colonies that are rich today have "better" institutions than colonies that are poor today</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1362602">
+<h2 id="org1362602"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_exprop.png" alt="acemoglu_exprop.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaf67cd2">
+<h2 id="orgaf67cd2">Colonies and institutions</h2>
+<ul>
+<li>All colonies had an institutional change when thy were colonized</li>
+<li>Some colonies got "better" institutions than others</li>
+<li>What decides if a colony got better institutions?
+<ul>
+<li>Note: "Better" in terms of economic growth only!</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2b49566">
+<h2 id="org2b49566"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_mort.png" alt="acemoglu_mort.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org7a4ba33">
+<h2 id="org7a4ba33"></h2>
+
+<div class="figure">
+<p><img src="./img/acemoglu_mortgdp.png" alt="acemoglu_mortgdp.png" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

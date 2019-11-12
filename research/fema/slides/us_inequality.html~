@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Inequality in the United States</title>
+<meta name="author" content="(ECON 499: Economics of Inequality)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal/css/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal/css/theme/slide_white_org.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Inequality in the United States</h1><h3 class="author">ECON 499: Economics of Inequality</h3><h3 class="date">Winter 2018</h3>
+</section>
+
+<section>
+<section id="slide-org066fa69">
+<h2 id="org066fa69">What is inequality?</h2>
+<ul>
+<li>We know how to think about inequality theoretically</li>
+<li>How do we measure inequality?</li>
+<li>What can the data tell us?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org4826879">
+<h2 id="org4826879">Kuznets hypothesis</h2>
+<ul>
+<li>Poor countries have homogeneous labor, mostly agriculture</li>
+<li>As countries develop, cities become industrial centers</li>
+<li>Creates urban/rural wage gap, increasing inequality</li>
+<li>As development increases, rural workers become educated and move to cities</li>
+<li>Reduces supply of rural workers, increases wages, decreases inequality</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8a1d999">
+<h2 id="org8a1d999">Kuznets curve</h2>
+
+<div class="figure">
+<p><img src="./img/Kuznets_curve.png" alt="Kuznets_curve.png" /> 
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc677f9a">
+<h2 id="orgc677f9a"><a href="https://eml.berkeley.edu/~saez/pikettyqje.pdf">Piketty and Saez, 2003</a></h2>
+<ul>
+<li>"Income inequality in the United States, 1913-1998"</li>
+<li>One of the first papers to estimate long-run evolution of inequality</li>
+<li>Two of the most prominent empirical researchers</li>
+<li>Renewed economists interest in inequality</li>
+<li>Much of these findings are included in Piketty's famous book (which we will talk about later)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org23f3ea4">
+<h2 id="org23f3ea4">Data</h2>
+<ul>
+<li>Tax return statistics reported by IRS</li>
+<li>Most people did not pay income tax prior to 1944, so focus on top 10%</li>
+<li>Gross income: Wages, profits, dividends, interest, rents, etc</li>
+<li>Exclude capital gains (people don't sell assets every year, therefore it is "lumpy")</li>
+<li>Calculated before any taxes, deductions, or transfers</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgc472266">
+<h2 id="orgc472266"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig1.png" alt="piketty_fig1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org847be33">
+<h2 id="org847be33"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig2.png" alt="piketty_fig2.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdd7540d">
+<h2 id="orgdd7540d">The fall in top income share</h2>
+<ul>
+<li>1938-1939</li>
+<li>World War II funded primarily through corporate income tax</li>
+<li>Top incomes were mostly earned through capital income</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org8514953">
+<h2 id="org8514953"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig4a.png" alt="piketty_fig4a.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org1fc8ce3">
+<h2 id="org1fc8ce3"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig3.png" alt="piketty_fig3.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org45d7937">
+<h2 id="org45d7937"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig4b.png" alt="piketty_fig4b.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org29a7aa7">
+<h2 id="org29a7aa7">Declining capital incomes</h2>
+<ul>
+<li>Capital incomes for the top income earners have declined steadily since WWII</li>
+<li>Capital income is derived from wealth</li>
+<li>After WWII ended, why did capital incomes not recover to previous levels?</li>
+<li>Why are the wealthy not earning as much capital income today?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org669abbe">
+<h2 id="org669abbe">Progressive taxation: A possible explanation</h2>
+<ul>
+<li>Pre WWI taxes are relatively flat, allowed wealth to accumulate</li>
+<li>Great depression and WWII "shocks" decreased the wealth of the top earners</li>
+<li>Progressive taxation and corporate taxes prevented wealth from accumulating to previous levels</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2e20600">
+<h2 id="org2e20600">The rise in top income after 1970</h2>
+<ul>
+<li>Primarily labor income</li>
+<li>Tax Reform Act of 1986: Top marginal tax rate changed from 50% to 28%</li>
+<li>Raised to 39.6% by 1993</li>
+<li>Initial cut coincides with rapid growth of top incomes</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org6350885">
+<h2 id="org6350885"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig8.png" alt="piketty_fig8.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgb3b64f9">
+<h2 id="orgb3b64f9"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig9.png" alt="piketty_fig9.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org20049d1">
+<h2 id="org20049d1">A mystery?</h2>
+<ul>
+<li>It's not clear from the data what is causing the rapid rise in top incomes</li>
+<li>Piketty and Saez speculate that changing social attitudes toward executive pay may be a factor</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd0f4fe8">
+<h2 id="orgd0f4fe8"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig11.png" alt="piketty_fig11.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org6b2c176">
+<h2 id="org6b2c176"></h2>
+
+<div class="figure">
+<p><img src="./img/piketty_fig12.png" alt="piketty_fig12.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org67f34fe">
+<h2 id="org67f34fe">Critiques of Piketty and Saez</h2>
+<ul>
+<li>Only looking at income in the top 10%, ignoring inequality elsewhere in the distribution ("transfer sensitivity" principle)</li>
+<li>The unit of observation is the "tax unit", not weighting observations by number of people, children, etc</li>
+<li>Their definition of income ignores non-market sources</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge77957a">
+<h2 id="orge77957a">What is income?</h2>
+<ul>
+<li>Piketty and Saez:
+<ul>
+<li>Salaries and wages</li>
+<li>Capital gains</li>
+
+</ul></li>
+<li>Other sources:
+<ul>
+<li>Benefits</li>
+<li>Taxes</li>
+<li>"In kind" transfers</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga07b960">
+<h2 id="orga07b960">Market vs comprehensive income</h2>
+<ul>
+<li>Market income:
+<ul>
+<li>The pre-tax compensation earned in exchange for selling labor</li>
+<li>Income from capital: profits, interest, etc</li>
+
+</ul></li>
+<li>Comprehensive income:
+<ul>
+<li>Market income plus "everything else"</li>
+<li>The total money received that can be used to purchase goods and services</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf487f67">
+<h2 id="orgf487f67">Healthcare</h2>
+<ul>
+<li>A large non-market source of income</li>
+<li>People need to consume health services whether or not they have insurance</li>
+<li>Employer-provided insurance isn't included in wages, by allows people to consume more than they otherwise could</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgeacc279">
+<h2 id="orgeacc279">Healthcare facts</h2>
+<ul>
+<li>Healthcare expenses were 17% of GDP in 2014</li>
+<li>70% of expenses paid by public or private insurance (not out-of-pocket)</li>
+<li>36% of all expenses paid by Federal programs Medicaid and Medicare</li>
+<li>Average Medicaid recipient receives $9,125 per year (family of 3)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org0dc9955">
+<h2 id="org0dc9955">Medicare</h2>
+<ul>
+<li>Covers nearly all citizens age 65 and older</li>
+<li>Covers some disabled citizens under 65</li>
+<li>Financed by 2.9% payroll tax (+0.9% for high income earners)</li>
+<li>Average beneficiary receives $11,400</li>
+<li>Adults over 65 generally have lower income than those under 65</li>
+<li>Transfer from relatively high incomes to lower incomes</li>
+<li>Reduces inequality (principle of transfers)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1917c83">
+<h2 id="org1917c83">Medicaid</h2>
+<ul>
+<li>Provides insurance for low income families</li>
+<li>Covers 60 million people</li>
+<li>Reduces inequality</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org8ebe5a5">
+<h2 id="org8ebe5a5"></h2>
+
+<div class="figure">
+<p><img src="./img/kaestner_tab1.png" alt="kaestner_tab1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orga861a93">
+<h2 id="orga861a93">Affordable Care Act</h2>
+<ul>
+<li>Allows states to expand Medicaid coverage (many don't)</li>
+<li>Offers subsidies to people with less than 400% federal poverty level</li>
+<li>Increased the coverage for low-income workers</li>
+<li>Reduces inequality</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd1d4e40">
+<h2 id="orgd1d4e40"></h2>
+
+<div class="figure">
+<p><img src="./img/kaestner_tab2.png" alt="kaestner_tab2.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgcb45807">
+<h2 id="orgcb45807">Employer provided healthcare</h2>
+<ul>
+<li>Most middle and high-income earners receive insurance through their employer</li>
+<li>Employee contributions untaxed &#x2013; increases income of middle and top earners</li>
+<li>Increases inequality</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgfe840e9">
+<h2 id="orgfe840e9"></h2>
+
+<div class="figure">
+<p><img src="./img/kaestner_fig1.png" alt="kaestner_fig1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org95fb11f">
+<h2 id="org95fb11f">Question:</h2>
+<p>
+In terms of well-being (utility), is $5,000 per year in healthcare subsidies the same as an additional $5,000 in wages?
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org12b197f">
+<h2 id="org12b197f"><a href="http://onlinelibrary.wiley.com/doi/10.4284/0038-4038-2013.175/abstract">Armour et al (2014)</a></h2>
+<ul>
+<li>"Levels and Trends in U.S. Income and its Distribution: A Crosswalk from Market Income towards a Comprehensive Haig-Simons Income Approach"</li>
+<li>How do different definitions of income change our measured inequality?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org9f83fb3">
+<h2 id="org9f83fb3">Haig-Simons income</h2>
+<ul>
+<li>Income is the amount of consumption plus the change in net worth</li>
+<li>Emphasizes consumption over market income</li>
+<li>A better representation of welfare</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org321d70b">
+<h2 id="org321d70b">Data</h2>
+<ul>
+<li>Census Bureau's Current Population Survey, March supplement (March CPS)</li>
+<li>Survey data, asks respondents about <b>all</b> sources of income (minus capital gains)</li>
+<li>Health insurance status asked, and source of health insurance</li>
+<li>Health insurance premiums not captured, and are calculated by the Census Bureau</li>
+<li>Incomes are "top-coded", need to be estimated</li>
+<li>Capital gains, tax credits and liabilities predicted using a model</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2a9afc7">
+<h2 id="org2a9afc7">The crosswalk</h2>
+<ul>
+<li>Describe income in 4 ways:
+<ol>
+<li>Market income (Piketty and Saez)</li>
+<li>Add transfer payments (disability, unemployment, social security, etc)</li>
+<li>Weight household size, add in kind transfers, add taxes</li>
+<li>Add realized capital gains</li>
+
+</ol></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga6f1ed1">
+<h2 id="orga6f1ed1"></h2>
+
+<div class="figure">
+<p><img src="./img/armour_tab1.png" alt="armour_tab1.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org13b3d0a">
+<h2 id="org13b3d0a"></h2>
+
+<div class="figure">
+<p><img src="./img/armour_tab2.png" alt="armour_tab2.png" height="625px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org0c4d716">
+<h2 id="org0c4d716">Capital gains</h2>
+<ul>
+<li>"Realized" capital gains are only observed when assets are sold</li>
+<li>Changes in wealth depend on the capital gains that are not "realized"</li>
+<li>If your portfolio goes up and you don't sell, your "income" has increased (at least in present value)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgc08b067">
+<h2 id="orgc08b067"></h2>
+
+<div class="figure">
+<p><img src="./img/armour_tab3.png" alt="armour_tab3.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgd105432">
+<h2 id="orgd105432">Why is the difference so dramatic?</h2>
+<ul>
+<li>In 2007, compared to 1989, lower income people owned more:
+<ul>
+<li>Equity</li>
+<li>Housing (!)</li>
+<li>Businesses</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org371a785">
+<h2 id="org371a785">Housing since 2007</h2>
+<ul>
+<li>Housing a primary source of capital "income"</li>
+<li>The 2007 recession resulted in a sharp decrease in housing</li>
+<li>This decrease was more severe among low-income home owners</li>
+<li>Housing shocks constrain ability to get credit, build wealth</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgbbf5539">
+<h2 id="orgbbf5539">Mian, Rao, Sufi (2013)</h2>
+
+<div class="figure">
+<p><img src="./img/mian_fig.png" alt="mian_fig.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org64cb467">
+<h2 id="org64cb467">Mian, Rao, Sufi (2013)</h2>
+
+<div class="figure">
+<p><img src="./img/mian_fig5.png" alt="mian_fig5.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org307fba2">
+<h2 id="org307fba2">What can we conclude?</h2>
+<ul>
+<li>Non-market sources of income matter</li>
+<li>Recent inequality caused by labor income, top 1%</li>
+<li>Capital gains matter</li>
+<li>Unresolved: How has capital ownership changed since the last recession?</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal/lib/js/head.min.js"></script>
+<script src="../../reveal/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

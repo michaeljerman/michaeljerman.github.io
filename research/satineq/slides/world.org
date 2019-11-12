@@ -1,0 +1,86 @@
+#+OPTIONS: toc:nil num:nil 
+#+REVEAL_TRANS: none
+
+#+TITLE: Global Inequality
+#+AUTHOR: ECON 499: Economics of Inquality
+#+DATE: Winter 2018
+
+* 
+#+REVEAL_HTML: <iframe src="https://ourworldindata.org/roser/graphs/WorldIncomeDistribution1820to2000/WorldIncomeDistribution1820to2000.html" height=650 width = 100%></iframe>
+* 
+#+REVEAL_HTML: <iframe src='https://ourworldindata.org/roser/graphs/WorldIncomeDistribution_LaknerAndMilanovic/WorldIncomeDistribution_LaknerAndMilanovic1988_100.html' width=100% height=650></iframe>
+* How does growth affect inequality?
+- Does inequality go up or down as countries get richer?
+- Kuznets: Inequality goes up, then goes down
+* 
+[[./img/ginigdp.png]]
+Source: World Bank 
+* Growth and inequality
+- In the cross section it does not appear the wealthier countries have lower inequality
+- We would like know how inequality evolves as countries develop
+- We don't have great data on this!
+- Piketty, Saez, Zucman (and others): World Wealth and Income Database
+* 
+[[./img/wid_developing.jpg]]
+* 
+[[./img/wid_developed.jpg]]
+* Growth and inequality
+- Growth doesn't appear to make top incomes diverge among developing countries
+- What about low income? Are people "left behind" by development?
+- We can look at poverty rates
+* 
+[[./img/deaton_poverty.png]]
+
+Source: Deaton (2013) 
+* 
+[[./img/ourworld_poverty.png]]
+* 
+#+REVEAL_HTML: 	  <iframe src="https://ourworldindata.org/grapher/share-of-the-population-living-in-extreme-poverty?tab=map&year=1981" width=100% height=650></iframe>
+* 
+[[./img/total-population-living-in-extreme-poverty-by-world-region.png]]
+* Poverty
+- Poverty has fallen dramatically at a global level
+- Poverty reductions in China and India (35% of global population) are important cause
+- Poverty in sub-Saharan Africa has not changed much
+* Between-country inequality
+- Global inequality has been falling
+- Within-country inequality has been (relatively) constant
+- Between country inequality must be falling
+- Poor countries must be growing faster than rich countries
+* Exponential growth
+"Rule of 70"
+- Imagine income grows at an exponential rate g% per year
+- Income will double in 70/g years
+- USA: g=2.5% $\rightarrow$ average income doubles every 28 years (the average person has twice as much income as their parents at the same age)
+- China: g=7% $\rightarrow$ average income doubles every 10 years
+- Lucas (1988): "Once one starts to think about [economic growth], it is hard to think about anything else."
+* 
+[[./img/acemoglu_converge.png]]
+* Solow growth model
+- Workers consume part of their income, save the rest
+- Savings are capital investments for firms (banks loan out savings)
+- Capital is productive, makes workers more efficient $\rightarrow$ wages increase
+- Workers save more, causing capital to increase, etc...
+- Diminishing marginal returns to capital: Eventually additional capital will not have much of an effect on productivity, growth levels off
+- "Steady state:" Capital and income grow at a constant rate, determined by technological growth
+* 
+[[./img/1870.gif]]
+* Convergence
+- Technology is easily transferable, so steady state growth should be the same in every country
+- Countries with below steady-steady state capital should grow faster than countries at steady state
+- Poor countries should grow faster than rich countries
+* 
+[[./img/acemoglu_density.png]]
+* Conditional convergence
+- Countries that are similar to each other tend to converge in income
+- What are those similarities?
+- Politics, education, institutions, technology, etc
+* 
+[[./img/acemoglu_condconverge.png]]
+* Summary
+- Decreases in inequality at global level driven by India and China
+- Solow model predicts growth of middle income countries will eventually slow down (converge)
+- Poor countries may be "left behind" unless they figure out how to grow
+- Low growth rates in poor countries means that the gap between rich and poor will get larger over time
+
+

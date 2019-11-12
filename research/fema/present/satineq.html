@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title> Michael Jerman </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/slide_white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<!-- C-x C-k S for slide, M for markdown -->
+
+	
+	<section data-state='no-title-footer' data-transition="convex-in fade-out">
+	  
+	  <h2> Estimating Regional Inequality and Growth Using Satellite Data</h2>
+
+	  <h4> Michael Jerman </h4>
+	  <h6>  Department of Economics <br>
+	    University of Oregon <br>
+	    May 31, 2017 
+	  </h6>
+
+
+	</section>
+
+	<section data-markdown>
+	  ### Motivation
+
+	  - Little is known about the distribution of economic resources in the developing world
+
+	  - Satellite imagery has been used to separately analyze population density and economic activity
+
+	  - Combining these approaches allows for the identification of per capita economic activity at a small (1km) resolution
+
+	  - What is the relationship between inequality and regional growth?
+	  
+	  - What is the relationship between inequality and policy?
+	</section>
+
+	<section data-markdown>
+	  ### Overview
+
+	  - Using a machine learning algorithm, I create a panel of per capita economic activity at a 1km resolution for the years 1996-2010
+
+	  - Negative relationship between inequality and aggregate activity
+
+	  - Positive relationship between inequality and growth in the cross-section
+
+	  - Preliminary panel results with fixed-effects indicate a negative relationship between inequality and growth
+
+	  - I propose a methodology to investigate potential political causes of inequality and poverty
+	</section>
+
+	<section data-markdown>
+	  ### Previous literature
+
+	  Inequality in the developing world:
+
+	  - World Wealth and Income Database (wid.world), Alvaredo et al, (2017)
+
+	  > "[W]e stress the need for
+more democratic transparency on income and wealth dynamics and better access to administrative
+	  and financial data."
+
+	  Population estimation:
+
+	  - ORNL's LandScan; WorldPop
+
+	  - Proprietary, limited years, not appropriate for time series analysis
+
+	  Night lights and economic activity:
+
+	  - Henderson, Storeygard, Weil (2012)
+	</section>
+
+	<section data-markdown>
+	  ### Data
+
+	  Ground-based sources:
+
+	  - Census of India, 2001 and 2011: District level population counts
+
+	  Extraterrestrial sources:
+	  
+	  - Landsat 5, 7, & 8: Six spectral bands, 30x30m resolution, 16-day period, 1984-present
+
+	  - Defense Meteorological Satellite Program: Night light intensity, 1x1km resolution, annual observations, 1992-present
+
+	  - Shuttle Radar Topography Mission: Global elevation, 30x30m resolution (2000)
+	  
+	</section>
+
+	<section>
+	  
+	  <section data-markdown>
+	    ### Population estimation
+
+	    For each census year:
+	    
+	    - Create a raster data set with nine layers: six Landsat bands, elevation, night lights, distance to closest permanent body of water (Pekel et al, 2016)
+
+	    - Estimation data: Calculate mean, variance, and correlation between each band at the district level
+
+	    - Prediction data: Calculate same summary statistics within a 5km gaussian kernel around each 30x30m pixel, resample to 1x1km resolution
+	    
+	    ##### (More)
+	  </section>
+
+	  <section data-background-video="videos/sat0.mp4">
+	  </section>
+	  <section data-background-video="videos/sat1.mp4">
+	  </section>
+	  <section data-background-video="videos/sat2.mp4" data-state='no-title-footer'>
+	  </section>
+	  <section data-background-video="videos/sat3.mp4" data-state='no-title-footer'>
+	  </section>
+	  <section data-background-video="videos/sat4.mp4" data-state='no-title-footer'>
+	  </section>
+	  <section data-background-video="videos/sat5.mp4" data-state='no-title-footer'>
+	  </section>
+	  <section data-background-video="videos/sat6.mp4" data-state='no-title-footer'>
+	  </section>
+
+	  <section data-markdown>
+	    ### Composite images
+
+	    - For each census year, compile every satellite image taken that year
+
+	    - Mask cloudy pixels
+
+	    - Calculate "greenest-pixel" composite: For each pixel, choose the image with the highest NDVI index
+
+	    - Calculate summary statistics at district and pixel level for composite images
+	  </section>
+	  
+	</section>
+
+	<section>
+	  <section data-markdown>
+	    ### Night light data
+
+	    - Night lights are log-linearly predictive of GDP (Henderson, Storeygard, Weil, 2012)
+	    
+	    - Raw DMSP data are top-coded
+
+	    - Hsu et al (2015) account for top-coding by combining observations from multiple sensors
+
+	    - Calibrated data for 1996, 1999, 2000, 2003, 2004, 2006, 2010
+
+	    - Inter-annual calibration achieved by regressing country-level aggregates against GDP for each year
+
+	    ##### (Figures)
+	  </section>
+
+	  <section>
+	    <h4>The Time-varying Relationship Between Lights and GDP</h4>
+
+	    <img src='img/fig1.png' />
+	  </section>
+
+	  	  <section>
+	    <h4>Inter-annual Calibration Parameters </h4>
+
+	    <img src='img/tab1.png' />
+	  </section>
+
+	</section>
+
+	<section data-markdown>
+	  ### Estimating population density 
+
+	  - Let *S* be the collection of summary staistics
+	  
+	  - The (log) population density in district *d* in time *t* is described by:
+
+	  ###### $y\_{dt} = f(S\_{dt}) + \epsilon\_{dt}$
+
+	  - The relationship between satellite observations and density is highly non-linear, high-level interaction between satellite bands
+
+	  - I estimate *f* with a *random forest* algorithm (Breiman, 2001)
+	  
+	</section>
+
+	<section>
+	  <section data-markdown>
+	    ### Random forests
+
+	    - A random forest is a collection of regression trees
+
+	    - Each regression tree partitions the data based on the observation that minimizes left-hand-side sum of squares
+
+	    - Each regression tree is grown on a bootstrapped sample, with each partition selected from among a random subset of covariates
+
+	    - Random forests are nonlinear, high levels of predictive accuracy
+	    
+	    - Randomization prevents overfitting
+
+	    ##### (More)
+	  </section>
+
+	  <section>
+	    <h3> Building a Regression Tree </h3>
+	    <iframe width=800 height=400 data-src="plugin/treant-js-master/examples/collapsable/index1.html"></iframe>
+	    <p style="color:red"> Collect $N$ observations </p>
+	  </section> 
+
+	  <section data-transition="fade">
+	    <h3> Building a Regression Tree </h3>
+	    <iframe width=800 height=400 data-src="plugin/treant-js-master/examples/collapsable/index2.html"></iframe>
+	    <p style="color:red"> Choose a decision rule for one of the covariates </p>
+	  </section> 
+
+	  <section data-transition="fade">
+	    <h3> Building a Regression Tree </h3>
+	    <iframe width=800 height=400 data-src="plugin/treant-js-master/examples/collapsable/index3.html"></iframe>
+	    <p style="color:red"> Partition the data based on the decision rule </p>
+	  </section>
+
+	  <section data-transition="fade">
+	    <h3> Building a Regression Tree </h3>
+	    <iframe width=800 height=400 data-src="plugin/treant-js-master/examples/collapsable/index4.html"></iframe>
+	    <p style="color:red"> Choose new decision rules for each subset </p>
+	  </section> 
+
+	  <section data-transition="fade">
+	    <h3> Building a Regression Tree </h3>
+	    <iframe width=800 height=400 data-src="plugin/treant-js-master/examples/collapsable/index5.html"></iframe>
+	    <p style="color:red"> Repeat... </p>
+	  </section> 
+
+	  <section data-transition="fade">
+	    <h3> Building a Regression Tree </h3>
+	    <iframe width=800 height=400 data-src="plugin/treant-js-master/examples/collapsable/index6.html"></iframe>
+	    <p style="color:red"> ...until each terminal node has one observation </p>
+	  </section> 
+
+	  <section data-markdown>
+	    ### Choosing a Decision Rule
+	    - Choose a partition value for covariate $X_i$
+	    - Calculate the MSE of the dependent variable $y$ for each of the two partitions
+	    - Find the partition value that minimizes the sum of the MSEs
+	    - Repeat for each covariate
+	    - Choose the maximum MSE-reducing partition covariate/value
+	  </section>
+
+	  <section>
+	    <h3> From Trees to Forests </h3>
+	    <ul>
+	      <li> The standard regression tree is overfit </li>
+	      <li> Random forests randomize tree along two dimensions: </li>
+	      <ol>
+		<li> Each tree is grown on a bootstrapped sample of size $N$ </li>
+		<li> At each node, a random subset of covariates are chosen to find the decision rule </li>
+	      </ol>
+	    </ul>
+	  </section>
+	  
+	</section>
+
+	<section data-markdown>
+	  ### Variable importance
+
+	  - The primary drawback of the random forest model is the inability to extract marginal effects
+
+	  - Can instead calculate "node purity," which measures the average amount variance reduction that is realized when a covariate is used in partitioning
+
+	  - Can be misleading: Variables might only have high predictive power when interacted with other variables
+	</section>
+
+	<section>
+	  <h4> Node Impurity </h4>
+	  <img src='img/fig1p3.png' />
+	</section>
+
+	  <section>
+	    <h3> Predicting smaller resolutions </h3>
+	    <ul>
+	      <li> The random forest algorithm returns an estimated function $\hat{f}(\cdot)$</li>
+	      <li>For each 1km pixel <em>p</em>, calculate $\hat{f}(S_p)$</li>
+	      <li>Aggregate the predicted values up to the district level, and regress against known district-level density</li>
+	    </ul>
+
+	  </section>
+
+	<section>
+	  <h4> Raw Census Data (2011) </h4>
+	  <img src="img/rawdists.svg"></img>
+	</section>
+
+	<section>
+	  <h4> Random Forest Population Estimates (2011) </h4>
+	  <img src="img/densest.svg"></img>
+	</section>
+
+	<section>
+	  <h4> District-level Prediction Error </h4>
+	  <img src="img/fig1p4.png"></img>
+	</section>
+
+	<section>
+	  <h4> Prediction Error Regressions </h4>
+	  <img src="img/tab1p2.png"></img>
+	</section>
+
+	<section data-markdown>
+	  ### Per capita economic activity
+
+	  - The random forest predicts population at a 1x1km resolution
+
+	  - The GDP-calibrated lights are at the same resolution
+
+	  - Average per capita economic activity is estimated by dividing lights by population for each pixel
+	</section>
+
+	<section>
+	  <img src="img/fig1p5a.png"></img>
+	</section>
+
+	<section>
+	  <img src="img/fig1p5b.png"></img>
+	</section>
+
+	<section>
+	  
+	  <section data-markdown>
+	    ### Estimating inequality
+
+	    - Pixel-level estimates can be used to calculate between-pixel inequality and per capita growth for any arbitrary geographic area
+
+	    - Measure inequality using the Theil index (subgroup additive, scale invariant)
+
+	    - Allows for the relationship between per capita growth and inequality to be explored at a sub-national level
+
+	    ##### (More)
+	  </section>
+
+
+	  <section data-markdown>
+	    ### Spatial resolution
+	    - Lights per capita are estimated at a 1x1km spatial resolution
+	    - Partition $Y$ into $G$ groups representing different pixels
+
+	    $$ Y = Y^1, Y^2,..., Y^G $$
+	  </section>
+
+	  <section data-markdown>
+	    ### Subgroup additivity
+	    - An index $I(Y)$ is *subgroup additive* if:
+
+	    $$ I(Y) = \sum_{g=1}^G \alpha_g I(Y^g) + I(N_1\bar{y}^1, N_2\bar{y}^2,...,N_G\bar{y}^G) $$
+	  </section>
+
+	  <section data-markdown>
+	    ### Between-group inequality
+	    - If $I(Y)$ is subgroup additive, then the between-group inequality measure is invariant to within-group inequality
+	    - The between-group index measures the contribution of spatial inequality to aggregate inequality
+	  </section>
+
+	  <section>
+	    <h3>Theil index</h3>
+	    $$ T(Y) = \frac{1}{N}\sum_{i=1}^N\frac{y_i}{\bar{y}}\ln\frac{y_i}{\bar{y}} $$
+
+	    <p> $T(Y)$ is subgroup additive: </p>
+
+	    $$ T(Y) = \sum_{g=1}^G \frac{N^g\bar{y}^g}{N\bar{y}} T(Y^g) + \sum_{g=1}^G\frac{N^g\bar{y}^g}{N\bar{y}}\ln \frac{\bar{y}^g}{\bar{y}} $$
+	  </section>
+
+	  <section>
+	    <h3> Inter-pixel inequality </h3>
+
+	    $$ T_p(Y) = \sum_{g=1}^G\frac{N^g\bar{y}^g}{N\bar{y}}\ln \frac{\bar{y}^g}{\bar{y}} $$
+	  </section>
+
+	</section>
+
+  	<section>
+	  <h4> District Inequality </h4>
+	  <img src="img/fig1p8.png"></img>
+	</section>
+
+	<section>
+  	  <section>
+	    <h4> Kuznets Curve </h4>
+	    <img src="img/fig1p9.png" width=50%></img>
+	    <h5> (Regression results) </h5>
+	  </section>
+
+  	  <section>
+	    <h4> Kuznets Regressions </h4>
+	    <img src="img/tabkuz.png"></img>
+	  </section>
+
+	</section>
+
+  	<section>
+	  <h4> Growth and Inequality </h4>
+	  <img src="img/tabineq.png" width=50%></img>
+	</section>
+	  
+	<section>
+	  <h4> Inequality Regressions </br> Dependent variable: light growth </h4>
+	  <img src="img/tabmainineq.png"></img>
+	</section>
+	  
+	<section data-markdown>
+	  ### Inequality and growth
+
+	  Initial inequality is positively correlated with subsequent growth
+
+	  - Convergence: Low-income regions may grow faster than high-income regions within districts
+
+	  - Omitted variables: District-specific characteristics may cause both initial inequality and subsequent growth rates
+	</section>
+
+	<section data-markdown>
+	  ### Preliminary answers
+
+	  - The fitted random forest algorithm can predict population in any year that the satellite data are available
+
+	  - Population is predicted for each year in the Hsu et al calibrated night-light data
+
+	  - Calculate annual average growth rates for each districts between the observations
+
+	  ###### $\log\left(\dfrac{lights\_{dt}}{lights\_{dt-1}}\right) = \beta\_1 \log\left(lights\_{dt-1}\right) + \beta\_2Theil_{dt-1} + \delta\_d + \tau\_t + \epsilon\_{dt}$
+	</section>
+
+	<section>
+	  <h4> Panel Regressions </h4>
+	  <img src='img/tabpanel.png' />
+	</section>
+
+	<section data-markdown>
+	  ### Ongoing research
+
+	  - Continue refining the panel estimations
+
+	  - Robustness checks: Arbitrary district boundaries, random-pixel districts
+
+	  - Politics: Electoral district boundaries can be used, regression discontinuity estimation from 1996 parliamentary elections
+	</section>
+	
+
+	
+	
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      backgroundTransition: 'none',
+      transition: 'none',
+      viewDistance: 3,
+      controls: true,
+      progress: true,
+      center: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('Michael Jerman | Regional Inequality and Growth Using Satellites | May 31, 2017'); } },
+      { src: 'plugin/chalkboard/chalkboard.js' },
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math-katex/math-katex.js', async: true }
+      ],
+
+      keyboard: {
+        67: function() { RevealChalkboard.toggleNotesCanvas() },
+        66: function() { RevealChalkboard.toggleChalkboard() }, 
+        46: function() { RevealChalkboard.clear() },    
+         8: function() { RevealChalkboard.reset() },    
+        68: function() { RevealChalkboard.download() }, 
+      },
+
+      chalkboard: { 
+      theme: "whiteboard",
+      color: [ 'rgba(0,0,0,1)', 'rgba(255,255,255,0.5)' ],
+      pen: [ 'crosshair', 'crosshair' ]
+      },
+      
+      });
+    </script>
+  </body>
+</html>

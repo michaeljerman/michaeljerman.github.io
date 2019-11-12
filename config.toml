@@ -90,22 +90,22 @@ title = "Michael Jerman"
     paper_title = "Measuring the Effects of Pollution Abatement in the Presence of Treatment Externalities: An Example Using Indian Data"
     status = "Working paper"    
     pdf = "research/rivers/rivers.pdf"
-    # slides = ""
+    slides = "research/rivers/present/rivers.html"
     abstract = "research/rivers/abstract.html"
 
-  # [[params.research.item]]
-  #   paper_title = "Inequality"
-  #   status = "Working paper"      
-  #   pdf = "paper.pdf"
-  #   slides = "slides.pdf"    
-  #   abstract = ""	
+  [[params.research.item]]
+    paper_title = "Estimating Regional Inequality and Growth Using Satellite Data"
+    status = "Working paper"      
+    pdf = "research/satineq/satineq.pdf"
+    slides = "research/satineq/present/satineq.html"    
+    abstract = "research/satineq/abstract.html"	
 
-  # [[params.research.item]]
-  #   paper_title = "FEMA"
-  #   status = "Working paper"      
-  #   pdf = "paper.pdf"
-  #   slides = ""    
-  #   abstract = ""
+  [[params.research.item]]
+    paper_title = "Race, Government Assistance, and Recovery from Natural Disasters"
+    status = "Working paper"      
+    pdf = "research/fema/disaster.pdf"
+    slides = "research/fema/slides.pdf"    
+    abstract = "research/fema/abstract.html"
 
   # [[params.research.item]]
   #   paper_title = "Elections"
