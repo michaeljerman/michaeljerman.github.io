@@ -28,7 +28,7 @@ title = "Michael Jerman"
   teaching = "Teaching"
   research = "Research"
   contact = "Contact"
-  cv = "cv"
+  # cv = "cv"
   # Include logo instead if HOME:
   # logo = "path/to/logo"
 
@@ -128,7 +128,7 @@ title = "Michael Jerman"
 # CV section
 [params.cv]
   enable = false
-  path = "images/jerman_cv.pdf"
+  # path = "images/jerman_cv.pdf"
 
 # Footer section
 # Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
