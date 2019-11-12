@@ -10,9 +10,9 @@ title = "Michael Jerman"
   email = "mail@michaeljerman.com"
   github = "http://github.com/michaeljerman"
   phone = "612-564-5355"
-  skype = "michaeljerman"
+  # skype = "michaeljerman"
   address = "1285 Univerity of Oregon <br> Eugene, OR 97403"
-  office_hours = "By appointment"
+  # office_hours = "By appointment"
   description = "" 
 
 # Hero section (from here on is for icon theme)
@@ -104,22 +104,22 @@ title = "Michael Jerman"
     paper_title = "Race, Government Assistance, and Recovery from Natural Disasters"
     status = "Working paper"      
     pdf = "research/fema/disaster.pdf"
-    slides = "research/fema/slides.pdf"    
+    pdfslides = "research/fema/slides.pdf"    
     abstract = "research/fema/abstract.html"
 
-  # [[params.research.item]]
-  #   paper_title = "Elections"
-  #   status = "Preliminary"          
-  #   # pdf = "paper.pdf"
-  #   slides = ""    
-  #   abstract = ""
+  [[params.research.item]]
+    paper_title = "The Effect of Close Electoral Outcomes on Pollution Abatement and Monitoring: An Example from India's 1996 Lok Sabha Election"
+    status = "Preliminary"          
+    # pdf = "paper.pdf"
+    # slides = ""    
+    abstract = "research/elections/abstract.html"
 
-  # [[params.research.item]]
-  #   paper_title = "RF Kernels"
-  #   status = "Preliminary"      
-  #   # pdf = "paper.pdf"
-  #   slides = ""    
-  #   abstract = ""    
+  [[params.research.item]]
+    paper_title = "Nonparametric Regression Discontinuity Estimation with Random Forest Kernels"
+    status = "Preliminary"      
+    # pdf = "paper.pdf"
+    slides = "research/rf/rf_slides.html"    
+    abstract = "research/rf/abstract.html"    
 
 # Contact section
 [params.contact]
