@@ -21,6 +21,7 @@ title = "Michael Jerman"
   title = "Michael Jerman"
   description = "Department of Economics <br> University of Oregon"
   back_img = "images/background.jpg"
+  # cv = "images/jerman_cv.pdf"
 
 # Navigation section
 [params.nav]
