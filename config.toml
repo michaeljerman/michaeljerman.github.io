@@ -118,7 +118,7 @@ title = "Michael Jerman"
     paper_title = "Nonparametric Regression Discontinuity Estimation with Random Forest Kernels"
     status = "Preliminary"      
     # pdf = "paper.pdf"
-    slides = "research/rf/rf_slides.html"    
+    slides = "research/rf/present/rf_slides.html"    
     abstract = "research/rf/abstract.html"    
 
 # Contact section
