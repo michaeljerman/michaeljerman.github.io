@@ -37,7 +37,7 @@ title = "Michael Jerman"
 [params.about]
   enable= true
   title = "about"
-  blurb = "I am a Ph.D. candidate in the Department of Economics at the University of Oregon. My research interests include economic growth and development, environmental economics, inequality, remote sensing, and machine learning. <br> <br> I will be available for interviews at the 2020 ASSA meetings."
+  blurb = "I am an Economics instructor at Oregon State University. My teaching and research interests include economic growth and development, environmental economics, inequality, remote sensing, and machine learning."
 
 # Teaching section
 [params.teaching]
