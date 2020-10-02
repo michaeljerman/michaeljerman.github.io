@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.19)  14 AUG 2020 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.9.11)  1 OCT 2020 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -534,39 +534,28 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-Overfull \hbox (6.59889pt too wide) in paragraph at lines 113--118
-[][] 
- []
-
-
-Overfull \hbox (7.77092pt too wide) in paragraph at lines 192--193
-[]\OT1/ptm/m/n/12 Environmental Eco-nomics, Growth and De-vel-op-ment, In-equal
--ity, Pub-lic Eco-nomics, Bayesian
- []
-
-[1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (13.74446pt too wide) in paragraph at lines 240--241
+Overfull \hbox (13.74446pt too wide) in paragraph at lines 236--237
 []\OT1/ptm/m/n/12 ``Measuring the Ef-fects of Pol-lu-tion Abate-ment in the Pre
 s-ence of Treat-ment []'' 
  []
 
 [2] (./jerman_cv.aux) ) 
 Here is how much of TeX's memory you used:
- 7543 strings out of 480478
- 108297 string characters out of 5905959
+ 7544 strings out of 480478
+ 108303 string characters out of 5905959
  362176 words of memory out of 5000000
  23375 multiletter control sequences out of 15000+600000
- 552809 words of font info for 69 fonts, out of 8000000 for 9000
+ 553916 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,96p,801b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
 /share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on jerman_cv.pdf (2 pages, 40370 bytes).
+Output written on jerman_cv.pdf (2 pages, 40414 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
