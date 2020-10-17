@@ -3,6 +3,7 @@ theme = "hugo-icon"
 baseURL = "https://michaeljerman.com/"
 languageCode = "en-AU"
 title = "Michael Jerman"
+publishDir = "docs"
 
 # Metadata
 [params]
