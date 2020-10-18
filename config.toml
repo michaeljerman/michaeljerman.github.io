@@ -20,7 +20,7 @@ publishDir = "docs"
 [params.hero2]
   img = "images/head_cropped1.png"
   title = "Michael Jerman"
-  description = "Economics Program <br> School of Public Policy <br> Oregon State University"
+  description = "Oregon State University"
   back_img = "images/background.jpg"
   # cv = "images/jerman_cv.pdf"
 
