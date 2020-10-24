@@ -1,0 +1,26 @@
+---
+title: "Week 10: Replication Exercise"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [](10_1.html)
+2. [](10_2.html)
+3. [](10_3.html)
+4. [](10_4.html)
+5. [](10_5.html)
+6. [](10_6.html)
+7. [](10_7.html)
+8. [](10_8.html)
+9. [](10_9.html)
+10. [](10_10.html)
+10. [](10_11.html)
+
+---
+
+[Begin](10_1.html)
+

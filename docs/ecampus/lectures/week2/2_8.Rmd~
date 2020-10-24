@@ -1,0 +1,18 @@
+---
+title: "OLS Statistical Properties, Part II"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Lecture Video
+
+**Embedded Video:**
+[https://media.oregonstate.edu/media/t/0_cwtbgmuo](https://media.oregonstate.edu/media/t/0_cwtbgmuo)
+
+
+
+
+[Back](2_6.html) | [Table of contents](2_0.html) | [Next](2_8.html) 

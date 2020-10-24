@@ -1,0 +1,57 @@
+---
+title: "OLS Derivation, Part III"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+source(week3.R)
+```
+
+## Lecture Video
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/391241/sp/39124100/embedIframeJs/uiconf_id/22119142/partner_id/391241?iframeembed=true&playerId=kaltura_player&entry_id=0_d28958g8&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_cj09c2ki" width="720" height="480"  allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+
+## R Example
+
+R will calculate the $R^2$ for the multiple regression model just as it does for the simple linear regression model. We can view it by executing the `summary()` function on the model object we created on the previous page:
+
+```{r, eval=T}
+summary(mlr)
+```
+
+R reports the $R^2$ as `Multiple R-squared` (0.1359, in this case). Note that this $R^2$ is higher than the one obtained from the simple regression model:
+
+```{r, eval=T}
+slr <- lm(wage ~ educ, data=wage2)
+summary(slr)
+```
+
+This is to be expected. For instance, we could add an entirely random explanatory variable to the model, and we would still expect $R^2$ to increase:
+
+```{r, eval=T}
+## Create a random variable of length n, add it to wage2 dataframe
+n <- length(wage2$wage)
+
+wage2$random_variable <- rnorm(n)
+
+## Estimate the mlr model with the random variable
+mlr_random <- lm(wage ~ educ + random_variable, data=wage2)
+summary(mlr_random)
+```
+
+Note that your output may be different because you will have generated a different random variable. Your $R^2$ will either be slightly larger or the same as the original $R^2$. It will not be lower.
+
+## Practice Question
+
+Suppose we added the `exper` variable to the model estimated above. What would we expect to happen to $R^2$?
+
+<div id="spoiler" style="display:none">
+In general, we would expect $R^2$ to increase, regardless of what variable we add. 
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+[Previous](3_2.html) | [Table of contents](3_0.html) | [Next](3_4.html)

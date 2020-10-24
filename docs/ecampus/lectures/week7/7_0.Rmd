@@ -1,0 +1,27 @@
+---
+title: "Week 7: Categorical Variables"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [](7_1.html)
+2. [](7_2.html)
+3. [](7_3.html)
+4. [](7_4.html)
+5. [](7_5.html)
+6. [](7_6.html)
+7. [](7_7.html)
+8. [](7_8.html)
+9. [](7_9.html)
+10. [](7_10.html)
+11. [](7_11.html)
+12. [](7_12.html)
+
+---
+
+[Begin](7_1.html)
+

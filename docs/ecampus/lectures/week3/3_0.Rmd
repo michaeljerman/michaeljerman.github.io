@@ -1,0 +1,31 @@
+---
+title: "Week 3: Multiple Regression Model"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/391241/sp/39124100/embedIframeJs/uiconf_id/22119142/partner_id/391241?iframeembed=true&playerId=kaltura_player&entry_id=0_d28958g8&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_45tjpl28" width="720" height="480"  allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+
+## Table of contents
+1. [OLS Derivation, Part I](3_1.html)
+2. [OLS Derivation, Part II](3_2.html)
+3. [OLS Derivation, Part III](3_3.html)
+4. [OLS Derivation, Part IV](3_4.html)
+5. [Unbiasedness, Part I](3_5.html)
+6. [Unbiasedness, Part II](3_6.html)
+7. [Irrelevant Variables](3_7.html)
+8. [Omitted Variables](3_8.html)
+9. [Variance, Part I](3_9.html)
+10. [Variance, Part II](3_10.html)
+11. [Variance, Part III](3_11.html)
+12. [Gauss-Markov Theorem](3_12.html) 
+
+
+---
+
+[Begin](3_1.html)
+

@@ -1,0 +1,69 @@
+---
+title: "OLS Algebraic Properties"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+
+library(wooldridge)
+library(ggplot2)
+data(wage2)
+```
+
+## Lecture Video
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/391241/sp/39124100/embedIframeJs/uiconf_id/22119142/partner_id/391241?iframeembed=true&playerId=kaltura_player&entry_id=0_d28958g8&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_7r7wibya" width="720" height="480"  allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+
+## Residuals and Fitted Values
+
+When we run a regression in R using the `lm()` function, R creates a new *object* that contains the regression results. We can save this object as a variable:
+
+```{r}
+wage_reg <- lm(wage ~ educ, data=wage2)
+```
+
+The `wage_reg` object contains lots of valuable information. For instance, we can extract the regression residuals $\widehat{u}$ from the object by adding `$residuals` to the end. Or we can extract the fitted values $\widehat{y}$ with `$fitted.values`. 
+
+For example, it's often useful to plot the residuals against the independent variable (we'll discuss why we might want to do this later in the course):
+
+```{r}
+qplot(x=wage2$educ, y=wage_reg$residuals)
+```
+
+Note that we do not need to tell R which dataset to use because we are supplying the data directly to the `qplot()` function. Alternatively, we could add a new variable to the `wage2` dataset that contains the residuals from the regression:
+
+```{r}
+## Create a new column in wage2 called "uhat"
+wage2$uhat <- wage_reg$residuals
+qplot(x=wage, y=uhat, data=wage2)
+## This also works:
+## qplot(x=wage2$wage, y=wage2$uhat)
+```
+
+## Practice Question
+Use the `lm()` function to calculate $\widehat{\beta}_1$ and $\widehat{\beta}_0$ for the model:
+
+$$\ln(wage) = \beta_0 + \beta_1 educ + u$$
+
+Using R, calculate 
+
+$$SSR=\sum_{i=1}^n \widehat{u}^2$$
+
+Hint: The `sum()` function calculates the sum of a vector.
+
+<div id="spoiler" style="display:none">
+
+```{r, eval=T}
+log_wage_reg <- lm(lwage ~ educ, data=wage2)
+sum(log_wage_reg$residuals^2)
+```
+
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+
+[Back](2_3.html) | [Table of contents](2_0.html) | [Next](2_5.html) 

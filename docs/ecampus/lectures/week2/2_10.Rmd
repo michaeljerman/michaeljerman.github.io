@@ -1,0 +1,32 @@
+---
+title: "OLS Variance"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Lecture Video
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/391241/sp/39124100/embedIframeJs/uiconf_id/22119142/partner_id/391241?iframeembed=true&playerId=kaltura_player&entry_id=0_0vqqctqp&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_7r7wibya" width="720" height="480"  allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+
+
+## Practice Question
+Consider the model
+
+$$wage = \beta_0 + \beta_1 educ + u$$
+
+and assume that we know for sure that assumptions SLR1--SLR4 hold in our sample. We perform OLS and obtain an estimate $\widehat{\beta}_1$. True or false: If all of the assumptions SLR1--SLR4 hold, it must be the case that $\widehat{\beta}_1 = \beta_1$.
+
+<div id="spoiler" style="display:none">
+
+False. The OLS estimate $\widehat{\beta}_1$ is a function of our data sample, and is therefore a random variable. As such, the probability that $\widehat{\beta}_1$ equals any specific number is equal to 0. For any given sample, we know for certain that $\widehat{\beta}_1 \neq \beta_1$. However, on average it will be the case that $E(\widehat{\beta}_1) = \beta_1$. 
+
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+[Back](2_9.html) | [Table of contents](2_0.html) | [Next](2_11.html) 

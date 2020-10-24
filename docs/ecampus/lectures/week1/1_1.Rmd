@@ -1,0 +1,26 @@
+---
+title: "Installing R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Introduction
+
+This class makes extensive use of the statistical software package R and the integrated desktop environment RStudio. These software packages are very powerful, commonly used, actively maintained, available on most computers (Windows, Mac, Linux), and---most importantly---completely free of charge. 
+
+The following is a brief overview on how to install both of these programs. For detailed instructions, read the documentation provided on the linked websites, search Google, or email the course instructor. If all else fails, you can use R and RStudio remotely on Citrix by following the instructions at <https://it.engineering.oregonstate.edu/citrix>
+
+## Download and Install R
+
+Open your browser and navigate to <https://cran.rstudio.com>. Follow the onscreen instructions to download and install R for your operating system. We will only be needing the "base" installation for this course.
+
+## Download and Install RStudio
+
+Now that we have installed R, we need some way to interact with the program (we can use a terminal run and interact with R, but this becomes very tedious, very quickly). There are many options, but we will use the popular RStudio environment. Download RStudio Desktop from the website <https://rstudio.com/products/rstudio/download/>. The option we are interested in is "RStudio Desktop." 
+
+After installing RStudio, open it by clicking on the icon on your desktop or from your program menu.
+
+[Table of contents](1_0.html) | [Next](1_2.html) 

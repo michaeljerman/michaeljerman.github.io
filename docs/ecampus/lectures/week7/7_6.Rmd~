@@ -1,0 +1,28 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+library(wooldridge)
+```
+
+## Lecture Video
+
+**Embedded Video:**
+[https://media.oregonstate.edu/media/t/0_wb5xk8ax](https://media.oregonstate.edu/media/t/0_wb5xk8ax)
+
+## R Example
+
+## Practice Question
+
+
+<div id="spoiler" style="display:none">
+
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+[Previous](7_5.Rmd) | [Table of contents](7_0.html) | [Next](7_7.html)

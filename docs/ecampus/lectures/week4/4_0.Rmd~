@@ -1,0 +1,28 @@
+---
+title: "Week 3: Multiple Regression Model"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [](4_1.html)
+2. [](4_2.html)
+3. [](4_3.html)
+4. [](4_4.html)
+5. [](4_5.html)
+6. [](4_6.html)
+7. [](4_7.html)
+8. [](4_8.html)
+9. [](4_9.html)
+10. [](4_10.html)
+11. [](4_11.html)
+12. [](4_12.html) 
+
+
+---
+
+[Begin](4_1.html)
+

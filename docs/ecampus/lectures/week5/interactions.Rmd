@@ -1,0 +1,81 @@
+---
+title: "Interaction Terms"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=T)
+```
+
+## Lecture Video
+
+**Embedded video:**[https://media.oregonstate.edu/media/t/0_11nbqqr9](https://media.oregonstate.edu/media/t/0_11nbqqr9)
+
+## R Example
+Open the `week5.R` script that we started previously and click the "Source" button to execute all of the commands. 
+
+Let’s consider the multiple regression model that aims to capture the association between an individual’s hourly wage as the outcome variable, and hours of sleep per night and education as the explanatory variables:
+
+$$lhrwage = \beta_0 + \beta_1 sleep\_hours + \beta_2 educ + u$$
+
+```{r}
+data(sleep75)
+sleep75$sleep_hours <- sleep75$sleep/60
+lm_sleep <- lm(lhrwage ~ sleep_hours + educ, data = sleep75)
+summary(lm_sleep)
+```
+
+See the package documentation for a description of the variables. How do we interpret $\beta_1$? $\beta_2$? $\beta_1$ is the effect of one additional hour of sleep per night on log hourly wage, holding education cnstant. $\beta_2$ is the effect of one additional year of education on wages, holding education constant.
+
+These parameters are interesting, but the model is still a bit unsatisfying. For instance, what if educated people sleep more than less educated people? Or the opposite? In that case, thinking about the effect of sleep on wages while remains education constant isn’t really the question we want to answer. Moreover as a practical matter, in any dataset we might observe a high correlation between hours of sleep and education, so trying to tease out the effect of one of these factors in isolation can be tricky unless we have a lot of data.
+
+In this case, we might want to model the effect of sleep on wages as depending not only on sleep alone, but on education too. We can do this by reformulating the model as:
+
+$$lhrwage = \beta_0 + \beta_1 sleep\_hours + \beta_2 educ + \beta_3 sleep\_hours\cdot educ + u$$
+
+The term $sleep\_hours\cdot educ$ is called an interaction term, which is a new variable formed from the product of two or more other variables. Interaction terms measure the way in which the two explanatory variables correlate or interact with each other. 
+
+```{r}
+# Note the syntax
+# Use a colon ":" for interactions, NOT the multiplication sign!
+lm_sleep_interaction <- lm(lhrwage ~ sleep_hours + educ +
+                           sleep_hours:educ, data = sleep75)
+summary(lm_sleep)
+```
+
+The marginal effect of sleep on wages is then not just $\beta_1$ but:
+
+$$\dfrac{\Delta lhrwage}{\Delta sleep\_hours} = \beta_1 + \beta_3 educ$$
+
+The marginal effect of sleep on wage now depends on education, just as we intended to model. What is the marginal effect of sleep on wage for a person with no education? $\beta_1$. What is the marginal effect of sleep on health for a person who has 10 years of education? $\beta_1 + \beta_3$. And so on.
+
+Note that the marginal effect of sleep is not constant, but depends on the particular value of education we consider. This is similar to calculating marginal effects with quadratic terms. What signs do we expect for $\beta_1$, $\beta_3$? $\beta_1 > 0$, $\beta_3 > 0$. $\beta_3 > 0$, in this case means the marginal effect of sleep on wages is greater for more educated people (you might think the opposite is true as well).
+
+Notice that the interaction term also serves a similar purpose for thinking about the marginal effect of education on wages:
+
+$$\dfrac{\Delta lhrwage}{\Delta educ} = \beta_2 + \beta_3 sleep\_hours$$
+
+The marginal effect of education on wages depends on how much one sleep one gets, just as we intended.
+
+## Practice Question
+What is the estimated effect of an additional year of education for a person who gets 7.5 hours of sleep per night?
+
+<div id="spoiler" style="display:none">
+
+```{r, eval=T}
+beta2hat <- coefficients(lm_sleep_interaction)["educ"]
+beta3hat <- coefficients(lm_sleep_interaction)["sleep_hours:educ"]
+beta2hat + 7.5*beta3hat
+```
+
+Each additional year of education increases wages by an estimated 13.3% for an individual who gets 7.5 hours of sleep per night.
+
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+
+---
+
+[Previous](quadratics_II.html) | [Table of contents](toc.html) | [Next](r2.html) 

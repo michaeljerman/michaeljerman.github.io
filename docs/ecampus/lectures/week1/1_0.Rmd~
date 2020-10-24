@@ -1,0 +1,22 @@
+---
+title: "Week 1: Introduction to R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [Installing R and RStudio](install.html)
+2. [Basics of R and RStudio, part I](basics.html)
+3. [Basics of R and RStudio, part II](basics2.html)
+4. [Basics of R and RStudio, part III](basics3.html)
+5. [Stats Review: Small Sample Hypothesis Tests](smallsamp.html)
+6. [Stats Review: Confidence Intervals](ci.html)
+
+
+---
+
+[Begin](install.html)
+

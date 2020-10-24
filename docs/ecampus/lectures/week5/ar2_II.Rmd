@@ -1,0 +1,62 @@
+---
+title: "Goodness of Fit: Adjusted R-squared, Part II"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=T)
+```
+
+## Lecture Video
+
+**Embedded video:**[https://media.oregonstate.edu/media/t/0_06i2mdc9](https://media.oregonstate.edu/media/t/0_06i2mdc9)
+
+## R Example
+Open the `week5.R` script that we started previously and click the "Source" button to execute all of the commands. 
+
+A limitation that applies to both $R^2$ and $\bar{R}^2$ is that comparing models on the basis of these measures is valid only when the samples and the dependent variables between the models are identical. For instance, consider two models (using the same sample) that relate CEO salary to company sales and return on equity (roe):
+
+$$salary = \hat{\beta}_0 + \hat{\beta}_1 sales + \hat{\beta}_2 roe$$
+$$log(salary) = \hat{\beta}_0 + \hat{\beta}_1 log(sales) + \hat{\beta}_2 roe$$
+
+Estimate these models using the `ceosal1` dataset from the `woodford` package:
+
+```{r}
+data(ceosal1)
+lm_roe1 <- lm(salary ~ sales + roe, data=ceosal1)
+lm_roe2 <- lm(lsalary ~ lsales + roe, data=ceosal1)
+```
+
+Compare the regression outputs:
+
+```{r}
+summary(lm_roe1)
+```
+
+```{r}
+summary(lm_roe2)
+```
+
+One might be tempted to look at these results and conclude that the second model is better because of the higher $R^2$ and $\bar{R}^2$ . This is not necessarily the case though. Recall that these goodness-of-fit measures look at how much variation in the dependent variables can be explained by the explanatory variables. Measuring salary in dollars results in much more
+variation in the outcome than the log of salary; taking the log compresses the variation in the outcome that we seek to explain. Comparing the $R^2$’s between models with different dependent variables is therefore not an apples-to-apples comparison, and should be avoided.
+
+## Practice Question
+
+Consider a regression of log earnings on education:
+
+$$lwage = \beta_0 + \beta_1 educ + u$$
+
+Estimate the equation first using the sample from the `beauty` dataset and then again using the sample from the `card` dataset. After comparing the $R^2$ and $\bar{R}^2$ from both regressions, which sample do you prefer?
+
+<div id="spoiler" style="display:none">
+
+A trick question. Neither $R^2$ nor $\bar{R}^2$ can be used to compare models that use different data samples.
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+
+---
+
+[Previous](ar2_I.html) | [Table of contents](toc.html) | [Next](coefficients.html) 

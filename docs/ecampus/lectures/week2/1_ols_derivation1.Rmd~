@@ -1,0 +1,26 @@
+---
+title: "Ordinary Least Squares Derivation, Part I"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Lecture Video
+
+**Embedded Video**[https://courses.ecampus.oregonstate.edu/index.php?video=econ424h/wk2.1.mp4](https://courses.ecampus.oregonstate.edu/index.php?video=econ424h/wk2.1.mp4)
+
+## Exploring the Data
+
+In the above video, Professor Pugatch describes why we might care about the relationship between two variables, such as education and earnings. Let's look at a real-world example of this relationship in R.
+
+We'll use data that is provided by the `wooldridge` package in R. If you haven't yet, install this package by typing 
+
+```{r}
+install.packages("wooldridge")
+```
+
+in the RStudio console (you only need to do this once on your computer). Next, open a new R script and save it as something memorable (I call mine `week1.R`). 
+
+[Table of contents](toc.html) | [Next](ols_derivation2.html) 

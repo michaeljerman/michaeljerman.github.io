@@ -1,0 +1,57 @@
+---
+title: "Unbiasedness, Part I"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+source(week3.R)
+```
+
+## Lecture Video
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/391241/sp/39124100/embedIframeJs/uiconf_id/22119142/partner_id/391241?iframeembed=true&playerId=kaltura_player&entry_id=0_d28958g8&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_u8nqtpqt" width="720" height="480"  allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+## R Example
+
+What happens if we try to estimate a model with perfect multicolinearity?
+
+Let's create a new variable in the `wage2` dataset that measures the amount of post high-school education that an individual receives:
+
+```{r, eval=T}
+wage2$post_highschool <- wage2$educ - 12
+summary(wage2$post_highschool)
+```
+
+Note that the `post_highschool` is equal to 4 if `educ` is equal to 16 (4 additional years of schooling after high school). 
+
+Now let's try to include both `educ` and `post_highschool` in the same model:
+
+```{r, eval=T}
+colinear_reg <- lm(wage ~ educ + post_highschool, wage2)
+summary(colinear_reg)
+```
+
+The output `NA` is R's way of saying that a variable cannot be estimated. Here, R drops the `post_highschool` variable, then proceeds to estimate the simple linear regression as if `post_highschool` were not included. 
+
+## Practice Question
+Suppose we are interested in the effect of education and experience on wages. We create a new variable that is the sum of education and experience, and included in the following regression:
+
+$$wage = \beta_0 + \beta_1 educ + \beta_2 exper + \beta_3 (educ + exper) + u$$
+
+Can we estimate this model? Why or why not?
+
+<div id="spoiler" style="display:none">
+We cannot estimate this model. $(educ + exper)$ is a linear combination of the component variables, and is therefore perfectly colinear. 
+
+```{r, eval=T}
+wage2$educ_exper <- wage2$educ + wage2$exper
+sum_reg <- lm(wage ~ educ + exper + educ_exper, data=wage2)
+summary(sum_reg)
+```
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+[Previous](3_4.html) | [Table of contents](3_0.html) | [Next](3_6.html)

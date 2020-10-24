@@ -1,0 +1,28 @@
+---
+title: "Week 2: Simple Regression Model"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [Ordinary Least Squares Derivation, Part I](2_1.html)
+2. [Ordinary Least Squares Derivation, Part II](2_2.html)
+3. [Ordinary Least Squares Derivation, Part III](2_3.html)
+4. [](2_4.html)
+5. [](2_5.html)
+6. [](2_6.html)
+7. [](2_7.html)
+8. [](2_8.html)
+9. [](2_9.html)
+10. [](2_10.html)
+11. [](2_11.html)
+12. [](2_12.html)
+
+
+---
+
+[Begin](2_1.html)
+

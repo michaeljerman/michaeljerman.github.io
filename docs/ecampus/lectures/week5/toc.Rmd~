@@ -1,0 +1,71 @@
+---
+title: "Data Scaling"
+author: "Part I"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Lecture Video
+
+**EMBED VIDEO HERE**
+
+## R Example
+Start a new R script called `week5.R` and save it in your course directory. Begin by loading the `car` and `wooldridge` packages, as well as the `tidyverse`, which should always be your first line:
+```{r, eval=F}
+library(tidyverse)
+library(wooldridge)
+library(car)
+```
+
+We'll use the `bwght` dataset to estimate:
+
+$$\widehat{bwght} = \widehat{\beta}_0 + \widehat{\beta}_1 cigs + \widehat{\beta}_2 faminc$$
+
+Estimate the equation in R:
+
+```{r, eval=T}
+data(bwght)
+lm1 <- lm(bwght ~ cigs + faminc, data=bwght)
+summary(lm1)
+```
+
+Recall that we can learn more about the `bwght` dataset by clicking on `wooldridge` in the "Packages" tab in RStudio. According to the documentation, the variables are defined as:
+
+- bwght: birth weight, ounces
+- cigs: cigs smked per day while preg
+- faminc: 1988 family income, $1000s
+
+The coefficient on `cigs` therefore says that if a pregnant mother smokes one additional cigarette, her baby will weight 0.46 ounces less. 
+
+Suppose we measure birth weight in pounds rather than ounces. One pound is 16 ounces, so we define the new dependent variable as $bwghtlbs = bwght/16$. 
+
+```{r}
+bwght$bwghtlbs <- bwght$bwght/16
+```
+
+This is an example of data rescaling. Because we’re rescaling the dependent variable and our coefficients measure the marginal effect on this dependent variable, it will affect all of our coefficients. To see this, we divide the entire regression by 16:
+
+$$\dfrac{\widehat{bwght}}{16} = \dfrac{\widehat{\beta}_0}{16} + \dfrac{\widehat{\beta}_1}{16} cigs + \dfrac{\widehat{\beta}_2}{16} faminc$$
+
+
+In other words, all of our coefficients in the new regression should be the old coefficients divided by 16. This is exactly what we see if we estimate the equation in R:
+
+```{r, eval=T}
+lm_lbs <- lm(bwghtlbs ~ cigs + faminc, data=bwght)
+summary(lm_lbs)
+```
+
+How do we interpret this new coefficient? A mother who smokes an additional cigarette will have a baby that weighs 0.0289 pounds less, on average. Because 0.0289 pounds$\times$(16 ounces/pound) = 0.4634 ounces, this is equivalent to our original result. You can also verify that the coefficient on faminc is the original coefficient divided by 16.
+
+What about t statistics? The new t-statistic on $\widehat{\beta}_1$ is $t_{\widehat{\beta}_1} = -5.07$, which is the same as in the original regression (`lm1`). Notice that the $R^2$ of the two regressions stays
+the same also. This is because even though SER and SSR change between the regressions, they change in the same proportions, so $R^2$ remains the same.
+
+## Test your knowledge
+There are approximately 2.2 pounds per kilogram. How much does one additional cigarette affect the birth weight of a baby in kilograms?
+
+---
+
+[Previous]() | [Table of contents]() | [Next]() 

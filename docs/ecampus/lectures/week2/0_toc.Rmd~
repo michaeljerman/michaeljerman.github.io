@@ -1,0 +1,19 @@
+---
+title: "Week 1: Introduction to R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [Ordinary Least Squares Derivation, Part I](ols_derivation1.html)
+2. [Ordinary Least Squares Derivation, Part II](ols_derivation2.html)
+3. [Ordinary Least Squares Derivation, Part III](ols_derivation3.html)
+
+
+---
+
+[Begin](ols_derivation1.html)
+

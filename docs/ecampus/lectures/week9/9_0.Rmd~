@@ -1,0 +1,25 @@
+---
+title: "Week 9: Data and Specification"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+```
+
+## Table of contents
+1. [](9_1.html)
+2. [](9_2.html)
+3. [](9_3.html)
+4. [](9_4.html)
+5. [](9_5.html)
+6. [](9_6.html)
+7. [](9_7.html)
+8. [](9_8.html)
+9. [](9_9.html)
+10. [](9_10.html)
+
+---
+
+[Begin](9_1.html)
+

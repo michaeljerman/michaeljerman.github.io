@@ -1,0 +1,58 @@
+---
+title: "Ordinary Least Squares Derivation, Part III"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=F)
+
+library(wooldridge)
+data(wage2)
+```
+
+## Lecture Video
+
+**Embedded Video:**
+[https://media.oregonstate.edu/media/t/0_k3czgop6](https://media.oregonstate.edu/media/t/0_k3czgop6)
+
+## OLS in R
+
+R can easily find the values of $\widehat{\beta}_0$ and $\widehat{\beta}_1$ that minimize the sum of the squared residuals. Once again, let's estimate the model:
+
+$$wage = \beta_0 + \beta_1 educ + u$$
+
+In R, we simply type:
+
+```{r}
+lm(wage ~ educ, data=wage2)
+```
+
+The `lm()` function estimates a *linear model*, which is just another way of saying "ordinary least squares." The first argument in the `lm()` function is what R calls a *formula*. Formulas in R are constructed by typing the left-hand-side, dependent variable first, followed by a tilde (`~`), then the right-hand-side, independent variable(s). It looks similar to our model that we wrote above, but we have omitted the coefficients and the error term. We have to use the `~` symbol instead of an equals sign because `=` means something specific in R (note that we use `=` when telling `lm()` to use the `wage2` dataset).
+
+The output of the `lm()` command should look like:
+
+```{r eval=T, echo=F}
+lm(wage ~ educ, data=wage2)
+```
+
+R is telling us the estimated OLS coefficients. The number reported under `(Intercept)` is the estimate for $\beta_o$, while the number under `educ` is the estimate of $\beta_1$, the coefficient on the `educ` variable. Note that these values are identical to what we found on the previous page. 
+
+## Practice Question
+Use the `lm()` function to calculate $\widehat{\beta}_1$ and $\widehat{\beta}_0$ for the model:
+
+$$\ln(wage) = \beta_0 + \beta_1 educ + u$$
+
+
+<div id="spoiler" style="display:none">
+
+```{r, eval=T}
+lm(lwage ~ educ, data=wage2)
+```
+
+</div>
+
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Solution</button>
+
+
+
+[Back](2_ols_derivation2.html) | [Table of contents](0_toc.html) | [Next](4.html) 
