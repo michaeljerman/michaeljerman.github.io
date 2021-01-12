@@ -2,7 +2,7 @@
 title: "The Effect of India's 1996 Lok Sabha Election on Pollution Abatement and Monitoring"
 date: "2021-01-11"
 status: "Working Paper"
-image: "img/stp_elections.png"
+image: "/files/stp_elections.png"
 categories: ["research"]
 paper: "/files/stp_elections.pdf"
 ---
