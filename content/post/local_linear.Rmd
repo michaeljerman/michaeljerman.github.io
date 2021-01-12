@@ -1,0 +1,30 @@
+---
+title: "Nonparametric Regression Discontinuity Estimation with Adaptive Kernels"
+date: "2017-10-19"
+status: "Ongoing Research"
+image: "/files/local_linear.png"
+categories: ["research"]
+---
+
+<!-- blogdown::hugo_build() -->
+<!-- blogdown::serve_site() -->
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, echo=F, warning=F, message=F,
+                      dev.args=list(bg="transparent"))
+dir <- "~/hd/stp_elections"
+library(tidyverse)
+library(stargazer)
+load(paste0(dir, "/data/results.RData"))
+```
+
+## Slides
+
+```{r, out.width="100%"}
+knitr::include_url("/files/local_linear_slides.html")
+```
+
+
+

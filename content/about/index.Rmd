@@ -1,0 +1,7 @@
+---
+title: "About"
+vita: "vita/jerman_cv.pdf"
+image: "/files/india_rivers.png"
+---
+
+I am an instructor of economics at Oregon State University. My teaching and research interests include economic growth and development, environmental economics, inequality, remote sensing, and machine learning.

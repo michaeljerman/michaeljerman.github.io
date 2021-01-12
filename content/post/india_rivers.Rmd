@@ -1,0 +1,37 @@
+---
+title: "Measuring the Effects of Pollution Abatement in the Presence of Treatment Externalities"
+date: "2017-01-01"
+status: "Working Paper"
+image: "files/india_rivers.png"
+categories: ["research"]
+paper: "/files/pollution_abatement.pdf"
+---
+
+<!-- blogdown::hugo_build() -->
+<!-- blogdown::serve_site() -->
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, echo=F, warning=F, message=F,
+                      dev.args=list(bg="transparent"))
+dir <- "~/hd/stp_elections"
+library(tidyverse)
+library(stargazer)
+load(paste0(dir, "/data/results.RData"))
+```
+
+## Abstract
+
+Differences-in-differences estimators can be biased in the presence of treatment externalities. In this paper I develop a spatial model that accounts for these externalities, and estimate the model using data on Indian river pollution. I show that failing to account for treatment externalities can substantially bias estimates toward zero.
+The Indian government built 107 sewage treatment plants in 1995 as part of the National River Conservation Plan (NRCP). The general consensus in the literature and among the Indian population is that the NRCP has been largely ineffective. Using data from the Central Pollution Control Board's river monitoring network, I find significant reductions in measured pollution levels in the areas downstream of sewage treatment facilities when compared to untreated areas. 
+
+<!-- ## Slides -->
+
+
+<!-- ```{r, out.width="100%"} -->
+<!-- knitr::include_url("/files/stp_elections_slides.html") -->
+<!--                    ## height="800px") -->
+<!-- ``` -->
+
+
+

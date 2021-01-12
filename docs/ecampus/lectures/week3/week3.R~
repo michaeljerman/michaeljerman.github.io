@@ -1,8 +1,0 @@
-library(wooldridge)
-data(wage2)
-
-## Estimate simple regression model
-slr <- lm(wage ~ educ, data=wage2)
-
-## Include experience as explanatory variable
-mlr <- lm(wage ~ educ + exper, data=wage2)

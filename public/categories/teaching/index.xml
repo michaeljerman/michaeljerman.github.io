@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>teaching on Michael Jerman</title>
+    <link>/categories/teaching/</link>
+    <description>Recent content in teaching on Michael Jerman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/teaching/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Effect of Close Electoral Outcomes on Pollution Abatement and Monitoring</title>
+      <link>/post/stp_elections/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/stp_elections/</guid>
+      <description>Introduction To be added. here is a bunch of text to make some words wrap around the page i don’t know if there is full justification here are some random letters l l a d a d g a g a g g a g a g a g g g a g a g ag g a ag g a g a g a g a g a g a</description>
+    </item>
+    
+  </channel>
+</rss>

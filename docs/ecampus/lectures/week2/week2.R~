@@ -1,3 +1,0 @@
-library(wooldridge)
-
-data(wage2)

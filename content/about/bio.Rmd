@@ -1,0 +1,5 @@
+---
+title: "Teaching"
+---
+
+I am an Economics instructor at Oregon State University. My teaching and research interests include economic growth and development, environmental economics, inequality, remote sensing, and machine learning.

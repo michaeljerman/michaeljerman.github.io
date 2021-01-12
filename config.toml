@@ -1,147 +1,133 @@
-# Main config file for icon theme.
-theme = "hugo-icon"
-baseURL = "https://michaeljerman.com/"
-languageCode = "en-AU"
+baseurl = "https://www.michaeljerman.com/"
 title = "Michael Jerman"
+theme = "hugo-nederburg-theme"
+languageCode = "en-us"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+preserveTaxonomyNames = true
+paginate = 5 #frontpage pagination
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.tex$"]
 publishDir = "docs"
 
-# Metadata
+[privacy]
+  # Google Analytics privacy settings - https://gohugo.io/about/hugo-and-gdpr/index.html#googleanalytics
+  [privacy.googleAnalytics]
+    # set to true to disable service 
+    disable = false
+    # set to true to meet General Data Protection Regulation (GDPR)
+    anonymizeIP = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+
 [params]
+  # Unmark to use post folder for images. Default is static folder.
+  #usepostimgfolder = true
+  # slogan = "Economic Research | Data Visualization | Data Analysis"
+  description = "Describe your website" # meta description
+  # You need to set author to have an author bio. If you have a writer in the markdown file it will override this.
   author = "Michael Jerman"
+  authorLink = "https://appernetic.io/"
+  bio = [ "" ]
+  copyright = [
+    "&copy; 2020 Michael Jerman",	
+    "Website based on the Nederburg theme (&copy; 2018 Göran Svensson)",
+    "Color palette based on the Solarized theme (&copy; 2011 Ethan Schoonover)"
+  ]
+
+
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below (it is also used in Gravatar for the bio).
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
   email = "mail@michaeljerman.com"
-  github = "http://github.com/michaeljerman"
-  phone = "612-564-5355"
-  # skype = "michaeljerman"
-  # address = "1285 Univerity of Oregon <br> Eugene, OR 97403"
-  # office_hours = "By appointment"
-  description = "" 
 
-# Hero section (from here on is for icon theme)
-[params.hero2]
-  img = "images/head_cropped1.png"
-  title = "Michael Jerman"
-  description = "Oregon State University"
-  back_img = "images/background.jpg"
-  # cv = "images/jerman_cv.pdf"
+  # Nav links in the side bar
+  # [[menu.main]]
+  # name = "Home"
+  # url = "/"
+  # weight = 1
 
-# Navigation section
-[params.nav]
-  about = "About"
-  teaching = "Teaching"
-  research = "Research"
-  contact = "Contact"
-  # cv = "cv"
-  # Include logo instead if HOME:
-  # logo = "path/to/logo"
+  # [[menu.main]]
+  # name = "About"
+  # url = "about/"
+  # weight = 2
 
-# About section
-[params.about]
-  enable= true
-  title = "about"
-  blurb = "I am an Economics instructor at Oregon State University. My teaching and research interests include economic growth and development, environmental economics, inequality, remote sensing, and machine learning."
+  # [[menu.main]]
+  # name = "Get in touch"
+  # url = "contact/"
+  # weight = 3
 
-# Teaching section
-[params.teaching]
-  enable = true
-  title = "teaching"
-  description = ""	
+  [[menu.main]]
+  name = "Research"
+  url = "categories/research/"
+  weight = 2
 
-  [[params.teaching.item]]
-    name = "Intermediate&nbsp;Micro"
-    terms = "Spring 2018"
-    website = "teaching/intermediate_micro/index.html"
-    syllabus = "teaching/intermediate_micro/syllabus_spring2018.pdf"
+  [[menu.main]]
+  name = "Teaching"
+  url = "teaching/courses/"
+  weight = 2
 
-  [[params.teaching.item]]
-    name = "Economics&nbsp;of&nbsp;Inequality"
-    terms = "Winter 2018"
-    website = "teaching/inequality/index.html"
-    syllabus = "teaching/inequality/syllabus_winter2018.pdf"
+  [[menu.main]]
+  name = "about"
+  url = "about/"
+  weight = 3
 
-  [[params.teaching.item]]
-    name = "Economics&nbsp;of&nbsp;Discrimination"
-    terms = "Winter 2018"
-    website = "teaching/discrimination/index.html"
-    syllabus = "teaching/discrimination/slides/discrimination_syllabus_winter2018.pdf"
+  [[menu.main]]
+  name = "Contact"
+  url = "contact/"
+  weight = 4
 
-  [[params.teaching.item]]
-    name = "Game&nbsp;Theory"
-    terms = "Spring 2018"
-    website = "teaching/game_theory/index.html"
-    syllabus = "teaching/game_theory/slides/syllabus_spring2018.pdf"
+# this will also be in author bio if there is no writer.
+  [params.social]
+  # facebook      = "full Social profile url in facebook"
+  # googleplus    = "full profile url in googleplus"
+  email         = "mail@michaeljerman.com"
+  # twitter       = "full profile url in twitter"
+  linkedin      = "https://www.linkedin.com/in/michael-jerman-b05a891b9"
+  # stackoverflow = "full profile url in stackoverflow"
+  # instagram     = "full profile url in instagram"
+  github        = "https://github.com/michaeljerman"
+  # pinterest     = "full profile url in pinterest"
+  # rss           = true
 
-  [[params.teaching.item]]
-    name = "Growth&nbsp;and&nbsp;Development"
-    terms = "Spring 2018"
-    website = "teaching/growth/index.html"
-    syllabus = "teaching/growth/slides/syllabus_spring2018.pdf"
+# Add a writer, then use it in the markdown front matter like this: writer = "Lukas Herman"
+  [params.writers]
+    [params.writers."Lukas Herman"]
+    link = "https://lherman.tk"
+    email = "lherman.cs@gmail.com"
+    bio = [
+      "Lukas has a few skills up his sleve. He can fly blindfolded under a bridge while simultanous writing blog posts."
+    ]
+    facebook      = "full lukas profile url in facebook"
+    googleplus    = "full profile url in googleplus"
+    twitter       = "full profile url in twitter"
+    linkedin      = "full profile url in linkedin"
+    stackoverflow = "full profile url in stackoverflow"
+    instagram     = "full profile url in instagram"
+    github        = "full profile url in github"
+    pinterest     = "full profile url in pinterest"
 
-  [[params.teaching.item]]
-    name = "Econometrics"
-    terms = "Summer 2016"
-    syllabus = "teaching/421_syllabus.pdf"
-
-
-# Research section
-[params.research]
-  enable = true
-  title = "Research"
-  # description = "blurb here"
-
-  [[params.research.item]]
-    paper_title = "Measuring the Effects of Pollution Abatement in the Presence of Treatment Externalities: An Example Using Indian Data"
-    status = "Working paper"    
-    pdf = "research/rivers/rivers.pdf"
-    slides = "research/rivers/present/rivers.html"
-    abstract = "research/rivers/abstract.html"
-
-  [[params.research.item]]
-    paper_title = "Estimating Regional Inequality and Growth Using Satellite Data"
-    status = "Working paper"      
-    pdf = "research/satineq/satineq.pdf"
-    slides = "research/satineq/present/satineq.html"    
-    abstract = "research/satineq/abstract.html"	
-
-  [[params.research.item]]
-    paper_title = "Race, Government Assistance, and Recovery from Natural Disasters"
-    status = "Working paper"      
-    pdf = "research/fema/disaster.pdf"
-    pdfslides = "research/fema/slides.pdf"    
-    abstract = "research/fema/abstract.html"
-
-  [[params.research.item]]
-    paper_title = "The Effect of Close Electoral Outcomes on Pollution Abatement and Monitoring: An Example from India's 1996 Lok Sabha Election"
-    status = "Preliminary"          
-    # pdf = "paper.pdf"
-    # slides = ""    
-    abstract = "research/elections/abstract.html"
-
-  [[params.research.item]]
-    paper_title = "Nonparametric Regression Discontinuity Estimation with Random Forest Kernels"
-    status = "Preliminary"      
-    # pdf = "paper.pdf"
-    slides = "research/rf/present/rf_slides.html"    
-    abstract = "research/rf/abstract.html"    
-
-# Contact section
-[params.contact]
-  enable = true
-
-# CV section
-[params.cv]
-  enable = false
-  # path = "images/jerman_cv.pdf"
-
-# Footer section
-# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
-[params.footer]
-  enable = false
-  note = "<p><tiny>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></tiny></p>"
-  # mail = "mailto:mjerman@uoregon.edu"
-  # github = "https://github.com/michaeljerman"
-  # twitter = ""
-  # facebook = ""
-  # vine = ""
-  # linkedin = ""
-  # instagram = ""
-  
+    [params.writers."Göran Svensson"]
+    link = "https://appernetic.io/"
+    email = "goran@molnsys.com"
+    bio = [
+      "Göran is an avid blogger and the founder of <a href='https://appernetic.io/'>Appernetic.io</a>. This is the author bio shown after posts."
+    ]
+    facebook      = "full Göran profile url in facebook"
+    googleplus    = "full profile url in googleplus"
+    twitter       = "full profile url in twitter"
+    linkedin      = "full profile url in linkedin"
+    stackoverflow = "full profile url in stackoverflow"
+    instagram     = "full profile url in instagram"
+    github        = "full profile url in github"
+    pinterest     = "full profile url in pinterest"

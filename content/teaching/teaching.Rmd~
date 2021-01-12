@@ -1,0 +1,32 @@
+---
+title: "Teaching"
+date: "2020-09-01"
+image: "img/411.png"
+categories: ["teaching"]
+course: "ECON 411"
+term: "Fall 2020"
+school: "Oregon State University"
+syllabus: "pdf/syllabus"
+coursedescription: "test description"
+---
+
+<!-- blogdown::hugo_build() -->
+<!-- blogdown::serve_site() -->
+
+
+## Current Courses 
+#### Oregon State University
+##### Fall 2020
+Click on the course title to download the syllabus:
+
+- [Intermediate Microeconomics]()
+- [Advanced Microeconomics]()
+- [Industrial Organization]()
+- [Introduction to Econometrics]()
+
+## Previous Courses
+#### Oregon State University
+
+#### University of Oregon
+
+
