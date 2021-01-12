@@ -1,4 +1,4 @@
-baseurl = "https://www.michaeljerman.com/"
+baseurl = "https://michaeljerman.com/"
 title = "Michael Jerman"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"

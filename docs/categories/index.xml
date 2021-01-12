@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Michael Jerman</title>
-    <link>https://www.michaeljerman.com/categories/</link>
+    <link>https://michaeljerman.com/categories/</link>
     <description>Recent content in Categories on Michael Jerman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.michaeljerman.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeljerman.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>research</title>
-      <link>https://www.michaeljerman.com/categories/research/</link>
+      <link>https://michaeljerman.com/categories/research/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.michaeljerman.com/categories/research/</guid>
+      <guid>https://michaeljerman.com/categories/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>teaching</title>
-      <link>https://www.michaeljerman.com/categories/teaching/</link>
+      <link>https://michaeljerman.com/categories/teaching/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.michaeljerman.com/categories/teaching/</guid>
+      <guid>https://michaeljerman.com/categories/teaching/</guid>
       <description></description>
     </item>
     
