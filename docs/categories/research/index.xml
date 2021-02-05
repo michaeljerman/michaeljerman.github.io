@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>research on Michael Jerman</title>
-    <link>/categories/research/</link>
+    <link>https://michaeljerman.com/categories/research/</link>
     <description>Recent content in research on Michael Jerman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeljerman.com/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Effect of India&#39;s 1996 Lok Sabha Election on Pollution Abatement and Monitoring</title>
-      <link>/post/stp_elections/</link>
+      <link>https://michaeljerman.com/post/stp_elections/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/stp_elections/</guid>
+      <guid>https://michaeljerman.com/post/stp_elections/</guid>
       <description>Abstract India’s general election of 1996 signaled a new era of political instability and competition, with three subsequent elections and five separate governments formed within three years. The political turmoil during this time created large incentives for vote-buying and other forms of clientelism. I find that electorally competitive cities in the Ganges basin during this period were more likely to receive funding for pollution abatement from the federal government of India.</description>
     </item>
     
     <item>
       <title>Geospatial Disaggregation of Economic and Demographic Data</title>
-      <link>/post/disag/</link>
+      <link>https://michaeljerman.com/post/disag/</link>
       <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/disag/</guid>
+      <guid>https://michaeljerman.com/post/disag/</guid>
       <description>Abstract I propose a universal method for disaggregating count statistics. The method is able to disaggregate regional statistics such as those collected by censuses or surveys. The output of the procedure is a dasymetric map of pixel-level estimates that preserves the aggregate counts over the data collection region. I demonstrate the algorithm by disaggregating Ugandan census counts of population, tabooda (kerosene lamp) usage, people consuming two or more meals per day, and subsistence farms counted at the subcounty level (the smallest administrative unit reported by the census).</description>
     </item>
     
     <item>
       <title>Race, Government Assistance, and Recovery from Natural Disasters</title>
-      <link>/post/disasters/</link>
+      <link>https://michaeljerman.com/post/disasters/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/disasters/</guid>
+      <guid>https://michaeljerman.com/post/disasters/</guid>
       <description>Abstract I use nighttime light luminosity data to estimate the effect of race on the recovery economic activity following a natural disaster. Within counties where a major disaster is declared by the Federal Emergency Management Agency, census tracts with higher proportions of Hispanic and black residents grow significantly more slowly in the immediate aftermath of the natural disaster. The result is robust to the inclusion of a variety of tract-level demographic and economic controls.</description>
     </item>
     
     <item>
       <title>Nonparametric Regression Discontinuity Estimation with Adaptive Kernels</title>
-      <link>/post/local_linear/</link>
+      <link>https://michaeljerman.com/post/local_linear/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/local_linear/</guid>
+      <guid>https://michaeljerman.com/post/local_linear/</guid>
       <description>  Slides   </description>
     </item>
     
     <item>
       <title>Measuring the Effects of Pollution Abatement in the Presence of Treatment Externalities</title>
-      <link>/post/india_rivers/</link>
+      <link>https://michaeljerman.com/post/india_rivers/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/india_rivers/</guid>
+      <guid>https://michaeljerman.com/post/india_rivers/</guid>
       <description>Abstract Differences-in-differences estimators can be biased in the presence of treatment externalities. In this paper I develop a spatial model that accounts for these externalities, and estimate the model using data on Indian river pollution. I show that failing to account for treatment externalities can substantially bias estimates toward zero. The Indian government built 107 sewage treatment plants in 1995 as part of the National River Conservation Plan (NRCP).</description>
     </item>
     
