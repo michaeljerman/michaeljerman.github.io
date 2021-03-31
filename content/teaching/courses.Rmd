@@ -9,21 +9,23 @@ image: "/files/india_rivers.png"
 
 ## Current Courses 
 #### Oregon State University
-##### Winter 2021
+##### Spring 2021
 Click on the course title to download the syllabus:
 
-- [Intermediate Microeconomics](/files/syllabus_311_winter2021.pdf)
-- [Introduction to Econometrics](/files/syllabus_winter_2021.pdf)
-- [Game Theory](/files/syllabus_420_winter2021.pdf)
-- [Economics of Discrimination](/files/syllabus_383_winter2021.pdf)
+- [Intermediate Microeconomics](/files/syllabus_311_spring2021.pdf)
+- [Introduction to Econometrics](/files/syllabus_spring_2021.pdf)
+- [Economics of Inequality](/files/syllabus_491-599_spring2021.pdf)
+- [Law and Econonomics](/files/syllabus_461_spring2021.pdf)
 
 ## Previous Courses
+- [Game Theory](/files/syllabus_420_winter2021.pdf)
+- [Economics of Discrimination](/files/syllabus_383_winter2021.pdf)
 - [Advanced Microeconomics](/files/syllabus_411_fall2020.pdf)
 - [Industrial Organization](/files/syllabus_460_fall2020.pdf)
 - [Introduction to Econometrics with Calculus](/files/syllabus_427_winter2020.pdf)
 - [Pre-Econometrics (Introduction to Statistical Methods)](/files/syllabus_423_fall2019.pdf)
 - [Economic Growth and Development](/files/syllabus_499.pdf)
-- [Economics of Inequality](/files/syllabus_491_fall2018.pdf)
+
 
 
 
